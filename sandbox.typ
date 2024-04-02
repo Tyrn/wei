@@ -21,7 +21,7 @@
   let name = it.body
   for zip in zipped {
     if zip.at(0).body == it.body {
-      return [
+      return link(zip.first().location())[
         #set align(center)
         #smallcaps[#it.body]
 
