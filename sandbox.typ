@@ -14,26 +14,26 @@
 //     971-1-XXXXXX-XX-X
 //   ],
 // )
-#show outline.entry: it => context {
-  let contents = query(selector(<opener>))
-  let headings = query(selector(heading))
-  let zipped = headings.zip(contents)
-  let name = it.body
-  for zip in zipped {
-    if zip.at(0).body == it.body {
-      return link(zip.first().location())[
-        #set align(center)
-        #smallcaps[#it.body]
-
-        #set align(left)
-        #zip.at(1) #box(width: 1fr, repeat[.]) #it.page
-      ]
-    }
-  }
-  // else
-  return it
-  // you could customise this to not inlude anything
-}
+// #show outline.entry: it => context {
+//   let contents = query(selector(<opener>))
+//   let headings = query(selector(heading))
+//   let zipped = headings.zip(contents)
+//   let name = it.body
+//   for zip in zipped {
+//     if zip.at(0).body == it.body {
+//       return link(zip.first().location())[
+//         #set align(center)
+//         #smallcaps[#it.body]
+// 
+//         #set align(left)
+//         #zip.at(1) #box(width: 1fr, repeat[.]) #it.page
+//       ]
+//     }
+//   }
+//   // else
+//   return it
+//   // you could customise this to not inlude anything
+// }
 
 #outline(title: "Юлия Латынина. Сто полей")
 #[]<opener>  // do not remove, unless outline title is none
