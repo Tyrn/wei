@@ -1,5 +1,9 @@
 # Wei
 
+## Notes
+
+- [Fight for a Robinson Crusoe TOC](https://www.reddit.com/r/typst/comments/1brnchc/create_a_chapterbychapter_synopsis_mirrored_in/)
+
 ## Plain text reformatting
 
 - Comment out code, if any
