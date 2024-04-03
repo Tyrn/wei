@@ -35,6 +35,8 @@
   // you could customise this to not inlude anything
 }
 
+#set text(lang: "ru")
+
 #outline(title: "Юлия Латынина. Сто полей")
 #[]<opener>  // do not remove, unless outline title is none
 
