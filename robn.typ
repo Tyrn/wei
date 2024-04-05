@@ -68,6 +68,7 @@
 
 #set text(size: 11pt)
 #let makeHeading(title, content, level: 1) = [
+  #v(10pt)
   #heading(
     level: level,
     supplement: title
@@ -79,6 +80,7 @@
       #content
     ]
   ]
+  #v(10pt)
 ]
 
 
