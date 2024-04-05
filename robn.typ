@@ -80,7 +80,10 @@ Anyway, how's your day been?
 #part("Part Four", "Part four is where things start to get really interesting")
 #lorem(100)
 
-#chapter("Chapter One", "content for the first chapter in part four. Hold onto your hats!")
+#chapter("Chapter One")[
+Content for the first chapter in part four.
+Already we are boldly launched upon the deep; but soon we shall be lost in its unshored, harbourless immensities. Ere that come to pass; ere the Pequod’s weedy hull rolls side by side with the barnacled hulls of the leviathan; at the outset it is but well to attend to a matter almost indispensable to a thorough appreciative understanding of the more special leviathanic revelations and allusions of all sorts which are to follow.
+]
 #lorem(100)
 
 #chapter("Chapter Two", "content for the second chapter in part four. Brace yourselves!")
