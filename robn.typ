@@ -19,7 +19,7 @@
         )[#elem.supplement]]
         
         #set align(left)
-        #description #box(width: 1fr, repeat[])
+        #description
       ]
   }
   //else
@@ -29,8 +29,9 @@
     #smallcaps[#text(
       size: sizes.at(elem.level - 2)
     )[#elem.supplement]]
+
     #set align(left)
-    #[#description] #box(width: 1fr, repeat[.]) #it.page
+    #description #box(width: 1fr, repeat[.]) #it.page
   ]
 }
 
@@ -47,7 +48,6 @@
 }
 
 #set text(size: 11pt)
-
 #let makeHeading(title, content, level: 1) = [
   #heading(
     level: level,
@@ -57,12 +57,15 @@
       // You can customise the font size for the
       // content here, if you wish
       #content
-
-      #v(10pt)
     ]
   ]
 ]
 
+
+// page numbering and stuff
+#set page(numbering: "1")
+#set par(justify: true)
+#set text(hyphenate: true)
 
 #outline()
 
