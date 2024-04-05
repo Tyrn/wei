@@ -73,25 +73,27 @@
   #cnt
 ]
 
-
-
-#let makeHeading(title, content, level: 1) = [
+#let makeHeading(title, content, level) = [
+  #v(10pt)
   #heading(
     level: level,
     supplement: title
   )[
-    // You can customise the font size for the
-    // content here, if you wish
     #set align(center)
     #text(size: 11pt, weight: "regular", style: "italic")[
       #box(width: 80%)[#content]
     ]
   ]
+  #v(10pt)
 ]
 
+#let part(title, content) = {
+  makeHeading(title, content, 1)
+}
 
-
-
+#let chapter(title, content) = {
+  makeHeading(title, content, 2)
+}
 
 
 
