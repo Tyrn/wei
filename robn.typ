@@ -73,11 +73,11 @@
     level: level,
     supplement: title
   )[
-    // You can customise the font size for the
+    // You can customize the font size for the
     // content here, if you wish
     #set align(center)
-    #text(weight: "regular", style: "italic")[
-      #content
+    #text(size: 11pt, weight: "semibold")[
+      #box(width: 80%)[#content]
     ]
   ]
   #v(10pt)
