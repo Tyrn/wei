@@ -76,7 +76,7 @@
     // You can customise the font size for the
     // content here, if you wish
     #set align(center)
-    #text(size: 14pt, weight: "regular", style: "italic")[
+    #text(weight: "regular", style: "italic")[
       #content
     ]
   ]
