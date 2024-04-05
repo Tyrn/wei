@@ -81,7 +81,7 @@
     supplement: title
   )[
     #set align(center)
-    #text(size: 11pt, weight: "regular", style: "italic")[
+    #text(size: 11pt, weight: "semibold", style: "normal")[
       #box(width: 80%)[#content]
     ]
   ]
