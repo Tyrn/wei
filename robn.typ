@@ -1,3 +1,19 @@
+#let to-string(content) = {
+  if content.has("text") {
+    content.text
+  } else if content.has("children") {
+    content.children.map(to-string).join("")
+  } else if content.has("child") {
+    to-string(content.child)
+  } else if content.has("body") {
+    to-string(content.body)
+  } else if content == [ ] {
+    " "
+  } else {
+    content
+  }
+}
+
 #show outline.entry: it => {
   if it.element.bookmarked == false {
     return
@@ -8,7 +24,10 @@
   let body = it.body
   let elem = it.element
   let title = body.fields().children.at(1)
-  let description = body
+
+  let description = text(style: "normal", size: 10pt)[
+    #to-string(body)
+  ]
 
   if elem.level == 1 {
     return link(elem.location())[
@@ -53,13 +72,13 @@
     level: level,
     supplement: title
   )[
-    #text(size: 11pt, weight: "regular")[
-      // You can customise the font size for the
-      // content here, if you wish
+    // You can customise the font size for the
+    // content here, if you wish
+    #set align(center)
+    #text(size: 14pt, weight: "regular", style: "italic")[
       #content
     ]
   ]
-  #v(10pt)
 ]
 
 
