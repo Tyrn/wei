@@ -63,11 +63,13 @@
 #chapter("Chapter Two", "content for the second chapter, and still in part three")
 #lorem(100)
 
-#chapter("Chapter Three", "There's really no hard limit to how long these openers can be and to be quite honest I'm rather curious to see how far we can go.
+#chapter("Chapter Three")[
+There's really no hard limit to how long these openers can be and to be quite honest I'm rather curious to see how far we can go.
 
 Adolphus W. Green (1844–1917) started as the Principal of the Groton School in 1864. By 1865, he became second assistant librarian at the New York Mercantile Library; from 1867 to 1869, he was promoted to full librarian. From 1869 to 1873, he worked for Evarts, Southmayd & Choate, a law firm co-founded by William M. Evarts, Charles Ferdinand Southmayd and Joseph Hodges Choate. He was admitted to the New York State Bar Association in 1873.
 
-Anyway, how's your day been?")
+Anyway, how's your day been?
+]
 #lorem(100)
 
 
