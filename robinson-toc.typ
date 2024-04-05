@@ -64,6 +64,7 @@
       return
     }
     return [
+      #set align(center)
       #it.supplement
   
       #it.body
