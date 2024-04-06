@@ -1,11 +1,53 @@
 #import "robinson-toc.typ": part, chapter, formatDoc
 
 #show: doc => formatDoc(doc)
-
-// page numbering and stuff
-#set page(numbering: "1")
+#set text(lang: "es")
 #set par(justify: true)
 #set text(hyphenate: true)
+
+
+#place(center + horizon, dy: -10em)[
+  #text(size: 25pt)[
+    The title of our book
+  ]
+  
+  #text(size: 15pt)[
+    A subtitle for the book
+  ]
+]
+
+#pagebreak()
+
+#[
+  #set align(center)
+  #text(size: 25pt)[
+    Acknowledgments
+  ]
+  
+  #set align(center)
+  
+  I just wanted to take a moment to express my deepest gratitude to each and every one of you. Whether you've been by my side through thick and thin or have just recently crossed paths with me, your presence means the world to me.
+  
+  To my friends, family, and loved ones: Thank you for your unwavering support, love, and understanding. You make every day brighter, and I am endlessly grateful for the joy you bring into my life.
+  
+  To my mentors and teachers: Thank you for your guidance, wisdom, and encouragement. Your belief in me has helped shape me into the person I am today, and I am forever thankful for your impact on my journey.
+  
+  To my colleagues and peers: Thank you for your collaboration, camaraderie, and shared experiences. Your dedication and passion inspire me to strive for greatness, and I am honored to work alongside such incredible individuals.
+  
+  To the strangers who have crossed my path: Thank you for your kindness, compassion, and random acts of generosity. Your unexpected gestures of goodwill remind me of the beauty in humanity, and I am humbled by your warmth and generosity.
+  
+  And to everyone else: Thank you for being you. Whether we've laughed together, cried together, or simply shared a passing moment, your presence has left an imprint on my heart, and for that, I am eternally grateful.
+  
+  So, from the bottom of my heart, thank you. Thank you for being a part of my life, for sharing in my journey, and for making each day a little brighter. I am blessed to know each and every one of you, and I look forward to the many adventures that lie ahead.
+]
+
+#pagebreak()
+
+
+// start numbering from this point onwards
+#set page(numbering: "1")
+
+
 
 #outline()
 
@@ -14,7 +56,6 @@
 = This heading won't show up
 == Neither will this
 === You have to create headings with the provided `makeHeading` function
-
 
 
 
@@ -134,4 +175,3 @@ Already we are boldly launched upon the deep; but soon we shall be lost in its u
 
 #chapter("Chapter Three", "Why not add a third chapter while we're at it, but this time in part six. Hold onto your seats!")
 #lorem(100)
-

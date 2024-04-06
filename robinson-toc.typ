@@ -14,17 +14,29 @@
   }
 }
 
+#let shouldIgnoreHeading(suppl) = {
+  let lang = text.lang
+  let sectionsInLanguages = (
+    "en": [Section],
+    "es": [Sección],
+    // Add more langauges here as necessary
+  )
+  return suppl == sectionsInLanguages.at(lang)
+}
+
 #let formatDoc(cnt) = [
   #show outline.entry: it => {
     if it.element.bookmarked == false {
       return
     }
-    if it.element.supplement == [Section] {
+    if shouldIgnoreHeading(it.element.supplement) {
       return
     }
+    
     let body = it.body
     let elem = it.element
-    let title = body.fields().children.at(1)
+    // let cpy = body.fields()
+    let title = to-string(body)
     
     let description = text(style: "normal", size: 10pt)[
       #to-string(body)
@@ -60,11 +72,10 @@
   }
   
   #show heading: it => {
-    if it.supplement == [Section] {
+    if shouldIgnoreHeading(it.supplement) {
       return
     }
     return [
-      #set align(center)
       #it.supplement
   
       #it.body
@@ -75,17 +86,17 @@
 ]
 
 #let makeHeading(title, content, level) = [
-  #v(10pt)
   #heading(
     level: level,
     supplement: title
   )[
+    // You can customise the font size for the
+    // content here, if you wish
     #set align(center)
-    #text(size: 11pt, weight: "semibold", style: "normal")[
+    #text(size: 11pt, weight: "regular", style: "italic")[
       #box(width: 80%)[#content]
     ]
   ]
-  #v(10pt)
 ]
 
 #let part(title, content) = {
