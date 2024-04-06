@@ -88,6 +88,7 @@
 ]
 
 #let makeHeading(title, content, level) = [
+  #v(10pt)
   #heading(
     level: level,
     supplement: title
@@ -95,10 +96,11 @@
     // You can customise the font size for the
     // content here, if you wish
     #set align(center)
-    #text(size: 11pt, weight: "regular", style: "italic")[
+    #text(size: 11pt, weight: "semibold", style: "normal")[
       #box(width: 80%)[#content]
     ]
   ]
+  #v(10pt)
 ]
 
 #let part(title, content) = {
