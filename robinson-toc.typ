@@ -20,7 +20,7 @@
     "en": [Section],
     "es": [Sección],
     "ru": [Раздел],
-    // Add more langauges here as necessary
+    // Add more languages here as necessary
   )
   return suppl == sectionsInLanguages.at(lang)
 }
