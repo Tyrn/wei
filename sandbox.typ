@@ -2,7 +2,7 @@
 
 #show: doc => formatDoc(doc)
 
-#set text(lang: "en")
+#set text(lang: "ru")
 
 // page numbering and stuff
 #set page(numbering: "1")
