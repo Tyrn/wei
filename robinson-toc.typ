@@ -19,7 +19,7 @@
   let sectionsInLanguages = (
     "en": [Section],
     "es": [Sección],
-    "ru": [Section],
+    "ru": [Раздел],
     // Add more langauges here as necessary
   )
   return suppl == sectionsInLanguages.at(lang)

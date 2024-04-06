@@ -1,7 +1,7 @@
 #import "robinson-toc.typ": part, chapter, formatDoc
 
 #show: doc => formatDoc(doc)
-#set text(lang: "es")
+#set text(lang: "ru")
 #set par(justify: true)
 #set text(hyphenate: true)
 
