@@ -2,7 +2,7 @@
 
 #show: doc => formatDoc(doc)
 #set text(lang: "ru")
-#set par(justify: true)
+#set par(first-line-indent: 1em, justify: true)
 #set text(hyphenate: true)
 
 

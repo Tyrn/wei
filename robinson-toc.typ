@@ -66,6 +66,7 @@
       #set align(left)
       #set par(
         hanging-indent: 1em,
+        first-line-indent: 0em,
         justify: true,
       )
       #description #box(width: 1fr, repeat[.]) #it.page
