@@ -51,7 +51,7 @@
             size: 18pt
           )[#elem.supplement]]
           
-          #set align(left)
+          //#set align(left)
           #description
         ]
     }
