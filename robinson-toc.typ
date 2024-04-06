@@ -92,6 +92,9 @@
   #v(10pt)
   #heading(
     level: level,
+  )[#title]
+  #heading(
+    level: level,
     supplement: title
   )[
     #set align(center)
