@@ -8,11 +8,11 @@
 
 #place(center + horizon, dy: -10em)[
   #text(size: 25pt)[
-    The title of our book
+    Сто полей
   ]
   
   #text(size: 15pt)[
-    A subtitle for the book
+    Юлия Латынина
   ]
 ]
 

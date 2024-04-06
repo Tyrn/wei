@@ -94,8 +94,6 @@
     level: level,
     supplement: title
   )[
-    // You can customise the font size for the
-    // content here, if you wish
     #set align(center)
     #text(size: 11pt, weight: "semibold", style: "normal")[
       #box(width: 80%)[#content]
