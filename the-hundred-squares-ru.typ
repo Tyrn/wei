@@ -1,5 +1,3 @@
-#if false [
-] else [
 #import "local/Outline-Summaryst/src/outline-summaryst.typ": style-outline, make-heading
 
 #let part(title, content) = {
@@ -32,7 +30,6 @@
 #pagebreak()
 
 #set page(numbering: "1")
-]
 
 #part("Часть первая")[Cтрана ложных имен]
 
