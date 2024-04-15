@@ -1,10 +1,18 @@
-#import "robinson-toc.typ": part, chapter, formatDoc
+#if false [
+] else [
+#import "local/Outline-Summaryst/src/outline-summaryst.typ": style-outline, make-heading
 
-#show: doc => formatDoc(doc)
+#let part(title, content) = {
+  make-heading(title, content)
+}
+
+#let chapter(title, content) = {
+  make-heading(title, content, level: 2)
+}
+
 #set text(lang: "ru")
 #set par(first-line-indent: 1em, justify: true)
 #set text(hyphenate: true)
-
 
 #place(center + horizon, dy: -10em)[
   #text(size: 25pt)[
@@ -18,12 +26,13 @@
 
 #pagebreak()
 
-// start numbering from this point onwards
-#set page(numbering: "1")
-
+#show outline: style-outline.with(outline-title: "Содержание")
 #outline()
 
 #pagebreak()
+
+#set page(numbering: "1")
+]
 
 #part("Часть первая")[Cтрана ложных имен]
 
