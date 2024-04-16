@@ -42,7 +42,7 @@
       
       // style h1's differently from lower level headings
       if lvl == 1 {
-        return link(loc)[
+        return box(link(loc)[
           #v(30pt)
           #set align(center)
           #smallcaps[#text(
@@ -51,10 +51,10 @@
           
           #set align(left)
           #subcnt
-        ]
+        ])
       }
       // else
-      return link(loc)[
+      return box(link(loc)[
         #let size = calc-elem-size(it.element)
         
         #set align(center)
@@ -65,7 +65,7 @@
         #set align(left)
         
         #subcnt #box(width: 1fr, repeat[.]) #it.page
-      ]
+      ])
     }
     
     elemcounter.step()
