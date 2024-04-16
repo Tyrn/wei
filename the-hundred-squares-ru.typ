@@ -1,12 +1,4 @@
-#import "local/Outline-Summaryst/src/outline-summaryst.typ": style-outline, make-heading
-
-#let part(title, content) = {
-  make-heading(title, content)
-}
-
-#let chapter(title, content) = {
-  make-heading(title, content, level: 2)
-}
+#import "robinson-toc.typ": style-outline, part, chapter
 
 #set text(lang: "ru")
 #set par(first-line-indent: 1em, justify: true)
