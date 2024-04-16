@@ -16,7 +16,7 @@
 
 #pagebreak()
 
-#show outline: style-outline.with(outline-title: "Содержание")
+#show outline: style-outline.with(outline-title: "")
 #outline()
 
 #pagebreak()
