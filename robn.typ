@@ -1,4 +1,4 @@
-#import "robinson-toc.typ": part, chapter, formatDoc
+#import "robinson-pip.typ": part, chapter, formatDoc
 
 #show: doc => formatDoc(doc)
 #set text(lang: "es")
