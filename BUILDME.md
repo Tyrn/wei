@@ -2,7 +2,8 @@
 
 ## Notes
 
-- [Fight for a Robinson Crusoe TOC](https://www.reddit.com/r/typst/comments/1brnchc/create_a_chapterbychapter_synopsis_mirrored_in/)
+- [A Fight for a Robinson Crusoe TOC](https://www.reddit.com/r/typst/comments/1brnchc/create_a_chapterbychapter_synopsis_mirrored_in/)
+- [A great contribution](https://github.com/aarneng/Outline-Summaryst)
 
 ## Plain text reformatting
 
