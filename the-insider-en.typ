@@ -12390,6 +12390,9 @@ adventurers joined their comrades and  went  to Kissur the  White Falcon. In
 spite of the official Federation language  being the only one allowed spoken
 in the army, they had picked up some Alom on the way.
 
+     The Fifteenth Chapter
+     Where  the  saviors  of  the Country  of  Great Light  pull the biggest
+insider deal in the history of the Galaxy.
 
      They took Bemish on a brief trip  around the  building that belonged to
 him. At every corner, he saw people wearing Federation military uniforms and
