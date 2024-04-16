@@ -1,6 +1,7 @@
 #import "robinson-toc.typ": style-outline, part, chapter
 
 #set text(lang: "ru")
+#show par: set block(spacing: 0.65em)
 #set par(first-line-indent: 1em, justify: true)
 #set text(hyphenate: true)
 
