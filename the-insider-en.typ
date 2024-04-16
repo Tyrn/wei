@@ -2,12 +2,6 @@
 
 
 
----------------------------------------------------------------
-     © Copyright Julia Latynina
-     © Copyright translation by Boris Itin (bitin@nysbc.org)
-     Date: 08 Dec 2004
----------------------------------------------------------------
-
     CONTENT
 
 
@@ -3251,7 +3245,7 @@ it but we were ordered to..."
      "Is it because of Assalah?"
      The broker shrugged his shoulders.
      "Have you seen the article?"
-     ` "What article?"
+     "What article?"
      Krasnov took a battered yellowish newspaper from a desk drawer and gave
 it to  Bemish. The  newspaper was local and Bemish was only able to make out
 Shavash's picture and he was barely able to get the paper's name - Red Star.
@@ -5607,7 +5601,7 @@ there a  gift basket full of soft turquoise figs and Shavash's note. "As you
 see, I can be grateful," Shavash wrote in calligraphy. "You had given me one
 fig and I gave you hundred." A bruise was called a fig in Weian.
 
-     ****
+     X X X
 
      The next day after the investors had left  Bemish returned to the villa
 and was stopped by a small peasant crowd.
@@ -8288,11 +8282,11 @@ would like to let me  go. I  was insolent to him. He  paused  and said, "All
 right, they  will  crucify you tomorrow, brat.  At first they  will  crucify
 Aldon and then you."
      "What happened tomorrow?"
-     "They brought Aldon and me out and Khanalai said, `If you let me pardon
+     "They brought Aldon and me out and Khanalai said, 'If you let me pardon
 you, I will let Aldon go.' I spit in his face."
      Ashidan paused. He  face paled completely  and Bemish suddenly imagined
 how cute a boy he had been at "almost fifteen."
-     "Khanalai rocked on his  feet for a  while and then said,  `You are too
+     "Khanalai rocked on his  feet for a  while and then said,  'You are too
 beautiful a boy to die.' They  crucified Aldon and quarreled for a while and
 then took me away."
      "And what happened to Dried Date?"
@@ -12953,10 +12947,3 @@ about me, you would have been a billion or two richer today."
      Having  said this,  the  small  official  bowed  ceremoniously  to  the
 Earthman  and walked  down the  path,  back to the  carved spires  and onion
 shaped turrets of the main palace pavilions.
-
-Популярность: 19, Last-modified: Tue, 07 Dec 2004 22:06:14 GMT
-
-
-
-
-
