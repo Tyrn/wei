@@ -95,12 +95,14 @@
   #heading(level: level, supplement: supl)[#box(width: 100%)[
     
     #v(2.5em)
+    #set align(center)
     #cnt
 
-    #set align(center)
+    #v(.5em)
     #text(size: 11pt, weight: "regular", style: "italic")[
       #box(width: 80%)[#subcnt]
     ]
+    #v(.5em)
   ]]
 ]
 
