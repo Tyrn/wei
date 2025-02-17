@@ -1,5 +1,6 @@
 #import "robinson-toc.typ": style-outline, part, chapter
 
+/// Scene break.
 #let dinkus() = {
   let star = "♢"
   set align(center)
