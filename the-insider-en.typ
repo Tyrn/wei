@@ -1,7 +1,14 @@
 #import "robinson-toc.typ": style-outline, part, chapter
 
+/// Scene break.
+#let dinkus() = {
+  let star = "♢"
+  set align(center)
+  star + star + star
+}
+
 #set text(lang: "en")
-#show par: set block(spacing: 0.65em)
+#set par(spacing: 0.65em)
 #set par(first-line-indent: 1em, justify: true)
 #set text(hyphenate: true)
 
@@ -301,7 +308,7 @@ lips. He didn't want them to say that he beat people free of charge.
      Then he got in his car and left.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -392,7 +399,7 @@ said to Kissur's back,
      "It's ok," replied Kissur, "if Gods like a man, he dies young."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -867,7 +874,7 @@ you pick this drug addict up?"
      "Drug addicts," Bemish said, "don't fight like this."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -1230,7 +1237,7 @@ confess about the bribe or Shavash  is going to get foxy on him. One of them
 is lying to me and I'll rub an onion in his eyes.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -1301,7 +1308,7 @@ me."
      Welsey rushed out.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -1479,7 +1486,7 @@ in account?"
 than toilet paper. The name for this oldster is country risk."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -1643,7 +1650,7 @@ this license  plate number  registered  in the police department.  In  fact,
 there is no car registered with this license plate number at all.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -1731,7 +1738,7 @@ looking at the pink eight-columned temple, thoughtfully chewing on a grilled
 lamb leg and washing it down with disgustingly warm carbonated water.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -1854,7 +1861,7 @@ Shavash,  smiling gently, was handing a form over to the minister of finance
 while Kissur, yowling horribly, was cutting some rag with a sword on a bet.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -2120,7 +2127,7 @@ consumption stayed the same.
      "Of course. Good-bye, Mr. Bemish, and I wish you the best luck."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -2400,7 +2407,7 @@ pond.  Kissur  wrapped  a towel  around  himself and, not interested  in the
 least, whether or not his pestering visitor drowned, walked to the house.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -2537,7 +2544,7 @@ inquired Giles if he liked to order anything.
 cuisine well, you wouldn't have ordered a guinea pig burger."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -2655,7 +2662,7 @@ the shirt and  Shavash laughed  and put  the  wine  glass on the  table  and
 reclined on his back again.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -2739,7 +2746,7 @@ care of your yacht. Do you understand me?"
      "Quite."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -2804,7 +2811,7 @@ galactic equipment for his company from the front intermediaries  at doubled
 prices.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3073,7 +3080,7 @@ said, I will shoot you."
      Kissur got up and walked down the road.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3132,7 +3139,7 @@ Shavash was getting the signatures!  He will  now harry  us with this Bemish
 till we pay three dinars for a share."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3217,7 +3224,7 @@ with the foreigners that understood the human speech worse than dogs and let
 them into the manor with hardly a word.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3283,7 +3290,7 @@ stop at  accusing innocent fellow  travelers." And he ordered to bring whips
 and canes.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3304,7 +3311,7 @@ half an  hour, Kissur carefully pried the wooden frame open with a knife and
 climbed inside.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3335,7 +3342,7 @@ crummy people," he thought, "in my benevolence, I  didn't prosecute them for
 the murder and they thanked me in such a way!"
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3485,7 +3492,7 @@ deeds were fake.
 satisfied crowd dispersed.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3532,7 +3539,7 @@ sovereign for you."
      And he started enthusiastically treating Bemish with wine.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3557,7 +3564,7 @@ voice, that he would be happy to find for Mr. Bemish anything in the world -
 an eternal phoenix, three-headed dragon, and even an honest administrator.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3604,7 +3611,7 @@ good Samaritan  towards you. He will be kind to you  only because he doesn't
 have another weapon."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -3796,7 +3803,7 @@ for the appointment and not the  man hating me because of the shares is head
 of the precinct.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -4245,7 +4252,7 @@ Rolls-Royce next to the Nut Pavilion."
 day after tomorrow.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -4483,7 +4490,7 @@ in such a saucy way.
 picture, don't you think so?"
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -4792,7 +4799,7 @@ Academy. They didn't accept me. I  am not interested  in any other  place in
 your Galaxy, full of worms like a year-old fig."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -4927,7 +4934,7 @@ will cost hundred times more.
      "It will be I and my friends."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -4977,7 +4984,7 @@ out and, if she is as good as this scoundrel claims, she is yours."
 projections crawled out of it.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5197,7 +5204,7 @@ haven't  figured  out  how  much an  Earthman  needs,  not  to  eat  another
 Earthman."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5219,7 +5226,7 @@ stored  in the palace  and was  fated to an  eternal confinement,  like  the
 Emperor's wives.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5252,7 +5259,7 @@ cost.
      Bemish thanked the official and refused.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5292,7 +5299,7 @@ the Hundred  Fields  Hall's  immense  luxury,  the golden ceiling  and  jade
 columns. "A very rich government of a very poor nation," he thought.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5303,11 +5310,11 @@ was  swimming in a night pond. There were various contracts made  and papers
 signed amidst the  dishes with stuffed dates and the dishes  with everything
 that was raised in the sky and raised on the ground, these very papers would
 normally involve huge  bribes; the bribes,  however, were still supposed  be
-paid later. There were also songs and poetry. A ministry of finance official
-- was his name Tai? - took something resembling a lute  and  started playing
-music and singing.
+paid later. There were also songs and poetry. A ministry of finance
+official---was his name Tai?---took something resembling a lute  and  started
+playing music and singing.
 
-     Then, a girl  sang a song - it was a very lyrical song. Bemish was told
+     Then, a girl  sang a song. It was a very lyrical song. Bemish was told
 that an official named Andarz had written this  song about twenty years ago.
 He  was  the  police minister  and  he had suppressed  the Chakhar uprising,
 having hung everybody who couldn't buy him off and letting off everybody who
@@ -5400,7 +5407,7 @@ regular price."
 yourself over my fist."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5426,7 +5433,7 @@ was based on  personal observations. And he  doubted his  behavior  was much
 better.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5496,7 +5503,7 @@ feet with multicolored pages standing out. It was the folder with  the Inis'
 father dossier. Bemish snatched it and kept running.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5555,7 +5562,7 @@ have been fed his body in a soup - that was their cute way of getting rid of
 the corpses.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5626,7 +5633,7 @@ money but the sovereign's  favorite could easily take the money  for fun and
 throw it in the next canal.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5697,7 +5704,7 @@ Kissur wanting to kill somebody and failing."
 about the spear and the birch.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5862,7 +5869,7 @@ people say that it was two million."
 knows a lot."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -5913,7 +5920,7 @@ it."
      And Ronald Trevis put the receiver down.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -6168,7 +6175,7 @@ republic, decided  that it  had to be a swell deal and followed him like the
 honey gatherers follow a bee.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -6184,7 +6191,7 @@ shares to IC Company at five and a half dinars per share."
      The line went off.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -6254,7 +6261,7 @@ hand. "Well, leave me alone for these three hours."
      "Think," Bemish said.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -6441,7 +6448,7 @@ contract with IC.
 sadly. "You tired me out. Kissur, visit me tomorrow morning."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -6473,7 +6480,7 @@ pub."
      And they went to a pub.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -6996,7 +7003,7 @@ gun under his belt and left.
 unhurt."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -7179,7 +7186,7 @@ day with apologies.
 painting.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -7387,7 +7394,7 @@ money, money that this country doesn't have. But, the Galaxy has  this money
 and you, Terence, will deliver this money from the Galaxy to here."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -7461,7 +7468,7 @@ all the way, suddenly said, "If a civil war starts in  this  Empire, it will
 start on this woman's account."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -7481,7 +7488,7 @@ see, I can be grateful," Shavash wrote in calligraphy. "You had given me one
 fig and I gave you hundred." A bruise was called a fig in Weian.
 
 
-     X X X
+     #dinkus()
 
 
      The next day after the investors had left  Bemish returned to the villa
@@ -7526,7 +7533,7 @@ will devour the whole hand. They are but spongers!"
 headman shut up, offended.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -7677,7 +7684,7 @@ our peasants mightily and we have  a strong society there. But yesterday the
 society head died. Go to Assalah and take his place."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -7771,7 +7778,7 @@ stories about riding in the  chief demon's car and seeing a meat  egg on the
 demon's shoulders.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -8140,7 +8147,7 @@ legalities bashing these hoods' teeth in."
      "They have advantages only compared to your crooks."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -8187,7 +8194,7 @@ whole gang down and declare it to be gods' wrath.
 said, "and that I will do a favor to you rather than to Bemish."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -8273,7 +8280,7 @@ women, power, glory, while you want only money."
 else."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -8812,7 +8819,7 @@ repair  manual that a zealot, considering acetylene welding to be a  phantom
 and illusion, was not supposed to do.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -8859,7 +8866,7 @@ organized the last attempt at my assassination?"
 different people for it?"
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -8934,7 +8941,7 @@ hang the zealots  publicly pissing off all the  human  rights committees and
 another thing to make them throttle each other.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -8978,7 +8985,7 @@ egg?"
      "Read a biology textbook," Bemish dryly suggested.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -9113,7 +9120,7 @@ is  not very jealous if he leaves  his concubine alone with a young man," he
 thought.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -9147,7 +9154,7 @@ head. And Terence Bemish assigned  automatically any unintelligent person to
 a place at the very bottom of his rating list.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -9175,7 +9182,7 @@ demon and you wouldn't take an offence at this name anyway."
      "Well, even if you are a zealot, at least you are not crazy," he said.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -9473,7 +9480,7 @@ appointments - this bill had been designed specially to kick Nan out  of the
 country.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -9624,7 +9631,7 @@ then, he  turned  sharply  and approached  a huge  gleaming fast  food stand
 covered with all kinds of hamburgers and bottles full of dyed water.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -9765,7 +9772,7 @@ nature...
      "Wow, what a python I have awakened," Inis whispered.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -9843,7 +9850,7 @@ living  room  with the other. Out  of the wide open office door, Inis caught
 embarrassed Ashinik's glance and smiled at him slightly.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -9911,7 +9918,7 @@ meeting?"
      "Of course, you can go, Ashinik," Bemish said.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -10012,7 +10019,7 @@ sadly  realized  that the larger was the embezzlement  scale, the  safer the
 embezzlement was.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -10069,7 +10076,7 @@ battles that our generals conducted maneuvers, take it?"
 acquaintance with it."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -10216,7 +10223,7 @@ printouts.
      "Are you ok? Should I call a doctor?"
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -10316,7 +10323,7 @@ whether  it's black  or white, and  I am sure  that  I will get there before
 you."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -10361,7 +10368,7 @@ the glorious battles' path. These people live in the previous century."
 drugs came from, but smiling Shavash claimed his total ignorance.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -10582,7 +10589,7 @@ gleam in the opened door, "No way, it's a fan laser, damn it - it's at least
 a plasma rocket launcher."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -10636,7 +10643,7 @@ turned the dial again but the conversation had ended. "Hmm," Bemish thought,
 "Somebody in this castle hid a transmitter away from old Elda."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -10773,7 +10780,7 @@ return to the castle by the evening."
 the white peasant's dress with a load of mud and rushed away.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -11443,7 +11450,7 @@ don't want people to say that about me."
      "Get in the saddle, Ashidan," Kissur spoke quietly.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -11704,7 +11711,7 @@ the construction. Think upon my words."
 rushed out with him.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -11767,7 +11774,7 @@ May I see you?"
      "Yes."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -11864,7 +11871,7 @@ hands in  anguish and, right  at that moment, a  journalist hiding behind  a
 large flower pot happily clicked his camera.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -11976,7 +11983,7 @@ worry. And they have many more opportunities to organize an assassination; I
 can bet my life that it was a suicide bomber."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -12096,7 +12103,7 @@ Elder. They will kill you if you are not with us!"
 with Inis? She is a dumb broad; you can get a bunch of them for an ishevik."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -12155,7 +12162,7 @@ will get out of there alive only if you agree to kill Terence!"
 lips - a fit started.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -12201,7 +12208,7 @@ whispered several words to Shavash and the latter smiled at the spy with his
 eyes.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -12456,7 +12463,7 @@ sarcastically.  "It's important that Bemish betrayed Rashan. He will  answer
 for that."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -12799,7 +12806,7 @@ shook slightly.
      "Don't worry," Bemish snickered, "I'll buy myself a new concubine."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -12867,7 +12874,7 @@ front page.
 show them that we can fight for peace not only with our mouths."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -12925,7 +12932,7 @@ these stupid committees and the base didn't have enough employees. That  was
 why Denny Hill conducted the census on his own.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -12989,7 +12996,7 @@ who should  get  a  medal  for  providing a  Federation ally  with  military
 support."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -13058,7 +13065,7 @@ attention  that had  let  the malevolent representative of  the local  fauna
 infiltrate the ship and the captain didn't receive a bonus.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -13070,7 +13077,7 @@ was changed again and  the containers  were now marked as medical equipment.
 The ship was flying to the planet of Weia, to the Assalah spaceport.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -13098,7 +13105,7 @@ its walls, covered with lead sheets, insulated all irradiation.
      "Giles won't object," Shavash snorted.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -13146,7 +13153,7 @@ Shavash.
 that he won't object about his offshoot company using his storage area!
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -13315,7 +13322,7 @@ forty billion dinars," Bemish said, "and he will work it all off for me."
 and the connection broke off.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -13485,7 +13492,7 @@ green,  were  almost  like  Idari's  eyes and  they  looked at  Bemish  with
 admiration and hope.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -13641,7 +13648,7 @@ neck.  The  woman  screamed and thrashed.  "Pull it!  Pull  it!"  the  voice
 screamed in Ashinik's mind. "Pull it, my son!"
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -13723,7 +13730,7 @@ only home is the sect but the Earthmen took it away from him!
      Bemish! Terence Bemish will understand him!
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -13774,7 +13781,7 @@ later he blamed himself that he  hadn't called  police at  once,  though  it
 would have made no difference by then.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -14126,7 +14133,7 @@ him bit after bit and how this man screamed at the top of  his lungs that he
 knew nothing, absolutely nothing about Inis.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -14353,7 +14360,7 @@ slaughtered the welcoming  host. As  it  was,  he  had  to limit himself  to
 killing one guard and leaving another one disabled.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -14383,7 +14390,7 @@ he drags  his brat even to the negotiations  with Galactic Bank and he dares
 to ask me to give him my wife!"
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -14514,7 +14521,7 @@ was.
      Ashinik promised to explain to Bemish what a people's inspection was.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -14616,7 +14623,7 @@ Confidentially the government hinted that it was  afraid to be kicked out of
 power if tried to do anything along these lines.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -14653,7 +14660,7 @@ provocateurs."
      "All right," Kissur said and he slammed the door and took off.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -14763,7 +14770,7 @@ more?"
 "even if it doesn't save the company."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -14916,7 +14923,7 @@ wrapped his dark red bordeaux colored tie around his left hand and, grinning
 broadly, he cut it off at the top.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -14985,7 +14992,7 @@ completely upon their honest reports.  Afterwards, the  whole Galaxy saw the
 pictures made by these journalists.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -15148,7 +15155,7 @@ persons were involved. Is it correct?"
      "Yes, your honor."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -15387,7 +15394,7 @@ shit on you."
 they praise a scoundrel who took eight thousand people hostage?!"
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -15427,7 +15434,7 @@ your missiles in your base  like chocolate bars in a supermarket, why do you
 point your finger at me?"
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -15624,7 +15631,7 @@ farmer's market. I don't care whether my creditors get one cent or ten cents
 for a dinar."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -15642,7 +15649,7 @@ ultimatum  -  five shot  hostages for every  minute  of  delay  - few people
 would've missed such a possibility to peep at history.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -15759,7 +15766,7 @@ ban private property. Is it true?"
 got this idea."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -15819,7 +15826,7 @@ agreement?"
 
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -15846,7 +15853,7 @@ crucial spaceport's systems to  function.  Five hundred  armed  fighters and
 several thousand Weian zealot peasants also stayed.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -16027,7 +16034,7 @@ for a Federation citizen was eleven hundred twelve credits!
 understood why the latter knew the difference between Aloms and Weians.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -16164,7 +16171,7 @@ decoration  on the  door  frame,  the jacket ripped apart and  the  official
 fainted and fell all the way to the floor.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -16254,7 +16261,7 @@ Bemish.
      "Drink with us," he said in English.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -16489,7 +16496,7 @@ thought that you, Shavash, were a  normal  official only because you  took a
 lot of bribes."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -16549,7 +16556,7 @@ colonel's temple under large whitecandle petals."
      "I am glad that there are still warriors left on Earth," Kissur said.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -16807,7 +16814,7 @@ Shavash," Bemish summarized.
      "Yes. We have to do it at the highest level, as they demanded."
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -16847,7 +16854,7 @@ demanded. "He is not even a Federation official!"
 shown to the door.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -16972,7 +16979,7 @@ the three thousand men he killed yesterday."
      And he left.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -17162,7 +17169,7 @@ invest now into economics and infrastructure of the Federation's new state!"
      "We will think your proposal over," the state secretary said.
 
 
-    X X X
+    #dinkus()
 
 
 
@@ -17266,7 +17273,7 @@ the heads of the states.
      "I agree," the first vice minister of finance finally said.
 
 
-    X X X
+    #dinkus()
 
 
 
