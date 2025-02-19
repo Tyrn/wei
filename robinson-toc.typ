@@ -57,14 +57,15 @@
       return box(link(loc)[
         #let size = calc-elem-size(it.element)
         
-        #set align(center)
-        #smallcaps[#text(
-          size: size
-        )[#cnt]]
+        //#set align(center)
+        //#smallcaps[#text(
+        //  size: size
+        //)[#cnt]]
         
         #set align(left)
         
-        #subcnt #box(width: 1fr, repeat[.]) #it.page
+        #v(1em)
+        #strong(cnt) #subcnt #box(width: 1fr, repeat[.]) #it.page
       ])
     }
     
