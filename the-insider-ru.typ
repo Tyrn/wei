@@ -1,4 +1,4 @@
-#import "robinson-pip.typ": part, chapter, formatDoc
+#import "robinson-toc.typ": text-size, style-outline, part, chapter
 
 /// Scene break.
 #let dinkus() = {
@@ -7,11 +7,11 @@
   star + star + star
 }
 
-#show: doc => formatDoc(doc)
 #set text(lang: "ru")
+#set text(size: text-size)
+#set text(hyphenate: true)
 #set par(spacing: 0.65em)
 #set par(first-line-indent: 1em, justify: true)
-#set text(hyphenate: true)
 
 
 #place(center + horizon, dy: -10em)[
@@ -19,20 +19,19 @@
     Инсайдер
   ]
   
-  #text(size: 15pt)[
+  #text(size: text-size)[
     Юлия Латынина
   ]
 ]
 
 #pagebreak()
 
-// start numbering from this point onwards
-#set page(numbering: "1")
-
+#show outline: style-outline.with(outline-title: "")
 #outline()
 
 #pagebreak()
 
+#set page(numbering: "1")
 
 #chapter("Глава первая,")[в которой Киссур Белый Кречет попадает в аварию,  а  первый заместитель
 министра финансов рассуждает о причинах прорухи в государственной казне.]

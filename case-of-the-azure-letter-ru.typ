@@ -1,4 +1,4 @@
-#import "robinson-toc.typ": style-outline, part, chapter
+#import "robinson-toc.typ": text-size, style-outline, part, chapter
 
 /// Scene break.
 #let dinkus() = {
@@ -8,16 +8,17 @@
 }
 
 #set text(lang: "ru")
+#set text(size: text-size)
+#set text(hyphenate: true)
 #set par(spacing: 0.65em)
 #set par(first-line-indent: 1em, justify: true)
-#set text(hyphenate: true)
 
 #place(center + horizon, dy: -10em)[
   #text(size: 25pt)[
     Дело о лазоревом письме
   ]
   
-  #text(size: 15pt)[
+  #text(size: text-size)[
     Юлия Латынина
   ]
 ]
