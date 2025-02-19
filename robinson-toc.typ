@@ -65,12 +65,12 @@
         #set align(left)
         
         #v(1em)
-        #box(width: 60%)[
+        #box(width: 89%)[
           #strong(cnt)
           #subcnt
           #box(width: 1fr, repeat[.])
         ]
-        #box()[#it.page]
+        #box(width: 7%)[#h(1fr)#it.page]
       ])
     }
     
