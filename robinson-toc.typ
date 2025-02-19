@@ -1,3 +1,5 @@
+#let text-size = 18pt
+
 #let calc-elem-size(elem, sizes: (12pt, 10pt, 8pt, 6pt,4pt)) = {
   let size = 3pt
   if elem.level - 2 < sizes.len() {
@@ -78,7 +80,7 @@
   }
 
   #if outline-title != none [
-    #text(size: 18pt, weight: 500)[
+    #text(size: text-size, weight: 500)[
       #set align(center)
       #outline-title
     ]
@@ -105,7 +107,7 @@
     #cnt
 
     #v(.5em)
-    #text(size: 11pt, weight: "regular", style: "italic")[
+    #text(size: text-size, weight: "regular", style: "italic")[
       #box(width: 80%)[#subcnt]
     ]
     #v(.5em)
