@@ -1,4 +1,4 @@
-# Wei
+# The Wei Empire
 
 ## Notes
 
