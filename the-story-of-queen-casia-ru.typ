@@ -1,36 +1,7 @@
-#import "robinson-toc.typ": text-size, style-outline, part, chapter
+#import "robinson-toc.typ": part, chapter
+#import "wei-toc.typ": dinkus, apply-wei-toc
 
-/// Scene break.
-#let dinkus() = {
-  let star = "♢"
-  set align(center)
-  star + star + star
-}
-
-#set text(lang: "ru")
-#set text(size: text-size)
-#set text(hyphenate: true)
-#set par(spacing: 0.65em)
-#set par(first-line-indent: 1em, justify: true)
-
-#place(center + horizon, dy: -10em)[
-  #text(size: 25pt)[
-    Повесть о государыне Касии
-  ]
-  
-  #text(size: text-size)[
-    Юлия Латынина
-  ]
-]
-
-#pagebreak()
-
-#show outline: style-outline.with(outline-title: "")
-#outline()
-
-#pagebreak()
-
-#set page(numbering: "1")
+#show: apply-wei-toc.with(title: "Повесть о государыне Касии")
 
 #chapter("Глава первая,")[в которой молодой юноша по имени Руш отправляется в столицу хлопотать об отце, а государыня Касия проявляет милость к вовлеченным в мятеж] 
 
