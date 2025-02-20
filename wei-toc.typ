@@ -12,6 +12,7 @@
   #set text(size: text-size)
   #set text(hyphenate: true)
   #set par(spacing: 0.65em)
+  //#set par(first-line-indent: (amount: 1em, all: true), justify: true)
   #set par(first-line-indent: 1em, justify: true)
   
   #place(center + horizon, dy: -10em)[
