@@ -58,12 +58,6 @@
       // else
       return box(link(loc)[
         #let size = calc-elem-size(it.element)
-        
-        //#set align(center)
-        //#smallcaps[#text(
-        //  size: size
-        //)[#cnt]]
-        
         #set align(left)
         
         #v(1em)

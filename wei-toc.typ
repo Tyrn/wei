@@ -35,4 +35,11 @@
   #set page(numbering: "1")
 
   #body
+
+  #smallcaps[
+    #v(1fr)
+    #set text(size: .5em)
+    //#(context text.size * 2)
+    #h(1fr)Built with Typst #sys.version, #datetime.today().display("[year]-[month]-[day]")
+  ]
 ]
