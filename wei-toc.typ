@@ -7,12 +7,13 @@
   star + star + star
 }
 
-#let apply-wei-toc(body, title: "No Name") = [
-  #set text(lang: "ru")
-  #set text(size: text-size)
-  #set text(hyphenate: true)
-  #set par(spacing: 0.65em)
-  #set par(first-line-indent: (amount: 1em, all: true), justify: true)
+#let apply-wei-toc(body, title: "No Name", author: "Юлия Латынина", lang: "ru") = [
+  #set text(lang: lang, size: text-size, hyphenate: true)
+  #set par(
+    spacing: 0.65em,
+    first-line-indent: (amount: 1em, all: if lang != "en" {true} else {false}),
+    justify: true
+  )
   
   #place(center + horizon, dy: -10em)[
     #text(size: 25pt)[
@@ -20,7 +21,7 @@
     ]
     
     #text(size: text-size)[
-      Юлия Латынина
+      #author
     ]
   ]
   

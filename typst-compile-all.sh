@@ -9,3 +9,5 @@ typst compile case-of-the-azure-letter-ru.typ      case-of-the-azure-letter-ru.p
 typst compile a-case-of-the-missing-god-ru.typ     a-case-of-the-missing-god-ru.pdf
 typst compile wizards-and-ministers-ru.typ         wizards-and-ministers-ru.pdf
 typst compile the-insider-ru.typ                   the-insider-ru.pdf
+
+typst compile the-insider-en.typ                   the-insider-en.pdf

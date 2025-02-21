@@ -1,44 +1,20 @@
-#import "robinson-toc.typ": style-outline, part, chapter
+#import "robinson-toc.typ": part, chapter
+#import "wei-toc.typ": dinkus, apply-wei-toc
 
-/// Scene break.
-#let dinkus() = {
-  let star = "♢"
-  set align(center)
-  star + star + star
-}
-
-#set text(lang: "en")
-#set par(spacing: 0.65em)
-#set par(first-line-indent: 1em, justify: true)
-#set text(hyphenate: true)
-
-#place(center + horizon, dy: -10em)[
-  #text(size: 25pt)[
-    Insider
-  ]
-  
-  #text(size: 15pt)[
-    Julia Latynina
-  ]
-]
-
-#pagebreak()
-
-#show outline: style-outline.with(outline-title: "")
-#outline()
-
-#pagebreak()
-
-#set page(numbering: "1")
+#show: apply-wei-toc.with(
+     title: "Insider",
+     author: "Julia Latynina",
+     lang: "en"
+)
 
 #chapter("The First Chapter,")[where  Kissur the  White  Falcon gets  in an accident  while  the first
 vice-minister  of  finance discusses the reasons for the dearth in the state
-treasury.]
+treasury]
 
      The walls of the living  room  were  covered with  blue  silk  and  the
 corners were overlayed with hexagonal tiles making the room an  octagon, the
 shape guided its owner's success in life and smoothed all turns in his fate.
-Embroiderings grew over silk  - blossoming lotuses  with leaves lowered from
+Embroiderings grew over silk---blossoming lotuses  with leaves lowered from
 heat, plum flowers opening up, a snow white duck in a  pond and a sping sun.
 A  light hung  almost  all  the  way down  to  the  floor,  looking  like  a
 transparent upside  down mushroom and golden figures of animals ran over its
@@ -56,7 +32,7 @@ tortoise comb. A 3D transvisor on a fat golden leg stood in the left corner.
 close the cup with a lacquered cap enclosing a straw, and stick the straw in
 his mouth. He was watching the transvisor.
 
-     On his left  hand,  a  small drawing  hung  in  a  sable fur frame  - a
+     On his left  hand,  a  small drawing  hung  in  a  sable fur frame---a
 beautiful  drawing  of  a  sick  chickadee  in  snow.  The picture  bore the
 Emperor's  signature.  It was a personal  gift from the Emperor. Two  golden
 rings of orchids and clematis  hang next to  it.  A sonar rabbit ear antenna
@@ -98,7 +74,7 @@ and a middle-aged majordomo in a blue caftan rolled into the room.
      Kissur jumped out of the chair, slammed the door and was gone.
 
      The majordomo in the room stuck his hand in the empty jar, scratched it
-and licked... The lord was not even drunk, or almost not drunk - there was a
+and licked... The lord was not even drunk, or almost not drunk---there was a
 light palm  wine  in a jar, generously diluted by the apricot  juice. Kissur
 could get  drunk and get drunk to his eyebrows, drunk enough to fight, drunk
 enough to cut dogs or people cut in half. But, he could do  it only at merry
@@ -124,13 +100,13 @@ in the moonlight and  the silver  gills  of the hydrogen engine  air intakes
 shined.
 
      Kissur ripped the hose out  of  the slave's hand and threw himself in a
-car. The  tires screeched -  the slave was barely able  to  jump  away.  The
+car. The  tires screeched---the slave was barely able  to  jump  away.  The
 terrified booth  guard hit the button on the  keyboard, the gates bobbed up,
 and  the car flew  out on the deserted and wet night highway. "Once he won't
 be able to get the gates up  in  time", Kissur thought,  "and  I'll break my
 neck at my own wall."
 
-     The car was purring and eating hydrogen - isn't it strange that a horse
+     The car was purring and eating hydrogen---isn't it strange that a horse
 eats when  it's  resting while  this  black ironmonger  eats  only when it's
 moving, and when it's not moving it doesn't eat  anything. Yes! Seven  years
 ago when gloom was sometimes eating at his soul,  Kissur would take a  black
@@ -289,7 +265,7 @@ trained  to  loose  any  self control during  a fight; at times  like  this,
 Kissur's ancestors  turned into wolves and bears.  If Kissur had a sword, he
 would cut the scoundrel down.  However, it would  be stupid  to wear a sword
 now and Kissur didn't have a liking for all these things with nulls, lights,
-gases  -  all  having a hole in the  middle like a wench. Though  he had  an
+gases---all  having a hole in the  middle like a wench. Though  he had  an
 automatic six pound  laser and another very fashionable gadget  in the car's
 trunk, Kissur didn't know even why he carried them. His friends did, so  did
 he.
@@ -297,12 +273,12 @@ he.
      Kissur  stood and shook his head  purposelessly, slowly coming  back in
 this world. The Earthman was lying on the car hood like a squashed frog. His
 white shirt and tie were hopelessly soiled with cranberry juice. The traffic
-light at the  intersection blinked and changed color  -  the fugurine  of  a
+light at the  intersection blinked and changed color---the fugurine  of  a
 god-protector  of intersections sparkled  with  green light. Kissur  finally
 came to his senses. He chewed his lips and retrieved his round wallet out of
 a pocket. Kissur didn't respect plastic. He got out  everything that he  had
-in  the  wallet - he  vaguely remembered that  it was twenty or maybe  fifty
-thousand -  rolled the money in a wad and  stuck it in the Earthmans's split
+in  the  wallet---he  vaguely remembered that  it was twenty or maybe  fifty
+thousand---rolled the money in a wad and  stuck it in the Earthmans's split
 lips. He didn't want them to say that he beat people free of charge.
 
      Then he got in his car and left.
@@ -330,13 +306,12 @@ hand. A marble cup  stood under the figurine. A piece of dried oil saturated
 cow  dung burned in the cup; it demontrated  the owner's modesty and honored
 the cane-built huts of ancient officials.
 
-     Surprisingly, the gates were closed  - the  vice prefect of the capital
+     Surprisingly, the gates were closed---the  vice prefect of the capital
 was not feeding either officials or paupers today.
 
      Kissur smirked.
 
-     The mansion's owner  could've had numerous titles written on the plaque
-- the Keeper of Piety, the Brocade of Truth, the Flower Garden of the Wisdom
+     The mansion's owner  could've had numerous titles written on the plaque---the Keeper of Piety, the Brocade of Truth, the Flower Garden of the Wisdom
 Beyond  the Sky, the Meadow of the State Virtue, etc... etc... He  regularly
 received these titles from  the Emperor and was supposed  to engrave them on
 gate plaques. However,  the owner of the mansion has often had visitors from
@@ -358,7 +333,7 @@ Kissur.
      "Hello," he said.
 
      "Well," said Kissur, "I was  driving and decided to drop by. Sorry that
-I  didn't warn  you... I don't  like these  -  beep, beep,"  Kissur traced a
+I  didn't warn  you... I don't  like these---beep, beep,"  Kissur traced a
 sickly body of a T-phone with his hand. "Are you busy?"
 
      Mr. Shavash regarded the caved in car door and looked Kissur over  from
@@ -408,7 +383,7 @@ said to Kissur's back,
 path to the Pavilion of White Creeks.
 
      There  were  two  pavilions  for  receiving  important  guests  in  the
-Shavash's  estate  -  the Pavilion of White  Creeks  and  the Red  Pavilion.
+Shavash's  estate---the Pavilion of White  Creeks  and  the Red  Pavilion.
 Pavilion of White Creeks was decorated in the traditional  style, the floors
 were covered  with  knee deep  white rugs, flower  spheres  swang under  the
 ceiling, incense flowed from golden braziers, silken scrolls rimmed with fur
@@ -419,7 +394,7 @@ Pavilion was designed by an Earthman.
 
      Shavash  usually  received Weians  in the Pavilion of White  Creeks and
 Earthmen  in the Red Pavilion. They claimed that  these  places  had magical
-properties  - when  Mr. Shavash received  Weians  in the Pavilion  of  White
+properties---when  Mr. Shavash received  Weians  in the Pavilion  of  White
 Creeks  he  discoursed one  way, but  when  he received Earthmen  in the Red
 Pavilion his  speeches were very different. For  instance,  when  questioned
 about the  reasons for the Empire's poverty in the Pavilion of White Creeks,
@@ -468,7 +443,7 @@ Kissur's  wife was  her sister) took bribes; they took bribes with lands and
 stocks, with licenses and money, with options and  thoroughbreds,  with  the
 newest  financial tools and  ancient paintings, took bribes  from provincial
 and  center  worlds,  took bribes  from the  Federation  of Nineteen and the
-Republic of Gera - though the dictator of Gera didn't take bribes and didn't
+Republic of Gera---though the dictator of Gera didn't take bribes and didn't
 really give much.  One official asked what kind of place  a supermarket was;
 they told him that it was a place where one could by anything. "Oh, it's Mr.
 Shavash's house," the astonished official exclaimed. Kissur once, after some
@@ -485,12 +460,12 @@ the cabinets and survived. The first man he betrayed in order to survive was
 his teacher and lord,  Nan, who  had made him  a big  boss  out of an street
 urchin thief. Thanks to such a long political life, Shavash was able to pull
 all the  strings  of  power and influence in  the country  in  spite  of his
-relative youth - he was only two years older than Kissur.
+relative youth---he was only two years older than Kissur.
 
      Shavash could help or hinder anything. Even the biggest country bumpkin
-Earthmen - who came to  Weia to invest in a  construction of some resort  in
+Earthmen---who came to  Weia to invest in a  construction of some resort  in
 the  middle of untamed nature or  in the development of a uranium  mine that
-will sooner or later finish this  untamed nature off - knew that they should
+will sooner or later finish this  untamed nature off---knew that they should
 introduce themselves to the  first vice minister of finance and  they should
 invest in Shavash first, and in a mine next.
 
@@ -562,7 +537,7 @@ sign it and the garbage plant construction will be cancelled."
 
      "But the foundation is already there."
 
-     "Mr.  Kaminski will  receive  a  compensation  for the foundation - two
+     "Mr.  Kaminski will  receive  a  compensation  for the foundation---two
 million."
 
      "And then?"
@@ -574,8 +549,7 @@ garbage plant on the business zoned land."
 what's going on."
 
      "Lands of the Empire that  are sold to foreign investors as  a  private
-property," Shavash patiently explained, "can be divided in four categories -
-agrarian, residential, industrial  and business lands. Industrial zoned land
+property," Shavash patiently explained, "can be divided in four categories---agrarian, residential, industrial  and business lands. Industrial zoned land
 costs twelve  times less than business zoned one. If Mr. Kaminsky had bought
 the land for a business center, it would have been too expensive for him."
 
@@ -617,7 +591,7 @@ before he changes the land zoning?"
 
      "Well, Kaminsky gave Khamida only a little bit, less than seven hundred
 thousand. The rest Khamida will get only upon a successful completion of the
-deal and  he  will  not  get it from the Earthman - he  will get it from the
+deal and  he  will  not  get it from the Earthman---he  will get it from the
 state. Khamida is not the one who invented it, it's a well known setup."
 
      "What other setups are there?" Kissur asked quickly.
@@ -638,14 +612,14 @@ and   therefore  art,  with   fanciful  ornament   and   decorations,   with
 mother-of-pearl hands made in the image of the eternity god, hence  they had
 nothing to do with this flat crap that even women now worn  on their wrists.
 Other  new additions were present: a tiny watch embedded in a lid of  a jade
-powder box  - it didn't have a glass cover, it had a twined filigree lattice
+powder box---it didn't have a glass cover, it had a twined filigree lattice
 and a single hour  hand languished  behind  it as if in prison cell; an oval
-watch strewn with pearls had two faces - one face for the minute and another
-for the hour  hand - and a long chain with jade pendants that high officials
+watch strewn with pearls had two faces---one face for the minute and another
+for the hour  hand---and a long chain with jade pendants that high officials
 used to wear personal seals.  A seal was at the botton and the watch covered
 with tiny jewels at the top.
 
-     Kissur suddenly grabbed Shavash by his right hand - a homely watch with
+     Kissur suddenly grabbed Shavash by his right hand---a homely watch with
 a simple platinum face  was there and twenty six hours  of Weian  time  were
 marked with Earthern numerals.
 
@@ -654,7 +628,7 @@ time has been severed. Let my hand go now or you will break it again."
 
      Grinning Kissur released Shavash's hand, turned to the shelf and picked
 up an  onion shaped  watch  with a crystal top.  Agitation briefly  ran over
-Shavash's  face -  he  loved this onion  more than any of his concubines and
+Shavash's  face---he  loved this onion  more than any of his concubines and
 Kissur knew  that. Kissur squeezed the  onion in his fist and  waved  it  in
 front of Shavash's face.
 
@@ -678,7 +652,7 @@ around the dial.
 
      Isn't it strange? A while ago  this fashion for watches  was started by
 this scoundrel, minister Nan, who  later appeared to be a barbarian from the
-stars, - Kissur couldn't stand this fashion - how could it  be that a  watch
+stars,---Kissur couldn't stand this fashion---how could it  be that a  watch
 hand commanded a Man like an owner his slave. And now his heart hurt when he
 saw the Weian numerals and a Weian device.
 
@@ -721,7 +695,7 @@ person from the stars. His brain got muddled otherwise.
 
      Shavash carefully  pulled a  window curtain  away and looked outside. A
 taxi  stood far outside, behind the  white wall.  Oh,  the Earthman  flew in
-yesterday  and rented a car - a grey Daiquiri. Hmm, to change a car  is more
+yesterday  and rented a car---a grey Daiquiri. Hmm, to change a car  is more
 difficult than to change a shirt.
 
      "Well, gentlemen," Shavash said,  still undecided  about the hall, "the
@@ -739,14 +713,14 @@ garbage plant, are you?"
 
 
 #chapter("The Second Chapter,")[where the  sad  history  of  the Assalah spacefield is  told  while the
-ex-first minister of Empire finds himself a new friend.]
+ex-first minister of Empire finds himself a new friend]
 
 
      Next morning Terence Bemish sat in his room on the seventh floor of the
 local  Hilton hotel nudging  the back of  his head and feeling annoyed.  His
 head hurt as hell. A large peony-shaped bruise swelled on his cheekbone.
 
-     Somebody knocked in the door - Stephen C. Welsey, an employee of one of
+     Somebody knocked in the door---Stephen C. Welsey, an employee of one of
 the largest investment banks in the Galaxy and Terence's  colleague on  this
 stupid trip, walked in.
 
@@ -784,8 +758,7 @@ is impeccable.  He  knows  everything about  IPO,  underwriters,  cumulative
 privileged stocks, etc...  You have to admit that  in  a  country where most
 people are sure that when an  Earth  starship  reaches the sky, the Earthmen
 knock  in the sky and God opens them a brass door, that's pretty impressive.
-He is a very intelligent man who encompassed the best in the both cultures -
-Weian and Galactic ones."
+He is a very intelligent man who encompassed the best in the both cultures---Weian and Galactic ones."
 
      "What does it mean?"
 
@@ -807,8 +780,7 @@ motherhood for a sour cream jar, if the jar was big enough."
      Welsey hummed.
 
      "Don't I dream sometimes," he said, "that  at some point the Securities
-and Stocks Committee will allow us to  have an entry  in a balance  sheet  -
-"for  bribing  of  the developing  markets  officials" - and it will be  tax
+and Stocks Committee will allow us to  have an entry  in a balance  sheet---"for  bribing  of  the developing  markets  officials"---and it will be  tax
 deductible... How much does he want?"
 
      "We didn't get to particular numbers."
@@ -824,13 +796,13 @@ interest for the company to survive and prosper."
      "Shavash is not the director of the company."
 
      "Excuse  me,"  Welsey  was  amazed, "what  do  you  mean,  he is  not a
-director? All the forms say - Shavash Ahdi, the  director of the state-owned
+director? All the forms say---Shavash Ahdi, the  director of the state-owned
 Assalah Company."
 
      "Stephen, it is a  poor  translation. The company  is  not owned by the
 state,  it is owned by the sovereign. Do you see the difference? "State" and
-"sovereign" are two different conjugations of the same word in Weian - nouns
-have conjugations here  - what a language... When  the translation says, the
+"sovereign" are two different conjugations of the same word in Weian---nouns
+have conjugations here---what a language... When  the translation says, the
 state  appoints, it  really means,  the sovereign  appoints.  The  sovereign
 personally  appoints  and  revokes  the  company  president;  the  sovereign
 personally accepts financial plans.  What if the  sovereign does not  accept
@@ -904,7 +876,7 @@ engine.
      "Have you seen nothing at all?"
 
      "Well, I saw  cards in the hotel hall," Bemish said, "and I also saw  a
-warning there - don't eat fried river calamari on the market if the calamari
+warning there---don't eat fried river calamari on the market if the calamari
 are from the left river, where the leather processing plant "flows" to."
 
      "Got you," Kissur said, "let's go then."
@@ -921,7 +893,7 @@ Temple  turrets  and  muraled  precinct gates  mixed  with astonishing  five
 storied shanty  houses  built from the stuff  that  Bemish  wouldn't dare to
 build a  cardboard  box; potters on the floating  market sold enticing  jars
 painted with grasses  and flowers and empty rainbow hued Coke bottles. Melon
-peels and colorful wraps floated down the canal - the remnants of everything
+peels and colorful wraps floated down the canal---the remnants of everything
 that grew on Weia and came from the skies,  everything that found a place in
 the mammoth belly of the Sky City but didn't find a place in the weak bowels
 of its sewage.
@@ -938,8 +910,8 @@ figurines next to the  clock, a thousand for an every province, and they all
 represented officials, peasants and artisans. They spun in front of the dial
 displaying  a blue  mountain.  Bemish asked  why the  mountain was blue  and
 Kissur answered that was the mountain that stood above the sky and  had four
-colors - blue, red,  yellow and  orange. The blue side of the mountain faces
-the Earth - that's why sky  is blue. The orange side of  the mountain  faces
+colors---blue, red,  yellow and  orange. The blue side of the mountain faces
+the Earth---that's why sky  is blue. The orange side of  the mountain  faces
 the gods, hence the sky above the place where gods live is orange.
 
      This was a standard cultural program except  for the fact the  director
@@ -1002,7 +974,7 @@ nobody between a warrior and god."
 hundred thirteen years."
 
      They  left the hall, walked through a rock and flower  garden and found
-themselves in another  temple wing - enticing smells wafted  from  there and
+themselves in another  temple wing---enticing smells wafted  from  there and
 Bemish  saw cars with  diplomatic plate licenses through  a  twined lattice.
 Bemish thought the temple rented this house out but Kissur told  him that an
 eatery had always been there.
@@ -1073,7 +1045,7 @@ plexiglass smothered in with red sauce, and Kissur continued,
 
      "The  company that  received  a  concession for  the Assalah  spaceport
 construction.  Since  the  sovereign  owns  65%  of  the company's  capital,
-accordingly to your laws he appointed the company director - Mr. Shavash."
+accordingly to your laws he appointed the company director---Mr. Shavash."
 
      Kissur, having some  vague recollection  that Shavash owned twelve more
 companies like  that  including the Galaxy's second  biggest  (and rated one
@@ -1086,8 +1058,7 @@ hundred eighteenth in efficiency) uranium mine, silently nodded.
      "Such as?"
 
      "It depends on  the current state of the construction, the state of the
-world stock market by the time of the IPO, the IPO volume and its prospects,
-- you see, LSV can act as an underwriter and get a profit selling securities
+world stock market by the time of the IPO, the IPO volume and its prospects,---you see, LSV can act as an underwriter and get a profit selling securities
 but prices may go down after the IPO and then LSV will incur all the losses.
 It  is also important what kind of  securities it will be, stocks, bonds, or
 derivatives.
@@ -1096,7 +1067,7 @@ derivatives.
 
      "Why?"
 
-     "You said  it  yourself  - if  anybody  buys stocks,  he also  buys the
+     "You said  it  yourself---if  anybody  buys stocks,  he also  buys the
 company. What if somebody buys the spaceport?  All these  ... trying to worm
 their way in here..."
 
@@ -1314,7 +1285,7 @@ me."
 
 
      After  the pub, Kissur dragged Bemish home. Bemish didn't find Kissur's
-mansion to be entirely immured in the past -  a closed circuit camera  roved
+mansion to be entirely immured in the past---a closed circuit camera  roved
 its eye and the powerful neon  lamps hung among the marble columns flanking,
 customarily, the path  to the main  building. However,  Bemish made  out  an
 altar in the garden and a lamb, slashed wide open, lay on it.
@@ -1326,7 +1297,7 @@ the proper preparation of pheasants.
 
      The Earthman  was  left in one of the  halls  with  windows facing  the
 garden  and  walls  draped with archaic  silks.  A  weapons  collection  was
-arranged on the wall - an encrusted with mother-of-pearl and gold  poleax, a
+arranged on the wall---an encrusted with mother-of-pearl and gold  poleax, a
 simple  battle-axe, swords,  one  arrow-head  covered in blood.  When Kissur
 returned, Bemish inquired about the strange collection theme.
 
@@ -1336,8 +1307,8 @@ returned, Bemish inquired about the strange collection theme.
 the end.
 
      "In a two day trip from your Assalah, the mountains begin and I was cut
-off in  the mountain  woods with maybe a thousand people, and Kharan  - that
-was  the  scoundrel's  name - had  about  fifteen thousand. But while Kharan
+off in  the mountain  woods with maybe a thousand people, and Kharan---that
+was  the  scoundrel's  name---had  about  fifteen thousand. But while Kharan
 dawdled on the plains, I ordered  the trees along the road  to be axed  part
 way. When they finally entered  the  forest,  the  trees started falling  on
 their heads and we butchered the ones who were still alive. Still, it wasn't
@@ -1349,7 +1320,7 @@ such an easy feat and I was almost killed with this spear."
 way more reliable."
 
      Kissur pivoted and threw the spear. It flew through the open window and
-implanted itself in a decorated gazebo pole. Bemish walked out to look - the
+implanted itself in a decorated gazebo pole. Bemish walked out to look---the
 spear had completely run through  the  pole. The pole was more than ten inch
 thick.
 
@@ -1375,16 +1346,15 @@ was taking place.
      Kissur and Bemish squeezed in closer.
 
      A dignified  oldster  in  a  waving  red dress  manufactured  two human
-figurines with an incredible nimbleness - one out of clay and another out of
-white rock -  put them on  the stage, covered them  with a decrepit  rag. He
-passed his hands, took the rag off - and where the clay figurines had been -
-two youths jumped up.  The youths started to dance in front of the audience,
+figurines with an incredible nimbleness---one out of clay and another out of
+white rock---put them on  the stage, covered them  with a decrepit  rag. He
+passed his hands, took the rag off---and where the clay figurines had been---two youths jumped up.  The youths started to dance in front of the audience,
 and soon a lively conversation  between them and  the oldster  issued forth.
 Intrigued Bemish asked Kissur what the play was about.
 
      "The show is based on an old myth," Kissur said.
 
-     You see, when god was making the world, he made two people - one out of
+     You see, when god was making the world, he made two people---one out of
 clay, another  out of rock. Both of  them knew as  much as the gods knew but
 the  clay man was simple and guileless  while the iron man  was envious  and
 crafty.  The  gods  took  heed and thought,  "People  walk among us and they
@@ -1429,13 +1399,12 @@ iron men cajoled generals to rebel.
 coins;  Kissur,  grinning widely,  put  two large pink  bills with  a  crane
 picture on the tray. "Braggart," Bemish thought irritably. He didn't want to
 appear miserly, and  he looked in the wallet. He didn't find any large Weian
-banknotes there but he had about hundred dinars in the passport just in case
--  the  Earthman  had been warned  that  ATM machines didn't readily present
+banknotes there but he had about hundred dinars in the passport just in case---the  Earthman  had been warned  that  ATM machines didn't readily present
 themselves. Bemish extracted two notes and put them on the tray.
 
      The  god in a ragged dressing gown took the  gray interplanetary  money
 with rainbow water signs along  the  edge, waved  them in  the  air, merrily
-announced something to the crowd - and tore them apart. Bemish stupidly took
+announced something to the crowd---and tore them apart. Bemish stupidly took
 it for trick.
 
      "What did he say," he asked Kissur.
@@ -1443,7 +1412,7 @@ it for trick.
      "That he doesn't take iron men's money," Kissur replied.
 
      The  crowd parted quickly  and menacingly  and Kissur  quickly  dragged
-Bemish out - several gibes and a rotten tomato flew at the Earthman.
+Bemish out---several gibes and a rotten tomato flew at the Earthman.
 
      In  just  a moment,  they  were  crossing the  gleaming river over  the
 lacquered pedestrian  bridge covered with shops. Bemish  was still upset. He
@@ -1542,14 +1511,14 @@ official reply  to, "I am grateful to you," by explicitily asking about  the
 size of your gratitude.
 
      On Friday  evening, Welsey dropped by the central communication station
-and called the work number of Ronald T. Trevis  - the head of LSV bank - the
+and called the work number of Ronald T. Trevis---the head of LSV bank---the
 man  that some  people called the un-crowned king of the Galaxy finances and
 the others called the un-crowned bandit.
 
      "How is it going?" a normal voice from a normal planet reached Welsey.
 
      "It's  not  going,"  Welsey  replied, "I  have  not obtained  a  single
-signature  in  a week.  I've  been  twice in their  central office  -  their
+signature  in  a week.  I've  been  twice in their  central office---their
 secretaries know nothing and there is nobody around besides them."
 
      "And Bemish?"
@@ -1574,7 +1543,7 @@ himself?"
 
      Welsey  was going back to  the hotel down  the  evening streets when he
 heard a siren  coming from behind  him. A police car made him  pull  over. A
-guard in a yellow coat - national police uniform - and with an assault rifle
+guard in a yellow coat---national police uniform---and with an assault rifle
 in his  hands jumped out of the car and  tore the driver's  door out  of the
 Welsey's  "environmental"  car  with a hydrogen  tank looking like a swollen
 cucumber.
@@ -1597,7 +1566,7 @@ pulled it out of the car.
      Crappy tires screeched and the police car drove away.
 
      Welsey sat in his cucumber on wheels and felt totally shocked. That was
-not a minor bribe anymore. That... There could be only one explanation - the
+not a minor bribe anymore. That... There could be only one explanation---the
 connection with the Earth didn't break off  accidentally. He was followed by
 the Shavash's agents. The conversation was tapped.
 
@@ -1606,7 +1575,7 @@ the Shavash's agents. The conversation was tapped.
      As mentioned  before, he was not a virgin child  and  certain  sums  of
 money had transferred hands from him to the Empire officials. While  he  was
 not able to obtain even  the most  trivial information  in  some  places, he
-obtained  absolutely  confidential  information in other  places - and  some
+obtained  absolutely  confidential  information in other  places---and  some
 confidential materials lodged in his briefcase. The rough drafts  of the IPO
 were also there, including various  financial machination notes and even the
 approximate numbers of kickbacks.
@@ -1617,17 +1586,16 @@ rise, LSV bank has joined the ranks of  the most profitable but not the most
 ethical banks of the Galaxy. The financial establishment used any pretext to
 set "these bandits" back;  the managers of the companies, passing away under
 LSV-staged  hostile  takeovers, complained about  wiretapping  and employees
-being bribed; two  of  Travis clients' inner circle members were in prison -
-for insider trading and stock parking.
+being bribed; two  of  Travis clients' inner circle members were in prison---for insider trading and stock parking.
 
      Actually,  Terence Bemish,  young  and promising  upstart  supported by
 Trevis, got the hint that his presence at  the civilized capital markets was
-not  appreciated  -  that's  why  he  went  to  Weia.  In  this  country  of
+not  appreciated---that's  why  he  went  to  Weia.  In  this  country  of
 de-nationalizing economy, there were many companies with poor management and
 no stock exchange rules.
 
      And now, the  Federation  newspapers had a  great opportunity to  grind
-Terence Bemish, Ronald Trevis,  and Welsey himself flat - all this caused by
+Terence Bemish, Ronald Trevis,  and Welsey himself flat---all this caused by
 the  Welsey's bumble. His future  appeared to  the young  banker darker than
 night. Trevis had thrown people out for smaller blunders and a banker, fired
 by Trevis, could expect a cashier's job in a supermarket at best.
@@ -1662,7 +1630,7 @@ opened the case and started to throw his belongings in  randomly. He  called
 the spaceport, found out that the next Earth flight would be in eleven hours
 and reserved a ticket.
 
-     The case was packed in fifteen minutes. Welsey looked at his watch - he
+     The case was packed in fifteen minutes. Welsey looked at his watch---he
 had ten more hours before the flight's departure. The trip to  the spaceport
 would take two hours. Welsey  shrugged his shoulders,  walked to the  draped
 window, pulled the curtain away, and looked from the fifth floor down at the
@@ -1715,7 +1683,7 @@ and said,
      And he fell asleep. A pig. A drunken pig.
 
      Welsey tore his pants and jacket off, hung them  on the  chair and  got
-out. The jacket was too heavy - the chair tipped over and the jacket crashed
+out. The jacket was too heavy---the chair tipped over and the jacket crashed
 to  the floor. Welsey returned  and  picked the jacket to hang  it back. The
 jacket  inside pocket was  crammed with  rumpled papers.  Welsey  pried  the
 papers   out  and  unrolled   them.  These  were   all   the   requests  and
@@ -1747,14 +1715,14 @@ lamb leg and washing it down with disgustingly warm carbonated water.
 recall  how the signatures came  to existence.  He remembered perfectly well
 the temple, two hundred kilometers away from the capital, that he and Kissur
 drove to,  and the  manor, that belonged to a  Kissur's friend, Khanadar the
-Dried Date, next to the temple. They  had fun in the manor -  at  first with
+Dried Date, next to the temple. They  had fun in the manor---at  first with
 weapons, then  at the table, and  then with the  chicks. Khanadar and Kissur
 took turns making bets and shooting at a peach on each other's head at first
 with a bow  and then  with  a gun. The  trick was to hit it right  in a pit.
 Bemish refused decisively to shoot the bow  and, to  assert  his manhood, he
 had a horrible fight with sinewy Khanadar, strong like a steam press.
 
-     Khanadar the Dried Date was the most extraordinary man  - he was  on of
+     Khanadar the Dried Date was the most extraordinary man---he was  on of
 the bravest Kissur's commanders and one of the best Empire's poets.
 
      He  plundered huge  spoils during the civil war; he squandered money as
@@ -1769,7 +1737,7 @@ ground and was no longer in any shape to fly.
 
      It  was awfully  fashionable to  assist  Weia then and Khanadar  almost
 received a  literature Nobel Prize for his  songs, full of  wild beauty. So,
-the  information  agencies are  making two announcements in  one  day - that
+the  information  agencies are  making two announcements in  one  day---that
 Weian poet Khanadar  is  nominated  for  a literature  Nobel Prize  and that
 somebody  named  Khanadar  is  wanted for the transgalactic  liner  "Mekong"
 robbery. This is how Khanadar did not receive a Nobel Prize first time.
@@ -1783,7 +1751,7 @@ more, and stopped; the people  loved  their  governor and  laid waste to the
 factory.
 
      Meanwhile, the time  for  the next Nobel Prize  approached.  Hence, the
-information  agencies are  making two announcements in one day -  that Weian
+information  agencies are  making two announcements in one day---that Weian
 poet  Khanadar  is  nominated for a literature Nobel Prize and that governor
 Khanadar  incited  a  mob and  caused  a  three  billion  denars  damage  to
 MetalPMOre company.  This  is how Khanadar  did not receive  a  Nobel  Prize
@@ -1804,7 +1772,7 @@ not present in  the court, the  judge cancels  the trial and  Khanadar saves
 bribe money.
 
      Again,  the Nobel Prize time approaches,  and the information  agencies
-are  making  two  announcements  -  that the famous Weian poet  Khanadar  is
+are  making  two  announcements---that the famous Weian poet  Khanadar  is
 nominated for a literature Nobel Prize and that Khanadar well-nigh cut  down
 a representative of a civilized nation right in a court.
 
@@ -1822,11 +1790,11 @@ Light  and  Bemish  told him what he  had already told Kissur.  Khanadar the
 Dried Date said the foreigner  would drown in the paperwork, and Kissur said
 that they should help him.
 
-     On Friday afternoon they flew to the Kissur's palace - the first guests
+     On Friday afternoon they flew to the Kissur's palace---the first guests
 were  already  crowding  there.  Kissur introduced Bemish  to the  Shavash's
-direct  boss -  minister of  finance - and to  the minister of police and to
+direct  boss---minister of  finance---and to  the minister of police and to
 many other  respectable  people.  Shavash  was also there.  The minister  of
-finance  told  Bemish  that his  -  minister of finance's - friend  had seen
+finance  told  Bemish  that his---minister of finance's---friend  had seen
 Bemish's friend, Welsey, and he was the fairest and the most honest man. The
 minister of police told Mr. Bemish that,  from this moment  on,  the goal of
 his  life would  be to do what Mr.  Bemish tells  him to. The  foreign trade
@@ -1850,14 +1818,13 @@ Welsey. Puritan! Pig! He just handed the papers rudely over to the secretary
 but he refused to come himself.
 
      Bemish decided that he would drive to the hotel  and  get  Welsey. They
-were probably trying to stop him. But Bemish outfoxed them - he tore through
+were probably trying to stop him. But Bemish outfoxed them---he tore through
 the grapevines, got  in the  car and went for  the  banker. Yes,  he had the
 papers with him and he knew for sure that they were signed.
 
      But who collected the signatures? For God's sake, he couldn't remember.
-Kissur was likely to get them - he was more sober than  others and though he
-drank he wasn't getting drunk. Or... No, it was not Kissur, it was Shavash -
-Shavash,  smiling gently, was handing a form over to the minister of finance
+Kissur was likely to get them---he was more sober than  others and though he
+drank he wasn't getting drunk. Or... No, it was not Kissur, it was Shavash---Shavash,  smiling gently, was handing a form over to the minister of finance
 while Kissur, yowling horribly, was cutting some rag with a sword on a bet.
 
 
@@ -1867,14 +1834,14 @@ while Kissur, yowling horribly, was cutting some rag with a sword on a bet.
 
 
      Bemish was splashing  in the shower, when somebody knocked in the door.
-Welsey opened it - a large basket stood by the door and an errand boy looked
+Welsey opened it---a large basket stood by the door and an errand boy looked
 from behind.
 
      "The gifts from  Mr. Ireda for Mr. Bemish, " he declared,  unloaded the
 basket and he was off.
 
      Welsey carried the basket in the room but, before he arranged it on the
-table, somebody knocked  in  the door again. Welsey  opened the  door  - the
+table, somebody knocked  in  the door again. Welsey  opened the  door---the
 messenger had a blue  caftan  on instead of a yellow  one and  had  a casket
 entwined with bands instead of a basket.
 
@@ -1904,7 +1871,7 @@ is Welsey. As I have told you before, he is represents LSV bank here."
 Earthman with  a face white and  round like  a  headache pill. Welsey  saw a
 blue-eyed rascal, a bit  above thirty, with a real golden  chain on his neck
 descending  all the way down to the belt on the narrow washed down jeans. In
-the  open  shirt neck there was a tattoo  - a bird of prey crossed by a pink
+the  open  shirt neck there was a tattoo---a bird of prey crossed by a pink
 scar. Welsey learned later that this was a  falcon and this way of tattooing
 was an old  custom of  the barbarian aloms. If they cut a war chief head off
 in a  battle and  undressed him,  how else would it be possible to recognize
@@ -1950,7 +1917,7 @@ to arrange it, so high that nobody would even dream of it afterwards."
 
      "Stephen?"
 
-     "I would rather take a  nap," Welsey uttered nervously - he didn't want
+     "I would rather take a  nap," Welsey uttered nervously---he didn't want
 to get himself deeper in a capital market discussion with Kissur.
 
      In a moment, Kissur and Bemish were downstairs, missing  another basket
@@ -1961,8 +1928,7 @@ Bemish was dumbfounded,
 
      "What the heck?!"
 
-     "We, " Kissur said, "are going to Mr. Ireda. The man was nice to  you -
-you should express your gratitude."
+     "We, " Kissur said, "are going to Mr. Ireda. The man was nice to  you---you should express your gratitude."
 
      "But..." Bemish started.
 
@@ -2001,7 +1967,7 @@ sovereign's thoughts," Kissur answered. Bemish jerked.
 
      "I was quite impressed," Kissur answered after a pause.
 
-     Bemish couldn't  help but smile - during the  day that Kissur first met
+     Bemish couldn't  help but smile---during the  day that Kissur first met
 the Earthmen, he called them vultures, hijacked a military plane and, having
 massacred the rebel camp, finished the civil war.
 
@@ -2036,8 +2002,7 @@ Emperor  hanging on the office  walls, otherwise  decorated with  the utmost
 grace.  Bemish  didn't know  yet  that a roll  signed  and bequested  by the
 Emperor costs more than a rank  and a title, and that Shavash offered half a
 million to the Emperor's suckling  brother, Ishim, to persuade the sovereign
-Varnazd  to bequest him a gift. Ishim, however, had  to return  the money  -
-somehow, the sovereign did not like Shavash.
+Varnazd  to bequest him a gift. Ishim, however, had  to return  the money---somehow, the sovereign did not like Shavash.
 
      "I am very grateful to you," Bemish mentioned at  the desert, "that you
 signed all these papers yesterday and agreed to help me."
@@ -2106,7 +2071,7 @@ Inada promised to roll Iniss carpet under your car's wheels when a friend of
 Kissur  visits his villa... Mr.  Inada will  roll Iniss  carpet  under  your
 wheels  and he  will  plant a plastic  bomb  under  the  Iniss  carpet.  The
 offiicials  will be signing  your papers  and playing foul behind your back.
-Kissur will  praise you  to the sovereign - they will prove to the sovereign
+Kissur will  praise you  to the sovereign---they will prove to the sovereign
 that Kissur is mistaken. My advice to you is to keep your distance from him.
 
      Bemish chewed on his lip.
@@ -2141,7 +2106,7 @@ swerved to the curb. They got out of the cars and embraced.
 
      Bemish glanced at his Urun indecisively.
 
-     Kissur clicked his tongue - a small servant in  linen pants got out  of
+     Kissur clicked his tongue---a small servant in  linen pants got out  of
 the back seat. Kissur pointed a finger at him.
 
      "Give him the keys and he return the car." Bemish gave him the keys and
@@ -2166,9 +2131,9 @@ god and asked the host,
 
      "Here is four. Go and scrape this offal away." Bemish lowered his eyes.
 He felt  crappy  after  the yesterday's  binge,  he didn't  eat  anything at
-Shavash's place - he couldn't even look at the goose! What should he do now?
+Shavash's place---he couldn't even look at the goose! What should he do now?
 Bemish  realized that, when Shavash  mentioned the offiicials hating Kissur,
-he meant  himself first of all - that's why he told Bemish about his fiancee
+he meant  himself first of all---that's why he told Bemish about his fiancee
 and  his  shriveled  hand... Should  he  tell Kissur that his brother-in-law
 hates him? But they are friends. It would look  like an Earthman dropped by,
 did some fishing with Kissur and quickly contrived to sow a discord  between
@@ -2192,7 +2157,7 @@ arousing  the  tribe's discontent. After  that, it took  Kissur  two days to
 finish him off.
 
      And  even though  everybody agreed that Kissur  was not even  close  to
-deceased  Arfarra with the tricks of this sort - he still didn't  resemble a
+deceased  Arfarra with the tricks of this sort---he still didn't  resemble a
 guileless lamb.
 
      Kissur,  meanwhile,  poured  wine in the cups,  covered  them with  the
@@ -2250,8 +2215,7 @@ And why? It's local mythology and tabloids."
 
      Kissur burst out laughing and waved his hands.
 
-     "Yeah!  Shavash has already started  digesting these six millions and -
-kabloom! You get the company!"
+     "Yeah!  Shavash has already started  digesting these six millions and---kabloom! You get the company!"
 
      Kissur laughed, happy with Shavash's failure.
 
@@ -2317,16 +2281,16 @@ cigarettes.
 
 
 #chapter("The Third Chapter,")[where Kissur opens the Emperor's eyes to a foreign briber while Terence
-Bemish received a gift of a luxury villa.]
+Bemish received a gift of a luxury villa]
 
      The next morning, Kissur  was desperately bored.  He called  Bemish but
 Bemish was running  around  somewhere like  a chicken with his head cut off.
 Kissur could find him but what was the point?  The man  is rushing from  one
-office to another - you can screw  a slut together - but bribing an official
+office to another---you can screw  a slut together---but bribing an official
 is a private matter; why  would  Bemish need Kissur  as a witness? The other
 guy, Welsey, said that tomorrow they would go to the spaceport.
 
-     Kissur beat a servant with no reason -  Kissur  didn't beat him really,
+     Kissur beat a servant with no reason---Kissur  didn't beat him really,
 he just pushed  him a bit, but the  servant slammed  into a bronze vase  and
 hurt  himself  badly with  the vase.  Kissur ate goose  and  marinated liver
 pirogi  for  breakfast  and  went  to  a   pub   and,  after  that,  to  the
@@ -2348,14 +2312,14 @@ shoes.
 
      "Ok, how much do you want?"
 
-     Kissur raised his  head - an unfamiliar Earthman, with a red and round,
+     Kissur raised his  head---an unfamiliar Earthman, with a red and round,
 like a street light, face stood in front  of  him. The  Earthman's eyes were
 crazed and his chin stuck out aggressively.
 
      "How much do you need?" the Earthman repeated. Kissur got  out of water
 unhurriedly and shook himself like a dog. The  water drops  from  his  blond
 hair  splashed  the  Earthman's  expensive  suit.  The Earthman  was clearly
-uncomfortable - Kissur bathed naked, out of an old Alom habit, and he didn't
+uncomfortable---Kissur bathed naked, out of an old Alom habit, and he didn't
 even  try to cover himself with a towel, demonstrating his  contempt for the
 visitor.
 
@@ -2371,7 +2335,7 @@ water drops stuck in the cracks between his powerful muscles.
 promised me  to  classify  it as  industrial  zoning.  I started to build  a
 garbage processing  plant.  Now,  thanks  to the complaint you filed  to the
 sovereign, it is classified as business zoning. If I want to keep this land,
-I have to pay the difference in price - two hundred million. If I don't want
+I have to pay the difference in price---two hundred million. If I don't want
 to pay the difference, I can get my money back and the land will be resold."
 
      "What's my part here?"
@@ -2381,7 +2345,7 @@ do you need?"
 
      "I don't sell my country."
 
-     Kaminsky burst out laughing.  His  stout face shook  - he  was probably
+     Kaminsky burst out laughing.  His  stout face shook---he  was probably
 starting to get hysterical. He stuck his fat finger at Kissur.
 
      "All  Weian  officials  can be  bought  and  they can  be  bought  at a
@@ -2421,7 +2385,7 @@ to the capital, in the evening.
 
      At three o'clock, Bemish drove to DJ Securities. One of the best broker
 firms in the Empire resided in a tiny place in a distinguished neighborhood.
-It  was  located in  the  palace  pavilion's western wing  -  previously the
+It  was  located in  the  palace  pavilion's western wing---previously the
 building had housed  the Cheese Bureau.  All  these  bureaus were dissolved,
 along  with  the  palace  administration  that  used to duplicate  the state
 apparatus. The Earthmen moved in the former palace officials' pavilions. The
@@ -2436,7 +2400,7 @@ skin. His name was Alexander Krasnov.
 turned the air  conditioning on, and they started to talk about Assalah. The
 approaching investment auction rumors  slightly raised  the Assalah  shares'
 prices. Almost nobody was, however, willing to sell them. The Assalah stocks
-could still be  considered non-liquid  assets  - the difference between  the
+could still be  considered non-liquid  assets---the difference between  the
 buying and selling price had reached 20%.
 
      Bemish  was  greatly  impressed  with  the  fine emanations of success,
@@ -2474,8 +2438,7 @@ tailbone.
 
      Krasnov put the shirt on and coolly explained.
 
-     "When I  arrived  in  Assalah, a  local  official met me.  "Broker?"  -
-"Broker."  - "Buying  stocks?" - "Yes." -  "Let's get to the  precinct, I'll
+     "When I  arrived  in  Assalah, a  local  official met me.  "Broker?"---"Broker."---"Buying  stocks?"---"Yes."---"Let's get to the  precinct, I'll
 weigh you the goods." We came to the precinct, and he put me in a manure pit
 overnight, gave orders to whip me with a whip  soaked in brine, and told me,
 "I wouldn't like to see you in Assalah again."
@@ -2499,17 +2462,17 @@ restaurant.  Galactic  dinar  prices were  the  only  civilized part  of the
 restaurant. Bemish  randomly tapped  couple  of  entries.  In a  moment, the
 waiter brought him a  full bowl  of steaming  soup  with dumplings,  several
 small plates with appetizers and an object that reminded belatedly to Bemish
-about the locals' favorite - dog meat burgers.
+about the locals' favorite---dog meat burgers.
 
      Bemish had just finished  the appetizers, when a guy took a sit next to
-him.  Bemish  raised his eyes - it was a  middling tall man with stern eyes,
+him.  Bemish  raised his eyes---it was a  middling tall man with stern eyes,
 transparent like gasoline, and with a  body that local peasants described as
 "a really  inept god hewed  him out." However, upon more careful inspection,
-the guy's face didn't  go together  with the  overall  crude image -  it was
+the guy's face didn't  go together  with the  overall  crude image---it was
 hard, as if made from the twisted together wires.
 
      "Good day,  Mr.  Bemish," the  man said, "My  name is  Robert Giles.  I
-represent  IC  company  -  you know,  we  are participating in  the  Assalah
+represent  IC  company---you know,  we  are participating in  the  Assalah
 spaceport investment auction.
 
      "What a coincidence," Bemish said, "I am participating also in it."
@@ -2563,7 +2526,7 @@ girl sat  on the Earthman's  knees  and  another  one,  breathing zestfully,
 licked  that particular object sticking its  bloated head  out  of Shavash's
 unzipped  pants. Shavash reclined,  leaning backward,  on the carpet and his
 jacket  and shirt sprawled nearby. The table was filled with  appetizers and
-fruits - the friends had finished the business part were starting to relax.
+fruits---the friends had finished the business part were starting to relax.
 
      The Earthman shook the wench off and got up.
 
@@ -2638,7 +2601,7 @@ else."
 
      "His LSV boss. Ronald Trevis. Where do  you think he got  the greenmail
 money? Trevis raised money for him and Bemish was just a cudgel. Did you see
-a  gentleman  named  Welsey, next  to Bemish? This is Trevis -  a morsel  of
+a  gentleman  named  Welsey, next  to Bemish? This is Trevis---a morsel  of
 Trevis."
 
      "I see," Kissur said.
@@ -2646,7 +2609,7 @@ Trevis."
      "LSV is a cool company," Shavash continued, "They find people, ready to
 get out of their own skins and skin the others to scrape together a dinar, a
 crown and a dollar,  and  they  set  them  at large companies.  They are not
-financiers - they are gangsters. They would be shot dead on our planet. They
+financiers---they are gangsters. They would be shot dead on our planet. They
 were reproached  elsewhere and they decided  to move  to the places  with no
 strict financial laws and a lot of under priced property."
 
@@ -2682,7 +2645,7 @@ importantly,  to  different  parties. Shavash  occasionally expressed  quite
 loudly his  opinion  about Yanik while  the  latter  occasionally  and quite
 loudly used the  former, as an example to  express his regret about  the old
 times when  the overly rapacious  officials would find themselves hanging on
-all four palace gates - a quarter per gate.
+all four palace gates---a quarter per gate.
 
      "Make yourself familiar," Yanik  said, handing Shavash  a white plastic
 folder.
@@ -2692,15 +2655,14 @@ folder.
      It was  a construction project of a  humongous aluminum complex in  the
 east  of  the  Empire,  in Tar'Salim,  rich in  alumina  but  poor in energy
 resources.  The  construction  consisted  of  the  aluminum  extraction  and
-processing facilities, two power plants  -  fission and magneto-hydrodynamic
+processing facilities, two power plants---fission and magneto-hydrodynamic
 ones, and a small plant making composite alloys for gravitonic engines.
 
      The  total  construction estimated expenditure was  two hundred million
 galactic dinars. The company was naturally state-owned.
 
-     Shavash  turned the  last page and  found what he was looking for - the
-person nominated  for the  company general director position was Chanakka  -
-the first minister's twice removed grandson, an empty-headed and debased man
+     Shavash  turned the  last page and  found what he was looking for---the
+person nominated  for the  company general director position was Chanakka---the first minister's twice removed grandson, an empty-headed and debased man
 who  had already failed  at  at least three  projects. Cosmopolitan Shavash,
 with his impeccable  knowledge of  the major  Galactic languages and stylish
 suits, especially loathed Chanakka's fanatical nationalism.
@@ -2755,7 +2717,7 @@ care of your yacht. Do you understand me?"
 the secretary, flung a fashionable jacket on the chair's back, threw himself
 in  the  armchair, and sat immobile  for a while.  Those, who  knew  Shavash
 superficially, would be certain that  he was upset  by the first  minister's
-open threat -  the  beautiful yacht clearly aggravated some people.  However
+open threat---the  beautiful yacht clearly aggravated some people.  However
 strange it may sound, Shavash was upset due to totally different reasons. In
 any case,  in  the absolute quietude of  his  office equipped  with  a dozen
 counter-tapping  devices, he  allowed himself to wrap  his hands around  his
@@ -2779,7 +2741,7 @@ and Lissa Joint Bank for six months at a nineteen percent interest. Could we
 do it?"
 
      Stephen  Sigel  swallowed.  19% interest was a  very  sweat  deal.  The
-Federation bonds had 7% interest rate,  the Earth Bonds - 7.5%.  Though, the
+Federation bonds had 7% interest rate,  the Earth Bonds---7.5%.  Though, the
 Weian  Empire finances were, no doubt, in a way worse state than the Earth's
 finances, the bank would've considered 16% to be quite a decent number.
 
@@ -2818,10 +2780,9 @@ prices.
 
      The same  day, when the budget problems for the Galaxy's fourth largest
 aluminum facility were  happily solved, McCormick,  Welsey, and Bemish drove
-to another construction - also state-owned and also humongous.
+to another construction---also state-owned and also humongous.
 
-     Halfway to their destination,  they almost drowned in a huge  pothole -
-the road started  again in seven meters  after  the rut. An oldster,  living
+     Halfway to their destination,  they almost drowned in a huge  pothole---the road started  again in seven meters  after  the rut. An oldster,  living
 nearby, gathered the people and they dragged  the jeep across the pothole on
 a  sledge.  They  charged  so  little  that  Bemish  even  relinquished  his
 suspicions about the old guy  digging the hole himself to make money  on it.
@@ -2829,7 +2790,7 @@ Later Bemish learned that two districts joined at that point and their heads
 could not agree on who would fix the pothole.
 
      At the ruins, Bemish felt such sadness as he had never felt in his life
-before - from  the inconceivable waste of nature and construction equipment.
+before---from  the inconceivable waste of nature and construction equipment.
 The black gate  on  the  landing field  lonely  stuck out  on the  blue  sky
 background like a victory arch,  it was decorated by various appeals to gods
 and demons. Ponds, yellow and  round like  owl eyes,  bloomed in the landing
@@ -2854,20 +2815,19 @@ noted.
 
      The  sun was hurrying up to  noon, when  Bemish and  McCormick left the
 building for a small  bamboo  grove rattling in the background of the bright
-stainless steel hangar. Bemish saw that they were not the only ones here - a
+stainless steel hangar. Bemish saw that they were not the only ones here---a
 helicopter  stood on  the fanned out  paws behind the  bamboo  grove and the
 wind, raised by its wings, entangled gentle green grass stuck to the landing
 field. Bemish  walked down to the  helicopter. Under  its belly,  a  man, in
 washed out jeans, laid out  a napkin  and was eating a  ham sandwich. Having
 recognized Giles from IC, Bemish smirked. Another man  stood nearby, petting
-on the back a red horse with white stockings - Kissur.
+on the back a red horse with white stockings---Kissur.
 
      "Good day," Bemish said, approaching. "Did you fly in together?"
 
      "No," Kissur said, "I am riding."
 
-     And  he  pointed to  the side,  where two  more  riders were circling -
-Khanadar the Dried Date and a servant.
+     And  he  pointed to  the side,  where two  more  riders were circling---Khanadar the Dried Date and a servant.
 
      "Did you ride here from the capital?" Welsey was shocked.
 
@@ -2890,11 +2850,9 @@ intersection  and  then  the world  changes  its masters,  the  temple  gets
 forgotten or a house owner moves away,  God knows where to. The house cries,
 grows older,  grass grows on  the  roof and  a  hat of moss covers the  gate
 poles. Water starts to cut doodles and lines on the pole and a crow builds a
-nest there. In the  evening, the locals get frightened passing by the pole -
-they think, somebody is standing guard in the dark. The fear grows  into the
+nest there. In the  evening, the locals get frightened passing by the pole---they think, somebody is standing guard in the dark. The fear grows  into the
 pole, covers its features and  seeps in  its soul. The pole's soul gets born
-of fear and wind, it starts to watch the moon and walk in the rain and slush
-- that's how a pole witch appears.
+of fear and wind, it starts to watch the moon and walk in the rain and slush---that's how a pole witch appears.
 
      Kissur pointed  at the wide open gate  on the  summer field and  added.
 "Who knows, maybe these poles also stroll around at night?"
@@ -3013,12 +2971,12 @@ two companies, whose management bought me off, went bankrupt."
 high for you, you will sell the stocks and the company will go bankrupt."
 
      I don't think so. You see, enormous amount of money was sunk in Assalah
-and,  despite all this view around us, - Bemish here gestured with  his  arm
+and,  despite all this view around us,---Bemish here gestured with  his  arm
 encompassing the bamboo growth far away and the semicircular  administration
 center  hulk, looking like an empty watermelon  rind- despite  all this, the
 spaceport is more than three quarters built. If we try hard, the first ships
 will  start  landing  practically in  six  months.  You  heard,  why it  was
-abandoned  -  to  cost  very  cheap.  Also,  everybody has  heard, that it's
+abandoned---to  cost  very  cheap.  Also,  everybody has  heard, that it's
 dangerous to invest in a  market  like yours, but  not everybody understands
 that spaceports and, also,  interstellar  communication systems are the only
 safe  parts  of your  economy.  This  item will  not  be  abandoned  at  any
@@ -3047,8 +3005,7 @@ confidential. I haven't registered it."
 
      "What is this investment auction of yours?"
 
-     "Ffty one percent of  government stocks will be divided in two blocks -
-20% and 31%. As you see, I will have a controlling block of shares even if I
+     "Ffty one percent of  government stocks will be divided in two blocks---20% and 31%. As you see, I will have a controlling block of shares even if I
 get only a 20% block at the auction."
 
      "Wouldn't it be better to offer a good price at the auction?"
@@ -3094,7 +3051,7 @@ identical silk clothes followed him with the same candles in their arms.
      Numerous gapers enjoyed the view.
 
      Shavash entered the building,  sluiced water on  the marble floor  and,
-with the proper  words, handed  the basin to the new bank's president  - his
+with the proper  words, handed  the basin to the new bank's president---his
 good friend's nephew.
 
      When  the  ceremony finished in  five minutes,  Shavash withdrew to the
@@ -3119,7 +3076,7 @@ if the other offer is better."
 can't afford somebody else applying for the auction!"
 
      "I regret,  but  you will have  to raise the  price.  Terence Bemish is
-offering seven point seven dinars - just raise the price."
+offering seven point seven dinars---just raise the price."
 
      "I didn't pay you, Shavash, to pay for the shares. Kick Bemish out."
 
@@ -3134,8 +3091,7 @@ him in the corridor.
 
      "The damned briber!" the enraged Earthman hissed, "Kissur's protg, my
 ass! Do you know who  got the officials'  signatures on the papers when they
-were  all  drunk? Kissur? Devil's spawn!  Kissur was lying  with  a  wench -
-Shavash was getting the signatures!  He will  now harry  us with this Bemish
+were  all  drunk? Kissur? Devil's spawn!  Kissur was lying  with  a  wench---Shavash was getting the signatures!  He will  now harry  us with this Bemish
 till we pay three dinars for a share."
 
 
@@ -3149,7 +3105,7 @@ with potholes, the spaceport disappeared a long  time ago behind the endless
 flat  fields  and the rows of olive trees, planted next to  the road so that
 the  dust  settled  on olives  and they ripened faster. They made  at  least
 twenty  five miles, not including the  morning  spaceport trip.  Bemish  was
-tired as a dog and was slowly getting nuts - what is Kissur trying to prove?
+tired as a dog and was slowly getting nuts---what is Kissur trying to prove?
 That  he walks on foot better than Bemish? It comes as no surprise in  a man
 who  fought  in  a  country  with  motorized  divisions  consisting  of  one
 horsepower units! The temptation to make it all  clear  to Kissur was pretty
@@ -3164,13 +3120,13 @@ visitors. Kissur inspected the geese the host offered, demanded to grill one
 of them and ordered, additionally, mushroom sauce, appetizers and wine.
 
      The goose soon appeared in front of the  travelers in the grilled state
-and it was impossible to recognize - such an appetizing crust covered it and
+and it was impossible to recognize---such an appetizing crust covered it and
 so cheerfully did  the goose  fat drip down in the steaming rice plate.  The
 travelers embarked  on the food and, though Bemish was very hungry, he  soon
 realized that  he had no chance holding his own with Kissur.  They conversed
 in  English. Bemish noticed suddenly that Kissur was trying  to not  to bang
 his  spoon  on the plate and  was listening to the conversation  between two
-poorly dressed peasants  -  they  were  scraping rice  quickly out  of their
+poorly dressed peasants---they  were  scraping rice  quickly out  of their
 plates with their heads down. Finally  Kissur  couldn't hold it, he bid them
 come to the table,  handed over  some goose  and started to  ask  questions.
 Bemish,  being barely able to  understand  a few  words, inquired  what  the
@@ -3195,8 +3151,7 @@ a name day gift."
      "But  they  cost  ten  isheviks  a  share even  now!" Bemish  exclaimed
 involuntarily, totally forgetting a vodka crock.
 
-     The peasants swung their heads nervously, listening to two bums talking
-- they were clearly speaking some thief's argot - the peasants couldn't make
+     The peasants swung their heads nervously, listening to two bums talking---they were clearly speaking some thief's argot---the peasants couldn't make
 a single word  out! Kissur pulled a wad of money  out  of his pants, counted
 two hundred isheviks and gave them to the older guy.
 
@@ -3245,7 +3200,7 @@ came out to meet them.
 
      "I am so sorry about this," he declared,  "but I have already sent your
 sister  to the lord in the capital, so there is  no way  to get her back. If
-the lord likes her, you are lucky - maybe he  will agree to forgive  you the
+the lord likes her, you are lucky---maybe he  will agree to forgive  you the
 rest of your debt."
 
      "But we managed to get the money,"  the peasant said happily and handed
@@ -3258,7 +3213,7 @@ to the construction. In the morning, he said that he had sent the servant to
 buy some stuff in the capital. He was going to report the  servant as having
 deserted afterwards but  an incredible  idea came  to  him, when he saw  the
 money.  He  leafed through the bank notes again and, suddenly, he pulled one
-of them out - it was a twenty isheviks note with a "200" ink bank mark.
+of them out---it was a twenty isheviks note with a "200" ink bank mark.
 
      "Hold them,"  he  cried to  the servants. "I gave  this twenty isheviks
 note  to my  servant Anai when  I  sent him out  yesterday. Anai should have
@@ -3270,7 +3225,7 @@ where would they get the money?"
      "Where did you get the money?" the headman attacked them.
 
      "Your grace," the elder begged,  "a  bum gave us  the money;  it looked
-like  he followed us here - he is sleeping now on the hay bale! How would we
+like  he followed us here---he is sleeping now on the hay bale! How would we
 know if he robbed somebody?"
 
      The headman ordered the servants to take a look and they reported in no
@@ -3316,7 +3271,7 @@ climbed inside.
 
 
 
-     Bemish woke up in the middle of the night - Kissur  was missing. "Where
+     Bemish woke up in the middle of the night---Kissur  was missing. "Where
 is he hanging his ass  out?" Bemish got angry. The moon shined and the roofs
 of  wing houses and utility shacks were clearly outlined  on  the night  sky
 background. Just then, Bemish saw a man's silhouette sneaking along the main
@@ -3334,7 +3289,7 @@ truck rushed out puffing.
 The  truck scurried around the yard, kicked  out the  gate and sprinted down
 the  slope. Awaken  servants rushed after it but, since everybody was afraid
 that  the robbers  could  start firing and  make some holes  in the lackeys'
-hides,  - they limited  their activities to the loud screams and  flashlight
+hides,---they limited  their activities to the loud screams and  flashlight
 hustling.
 
      The headman silently contemplated the stripped safe. "These robbers are
@@ -3393,8 +3348,7 @@ how he got the shares as a gift."
      Bemish gestured with his hand and became silent.
 
      It took  them  an  hour to drive back to the beginning of the destroyed
-overpass, where Bemish and McCormick had  abandoned the car in the morning -
-the car was still there. Kissur got out of the truck, threw the stolen stuff
+overpass, where Bemish and McCormick had  abandoned the car in the morning---the car was still there. Kissur got out of the truck, threw the stolen stuff
 on the back seat and took the clean clothes out of the trunk.
 
      "Change you clothes."
@@ -3420,12 +3374,12 @@ bustle issued in the house. The official reported, bowing.
      "Mr. Kissur!  Your  manor  is  located  nearby, and a modest man  named
 Khanni is the headman there.  Yesterday night, two bums robbed the house and
 stole  four  hundred thousand!  Probably,  these two  guys also  killed  his
-servant and lifted his money  - the servant's body  was found today  in  the
+servant and lifted his money---the servant's body  was found today  in  the
 riverside bushes!
 
      Bemish understood some of the official's talk and froze.
 
-     They drove to the headman -  a dozen Kissur's  servants, that he called
+     They drove to the headman---a dozen Kissur's  servants, that he called
 that night  from the  capital, joined  them on the  way. The  district  head
 entered the yard, with a large crowd already assembled, and Kissur stayed in
 the crowd screened by his servants.
@@ -3434,9 +3388,9 @@ the crowd screened by his servants.
 and the headman accused them.
 
      "Everything is clear. These two made a deal with the bandits and robbed
-and killed  my  servant - they didn't  expect  me recognizing the money. You
+and killed  my  servant---they didn't  expect  me recognizing the money. You
 were going to rob the manor together next but,  since you were arrested, the
-bums  went ahead  on their  own.  Answer me - where did you  bump into them?
+bums  went ahead  on their  own.  Answer me---where did you  bump into them?
 Imagine it, I was trying to protect you before your lord, turned your sister
 over to him, so that he would become lenient."
 
@@ -3457,15 +3411,15 @@ oppress the people, only take one tenth.' Yesterday, I was  passing by, with
 a  friend, and  I decided  to check,  how you obey my  orders, and  when you
 arrested  the  people I  gave money to, claimed this money for yourself, and
 told them that I dishonored their sister that  I haven't even met, it looked
-to me, that you obeyed my orders like a pig you are - that you sucked on the
+to me, that you obeyed my orders like a pig you are---that you sucked on the
 people's  marrow and drank their blood. I decided to look in your safe and I
 carried away from it  not  four hundred thousand  but, rather, six  and half
 thousand and, secondly, I  carried away from it  the loan  agreements signed
-with  my signature -  and  this is a fake  signature. Then I realized that I
+with  my signature---and  this is a fake  signature. Then I realized that I
 didn't  waste  my time poking  into this safe,  because you would doubtfully
 have shown me these faked agreements!"
 
-     The headman could not speak - he bleated and crawled at Kissur's feet.
+     The headman could not speak---he bleated and crawled at Kissur's feet.
 
      "Spit it  out," Kissur barked.  "How  many girls  have  you sold to the
 whorehouses in my name?"
@@ -3473,7 +3427,7 @@ whorehouses in my name?"
      "Twenty of them, at least," somebody in the crowd responded.
 
      Here, Kissur leaped at the headman and crushed his nose and  many other
-parts, and  then ordered to "hang this  fucker on  the gate" -  Bemish could
+parts, and  then ordered to "hang this  fucker on  the gate"---Bemish could
 barely persuade him to call the lynching off.
 
      They still stuffed the headman in the stocks at the punishment pole. By
@@ -3548,8 +3502,8 @@ sovereign for you."
 on a deity's jade mug, grinning above the door, on an ancient silver lantern
 where an electric light bulb bloated like a  white  bubble. With  an effort,
 Bemish recalled yesterday events. "There  was  a fight... We drank... Oh, my
-God! He granted me the manor!" Bemish  jumped up in the bed - the house deed
-and a note from Kissur lay on the table - he returned to the capital.
+God! He granted me the manor!" Bemish  jumped up in the bed---the house deed
+and a note from Kissur lay on the table---he returned to the capital.
 
      In  an hour,  Bemish  thoughtfully consumed  breakfast  on  a  veranda.
 Frightened servants ran around. He could barely talk to the servants and was
@@ -3560,8 +3514,7 @@ inside and called to Mr. Shavash's office.
 honest administrator?"
 
      The  first  finance  vice-minister assured  him,  in  a slightly ironic
-voice, that he would be happy to find for Mr. Bemish anything in the world -
-an eternal phoenix, three-headed dragon, and even an honest administrator.
+voice, that he would be happy to find for Mr. Bemish anything in the world---an eternal phoenix, three-headed dragon, and even an honest administrator.
 
 
     #dinkus()
@@ -3618,10 +3571,10 @@ have another weapon."
 
      Bemish  was  enjoying the ancient mosaic overlaying  the  walls  on the
 second floor, when he heard a  descending flyer's  characteristic rustle. He
-walked  out to the gallery  - a white  flyer  stood in  the yard,  the  last
+walked  out to the gallery---a white  flyer  stood in  the yard,  the  last
 "rainbow" shimmers were beating above its wings. In a moment, the  "rainbow"
 dimmed, the  flyer's  roof  opened up like a poppy  flower  carpel,  and two
-people got out of the  car  - a handsome  lithe youth in a strict white suit
+people got out of the  car---a handsome  lithe youth in a strict white suit
 and  another guy, more scrawny than  slim, in a checked shirt  with torn-off
 sleeves  and a  red flower in  his  hair,  following the  contemporary rebel
 fashion.
@@ -3725,7 +3678,7 @@ youth.
      Ashidan got up and walked to the garden to make a call. Right then, the
 servants rushed to the terrace to announce the district head's arrival.
 
-     The district head brought gifts with him - three dishes of grilled meat
+     The district head brought gifts with him---three dishes of grilled meat
 with  garlic, a  suckling pig, salads in flat baskets and, also, a  plate of
 walnut  shaped  cookies  and  a  round sweet quince pie  decorated  with the
 Bemish's last name misspelled on top.
@@ -3787,7 +3740,7 @@ for free? To pay for the taxes you invented?"
 serve you! What would you like me to do? Tell me and I will carry it out."
 
      "I would like you," Bemish said, "to  sell me the Assalah shares at the
-same price the peasants sold them to you - for free."
+same price the peasants sold them to you---for free."
 
      The official choked.
 
@@ -3828,7 +3781,7 @@ tricks at home."
 
 #chapter("The Fourth Chapter,")[where Kissur tells investment bankers how to train a highwayman's horse
 while Terence  Bemish makes an acquintance with other contenders for Assalah
-stocks.]
+stocks]
 
      The next day after his return to the capital, Bemish found himself at a
 party thrown by the  district  prefect  to celebrate the  plum blossoming or
@@ -3848,10 +3801,10 @@ misfortune  and  he asks for two hundred thousand dinars for the ceremony. I
 refuse and the next  night a fire  starts in  the  office. The next day this
 vermin  comes to  me  again,  expresses its  condolences, and  asks  for two
 hundred  thousand again. When  I complained to the police, they gave me  the
-advice - don' buck and cough up the money - the abbot is connected to Horn's
+advice---don' buck and cough up the money---the abbot is connected to Horn's
 gang."
 
-     "By  the way,  speaking  about  banks  -  do  you  know that  only  the
+     "By  the way,  speaking  about  banks---do  you  know that  only  the
 companies, with accounts  in Shavash controlled banks,  received the  budget
 financing this month? They say that Shavash had a ten percent kickback.
 
@@ -3862,8 +3815,7 @@ the envoy led Bemish into a  corner immediately and started telling him true
 stories from local officials' lives.
 
      There were about dozen envoys present. Bemish was suddenly surprised by
-the number. He thought that only fifteen... not even fifteen - ten years ago
-- the envoys' number would  be way smaller. The Earth  colonies were leaving
+the number. He thought that only fifteen... not even fifteen---ten years ago---the envoys' number would  be way smaller. The Earth  colonies were leaving
 the Federation  of Nineteen one  after another,  peacefully  or with  swords
 drawn.
 
@@ -3905,7 +3857,7 @@ later rise to 90% and he had a great  time meanwhile with the margin between
 his take-in and his payments to the clients.
 
      It was not  economical  but rather  political quandaries that destroyed
-him - a new tax  law on Aegeia,  where his head office was, and  a couple of
+him---a new tax  law on Aegeia,  where his head office was, and  a couple of
 the  adroit auditors.  Rusby's assets were  arrested, his wife divorced  him
 scandalously, the  fund immediately  bankrupted  and Rusby  escaped to Gera,
 where he kept  insisting that, all this time, he  fulfilled his  obligations
@@ -3922,11 +3874,11 @@ were also taking part in the Assalah auction?"
      "Also?" Bemish winced. "Wow! Would Shavash really let this  man, wanted
 by the Galaxy police, participate in an auction."
 
-     Next to a lighted pond with gold fish, a small man stood - Shavash.
+     Next to a lighted pond with gold fish, a small man stood---Shavash.
 
      "Thanks for the headman," Bemish said, "what salary should I pay him?"
 
-     "Nothing - he is your slave."
+     "Nothing---he is your slave."
 
      Bemish choked.
 
@@ -4002,13 +3954,13 @@ curbing.  This Assalah thing  swallowed two billion isheviks while the  real
 expenses were not even two million."
 
      The  official's voice didn't carry  either cynicism or sarcasm  in  it.
-Bemish  kept silent  - he didn't know how  to snub  a man  who issued pseudo
+Bemish  kept silent---he didn't know how  to snub  a man  who issued pseudo
 money  as  the first finance  vice-minister, received it  on  the  Assalah's
 account as a Board  of  Director's  member, and ferried it  to  his personal
 account as real money.
 
-     Right  then, Bemish realized a very simple thing - Kissur can bequest a
-villa to him, Kissur  can secure Assalah for  him - but only Shavash has the
+     Right  then, Bemish realized a very simple thing---Kissur can bequest a
+villa to him, Kissur  can secure Assalah for  him---but only Shavash has the
 life and death power over money in this country.
 
      "Who was the  man who visited the  manor with  Ashidan?" Shavash  asked
@@ -4022,9 +3974,9 @@ title announced,  "The  main suspect  in the Menszel trading exchange center
 escapes in an unknown direction."
 
      Bemish hadn't  heard about the explosion and he leafed through the text
-quickly. The  explosion was indeed a small one - two  or three doors cracked
+quickly. The  explosion was indeed a small one---two  or three doors cracked
 and  a computer  had its brains blown out. The  blast was small because only
-one explosive  device performed -  a non-fragmentation demolition shell with
+one explosive  device performed---a non-fragmentation demolition shell with
 ten grams  of  trinex.  A  case  with the equivalent of three  kilograms  of
 dynamite was next to it but, miraculously, it didn't detonated. If the  case
 had exploded, the victim count would have been in tens or, even hundreds.
@@ -4034,7 +3986,7 @@ had exploded, the victim count would have been in tens or, even hundreds.
      "Ashidan has  nasty companions, " Shavash  said. "Though this  guy is a
 friend of Kissur's."
 
-     "Pardon  my  curiosity,  Mr. Shavash -  it's  surprising how  you  know
+     "Pardon  my  curiosity,  Mr. Shavash---it's  surprising how  you  know
 everything. You  know even what  happens at a  villa two hundred  kilometers
 away from the capital. Are you a vice-minister of finance or of police?"
 
@@ -4104,7 +4056,7 @@ you?"
      "Let me introduce you to  our  executive  director," Giles said lazily,
 "James McFergson."
 
-     Bemish turned  around  - behind  him, a stout short  man with unusually
+     Bemish turned  around---behind  him, a stout short  man with unusually
 lively eyes and a mole  on a pug nose was smiling and extending amicably his
 hand.
 
@@ -4114,7 +4066,7 @@ existed in this world, he would fall dead with sorrow.
 
      Here, the stage  in  the  garden under the balcony  was  lightened, the
 harmonious  sounds of flutes and lute-shells poured forth and a  performance
-started  below - in not too  prudish dresses, four  beauties  were dancing a
+started  below---in not too  prudish dresses, four  beauties  were dancing a
 complex  dance with swords. Quite a  crowd surrounded the stage quickly and,
 when the performance finished, a  guest -likely drunk- climbed the boards to
 kiss the dancing girls.
@@ -4127,7 +4079,7 @@ kiss the dancing girls.
 
      "They are  no longer  Earthmen," McFergson smirked,  "the planet Adana,
 for your  information, was settled by SD Warheim. So,  Warheim brought there
-several  dozen  thousand  unemployed  people  -  subsidizing  their  one-way
+several  dozen  thousand  unemployed  people---subsidizing  their  one-way
 tickets. In  just  a short while, the unemployed realized that there were  a
 lot of jobs on  Adana and  no unemployment benefits.  So,  they all screamed
 that it was slavery in disguise and demanded that the company transport them
@@ -4158,7 +4110,7 @@ made many financiers pay attention to Gera economics."
 
      "So far, it  shows,  "  Giles  said,  "in  him  attracting  high  level
 scientists  and  advancing  huge  loans  to local companies  for  the newest
-technologies  development - our  government is forced to spend this money on
+technologies  development---our  government is forced to spend this money on
 social expenses. And Gera banks are  reputed  to be the most reliable in the
 Galaxy, though not due  to the government protection but  rather due to  the
 very  strict  laws  specifying  the  total  personal  responsibility of  the
@@ -4189,7 +4141,7 @@ index grows faster."
 
      "It's a stupid argument," he said, "I've been to Gera and I could  give
 you hundred proofs that its Leader is thousand times more dangerous than all
-the psychopaths...  Why don't you think about this  - the Gera  army's total
+the psychopaths...  Why don't you think about this---the Gera  army's total
 military capabilities are  approaching  those  of Earth and  all  the  other
 Federation  of  Nineteen members'  armies  combined,  and  every time,  when
 somebody in the Federation Assembly proposes to  boost the defense spending,
@@ -4197,8 +4149,8 @@ the owners of  the accounts in the stable Gera banks start screaming that we
 should  not  spend  money  on  war,  we  should spend  the money  on  social
 assistance."
 
-     Kissur came in after midnight - by his looks, he spent the evening in a
-more interesting way - in a pub.  He ran  into Bemish on a garden path, next
+     Kissur came in after midnight---by his looks, he spent the evening in a
+more interesting way---in a pub.  He ran  into Bemish on a garden path, next
 to  a  grotto  that,  due  to an  evident reason, Bemish needed to  visit in
 private.
 
@@ -4230,17 +4182,17 @@ makes  billions  on  the  price  differential and  gets  out.  Shavash  gets
 millions,  IC gets billions and  the  Federation  investors with  the Empire
 nationals get a fly speck. I spent this week making enquires about IC. It is
 a phantom. This is a trickster company that had a couple of projects on some
-planets that nobody  has heard anything about, -  and these planets had been
-expelled from the United Nations. A  planet that's not a UN  member - from a
-financial viewpoint  -  Kissur,  is  a planet where  the  public  companies'
+planets that nobody  has heard anything about,---and these planets had been
+expelled from the United Nations. A  planet that's not a UN  member---from a
+financial viewpoint---Kissur,  is  a planet where  the  public  companies'
 accounting doesn't have to follow the Federal financial committee standards.
-They  have  a  well  developed system  -  they  bribe an official, issue the
+They  have  a  well  developed system---they  bribe an official, issue the
 stocks, advertising their "connections  to  the  government",  peddle  these
 stocks to fools through a phony company, the stocks grow, the company cleans
-the cream off, and then - kabloom! Got it?
+the cream off, and then---kabloom! Got it?
 
      "Got  it,"  Kissur  said. "I got  it, that  our  companies have a merry
-choice -  they can choose  between a disreputable  greenmailer and a company
+choice---they can choose  between a disreputable  greenmailer and a company
 like IC."
 
      Kissur left soon, having loud-mouthed the Federation envoy and publicly
@@ -4276,7 +4228,7 @@ to the tax collectors!"
 
      "Haven't you tamed the tax collectors?"
 
-     "We? Come on, Bemish, every  month... They apologized - we  wouldn't do
+     "We? Come on, Bemish, every  month... They apologized---we  wouldn't do
 it but we were ordered to..."
 
      "Who exactly signed the order?"
@@ -4293,7 +4245,7 @@ it but we were ordered to..."
 
      Krasnov took a battered yellowish newspaper from a desk drawer and gave
 it to  Bemish. The  newspaper was local and Bemish was only able to make out
-Shavash's picture and he was barely able to get the paper's name - Red Star.
+Shavash's picture and he was barely able to get the paper's name---Red Star.
 On the picture, Shavash appeared from the waist up, presenting an outrageous
 sight  with a girl,  dressed only in  a  band, coquettishly  tied around her
 neck.
@@ -4312,7 +4264,7 @@ boysenberries, and a black braid tied  around her head, rose to meet him. On
 the  coach, dismayed  Shavash pressed  himself  against the pillows. Shavash
 hurled the bundle of papers, he held in his hands, to the floor and said,
 
-     "Let  me  introduce you - Terence Bemish - the house mistress."  Bemish
+     "Let  me  introduce you---Terence Bemish---the house mistress."  Bemish
 realized that Mrs. Idari, Kissur's wife, was in  front of him  and he  bowed
 awkwardly. The woman laughed. Her laughter was akin to a silver bell.
 
@@ -4328,7 +4280,7 @@ awkwardly. The woman laughed. Her laughter was akin to a silver bell.
 for a woman  to  stay  too long with a  man her husband hasn't introduced to
 her."
 
-     She  bowed  and  left  -  only the black braid  tied  around  her  head
+     She  bowed  and  left---only the black braid  tied  around  her  head
 glistened in the door. Bemish was looking after her  and blinking piteously.
 Then, he turned to the official.
 
@@ -4405,12 +4357,11 @@ newspaper. They tried to assassinate me twice."
 
      "What zealots?"
 
-     "You saw them yourself while walking with  Kissur -  remember  the iron
+     "You saw them yourself while walking with  Kissur---remember  the iron
 people show?"
 
      Bemish shuddered slightly. As if it's not enough, that  Shavash already
-knew  who and when anyone visited Kissur's villa in Assalah! What's he doing
-- does he follow Bemish's every step?
+knew  who and when anyone visited Kissur's villa in Assalah! What's he doing---does he follow Bemish's every step?
 
      "Where did this iron men story come from?"
 
@@ -4421,7 +4372,7 @@ men will crawl  out from  the  underground. I have  to say that  every  time
 rebellions  or barbarian invasions happened in the Empire,  the rebels  were
 thought to be the iron men. However,  once the rebels  took power, everybody
 would  immediately realize  that they  were  not the iron  men.  As  for the
-Earthmen -  you don't grab  the power and don't hang your enemies. Can't you
+Earthmen---you don't grab  the power and don't hang your enemies. Can't you
 be anybody else but the iron men?"
 
      "The ones that crawl out from underground?"
@@ -4560,7 +4511,7 @@ had met two years ago on Earth."
 
      Bemish flushed. His  ignorance of everything  related to Weian  history
 was  practically absolute, it could only compare to  his ignorance  of Earth
-history.  If anything was of  interest to him  on this  planet - it  was the
+history.  If anything was of  interest to him  on this  planet---it  was the
 budget  deficit size or  the central bank  interest rate.  The central  bank
 interest rate did not depend on history in any way.
 
@@ -4572,11 +4523,11 @@ interest rate did not depend on history in any way.
 
      "He was the  first minister twice. Once, before  Earthmen. Second time,
 after  them.  Once the Earthmen  came to Weia,  the Emperor  appointed a man
-named Nan as the first minister. Then,  Nan  was removed - with my husband's
+named Nan as the first minister. Then,  Nan  was removed---with my husband's
 help."
 
-     Bemish vaguely remembered the five-year-old scandal - since the scandal
-took  place on  Earth, not on Weia. There  was something  about Kissur - the
+     Bemish vaguely remembered the five-year-old scandal---since the scandal
+took  place on  Earth, not on Weia. There  was something  about Kissur---the
 Weian  ex-first minister, hanging out on  Earth.  Or was  it on Lann? Amidst
 terrorists  and drug abusers. A stolen car, drugs, a beaten  policeman,  the
 arrest of a terrorist  activity suspect, a  scandal diligently stirred up by
@@ -4618,16 +4569,15 @@ ivy twigs.
 
      "A  bit  later, Arfarra said to a man, named Van  Leyven, that  used to
 invest a lot of money in Weia,  "we are selling state constructions now, why
-don't you buy Assalah?" - "I won't do that," Van Leyven said, "it's the most
-disgusting of all Shavash's feeding troughs." - "Weian  economics improved a
+don't you buy Assalah?"---"I won't do that," Van Leyven said, "it's the most
+disgusting of all Shavash's feeding troughs."---"Weian  economics improved a
 lot  this  year,"  Arfarra  said,  "but  you used  this year to  freeze  the
 constructions, sell them to the state  or get  rid  of the stocks via  dummy
-fronts.  Why?" - Van Leyven thought for a bit and said. "I invested a lot of
+fronts.  Why?"---Van Leyven thought for a bit and said. "I invested a lot of
 money in Weia and incurred big losses. I staked it all and I  lost. You  let
 the time slip by. The people lost their trust to the officials, the Earthmen
-and the sovereign. You  are old and sick, what will  happen when you die?" -
-"I've been dying for six years," Arfarra got angry, "will you buy Assalah or
-not?" - "No." They parted then. Arfarra died the next day.
+and the sovereign. You  are old and sick, what will  happen when you die?"---"I've been dying for six years," Arfarra got angry, "will you buy Assalah or
+not?"---"No." They parted then. Arfarra died the next day.
 
      Bemish was now listening and holding his breath.
 
@@ -4645,11 +4595,11 @@ woman's voice was singing something accompanied by a flute.
 
      Falling asleep, Bemish thought about the woman, with the black eyes and
 the black braid wrapped  around her head, and  about the two people  who had
-lost their heads over that woman - Kissur and Shavash. He also thought about
+lost their heads over that woman---Kissur and Shavash. He also thought about
 Clyde Van Leyven;  he knew a  lot about this man, unlike the other actors of
 the  Idari's story. Since, Van  Leyven  was a  billionaire and the financial
 community  watched his each step  holding  its breath.  Unlike Idari, Bemish
-knew that Van Leyven  almost died half  a year  after the Weian events - the
+knew that Van Leyven  almost died half  a year  after the Weian events---the
 brakes  on his air  cushioned seven-meter-long  limo failed,  the  car broke
 through the rail  and dived  in water from a twenty-meter-high  bridge,  the
 driver  drowned,  the bodyguard  broke his head on the front panel,  and Van
@@ -4687,8 +4637,8 @@ less shoot out in the city.
 
      Kissur  and Bemish had just started on a suckling piglet, rising like a
 soft white mountain from a savory sauce sea, when Kissur suddenly raised his
-head  -  Kaminsky stood in  front of  him. The  businessman  had a  somewhat
-down-hearted look to him.  He  had a huge blue spot under his  eye  - like a
+head---Kaminsky stood in  front of  him. The  businessman  had a  somewhat
+down-hearted look to him.  He  had a huge blue spot under his  eye---like a
 shaman painting himself  before a divination-  and his  hand hung in a  silk
 sling.
 
@@ -4702,7 +4652,7 @@ tomorrow."
      "I was wrong," he said. "Out of all the Weian  officials you are indeed
 the only honest one. You didn't want a penny from me. Having  returned, I'll
 certainly tell  all  my  friends,  that  there are  two  types of  the Weian
-officials - the officials who demand bribes from the  Earthmen  and use them
+officials---the officials who demand bribes from the  Earthmen  and use them
 as pawns in their feuds  and  the  one honest  official who  bathed me  in a
 swimming pool."
 
@@ -4724,10 +4674,10 @@ dealings,  I  refuse. Well! Twelve million it  will  be. Mr.  Khanida  is so
 happy. He says that a base man cares about profit and an honorable man cares
 about fairness. He sees both of us  belonging to the honorable people ranks.
 I start the construction and invest the money. Meanwhile,  the land is still
-not  bought yet - they assure me  - it's a pure formality. On  a nice day, I
+not  bought yet---they assure me---it's a pure formality. On  a nice day, I
 visit Mr. Khanida and he starts  the million and a half talk again. I refuse
 politely. Khanida  shrugs his  shoulders and becomes  as cold as a frog.  He
-says that he is breaking the contract off. I lose it - come on, I've already
+says that he is breaking the contract off. I lose it---come on, I've already
 sunk big  money in! For  an answer, Khanida  utters  through clenched  teeth
 something about exploitators sucking  on Weia's blood  and liver. Then, I go
 to Shavash, your dearest friend. He offers  me... it's  enough to  say,  Mr.
@@ -4759,7 +4709,7 @@ trouble."
      "Where do you get money, Kissur, eh?  You don't trade,  you  don't take
 bribes  and you  don't rob passers-by! Where  does the money come from?  The
 Emperor just  gives  it to you, doesn't he? And it doesn't cost anything  to
-the Emperor - when the treasury runs  out of money, he invents another  tax.
+the Emperor---when the treasury runs  out of money, he invents another  tax.
 You  call a  man who sells and buys a  criminal, and a man who collects  the
 taxes for you, the cornerstone of the state! That's why you won't like it if
 a parliament  forms and only parliament can authorize the taxes collected in
@@ -4774,7 +4724,7 @@ that  time. Since you don't have any  arguments other than swimming, I would
 rather be silent. But I will advise all my friends on Earth and, by the way,
 Terence Bemish, sitting next to you, never, under no  circumstances,  do any
 business  on Weia since nothing will come out of  it  besides debasement and
-shame. Believe me, Mr. Kissur - I could still patch everything together. But
+shame. Believe me, Mr. Kissur---I could still patch everything together. But
 I am grateful to you that I lost  this money;  I  recalled again that I have
 honor and self-respect."
 
@@ -4805,7 +4755,7 @@ your Galaxy, full of worms like a year-old fig."
 
 
      The next day, Bemish flew to the  villa, where several members  of  his
-team and two LSV employees arrived. They  had a simple task - to develop the
+team and two LSV employees arrived. They  had a simple task---to develop the
 contract's financial shell by the week's end.
 
      The  bankers worked  day and night. In  two days, a helicopter arrived,
@@ -4879,10 +4829,10 @@ zero-coupon bonds are."
      Bemish quacked in exasperation.
 
      "We  are  also  considering  securities  with  the  alternative  coupon
-payments - they can be paid with money or with the new bonds."
+payments---they can be paid with money or with the new bonds."
 
      Shavash paused.  Trumpet sounds  suddenly entered the  room through the
-window - the shepherd was herding the cows back to the village.
+window---the shepherd was herding the cows back to the village.
 
      "That's a risky  affair, Mr.  Bemish. I am not sure if your bond  price
 will get to 70% of its face value on the market. What will remain then, from
@@ -4917,7 +4867,7 @@ words.
 this affair and buy your bonds  on a big scale. However, the affair is quite
 risky and  you  need  to  sweeten  it  up  a bit. I suppose  that  the large
 investors  could have an  opportunity to  buy, besides the bonds,  the stock
-warrants for three years - ten shares for  a dinar. You could reserve 20% of
+warrants for three years---ten shares for  a dinar. You could reserve 20% of
 the shares for this purpose."
 
      Bemish  raised  his eyebrows  slightly. Shavash's idea meant  that  the
@@ -4940,7 +4890,7 @@ will cost hundred times more.
 
 
      In an hour, Welsey and Shavash  descended to  the  central hall. Bemish
-stayed on the upper floor to  take a shower and  change his shirt  - he  had
+stayed on the upper floor to  take a shower and  change his shirt---he  had
 broken a sweat. When  he  walked down,  Kissur was sitting  in  the hall and
 instructing two young Trevis' aides  how to train a  highwayman's horse,  so
 that it could find  the road in  the dark and didn't neigh in an ambush. The
@@ -4957,22 +4907,21 @@ said.
      "Why are you so glum, Terence," he said in Weian, "and why is it all so
 dirty?"
 
-     Kissur trailed his fingers in disgust down an expensive pink wood table
-- a banker dropped pizza on the table, hurriedly eating it.
+     Kissur trailed his fingers in disgust down an expensive pink wood table---a banker dropped pizza on the table, hurriedly eating it.
 
-     "You  don't  have a woman - that's the  problem,"  Kissur noted. "Idari
+     "You  don't  have a woman---that's the  problem,"  Kissur noted. "Idari
 says the same."
 
      The headman, having  noiselessly  approached  on  the side,  bowed  and
 quickly popped in.
 
-     "If the lord needs a maid, I have a good candidate - a small official's
+     "If the lord needs a maid, I have a good candidate---a small official's
 daughter, a seventeen-year-old maiden, gentle as jasmine  petals. Her father
 was  caught stealing and he is currently under an investigation.  To collect
 the money to butter the judges up and secure his daughter's future, he could
 sell her for fifty thousand."
 
-     Bemish glanced quickly towards his colleagues - the conversation was in
+     Bemish glanced quickly towards his colleagues---the conversation was in
 Weian and they clearly didn't understand it.
 
      "I'll think about it," Bemish said.
@@ -4993,11 +4942,11 @@ projections crawled out of it.
 two o'clock, he found that he was not the only one there. In the bed, coiled
 like  a doughnut, a  cute girl  of about  seventeen  years  age was sleeping
 tranquilly. Bemish  pulled the blanket  off  her  and found her  to be quite
-naked -  Adani  probably brought her  in the evening and  he  was afraid  of
-bothering the  master, busy with calculations -  the girl waited and  waited
+naked---Adani  probably brought her  in the evening and  he  was afraid  of
+bothering the  master, busy with calculations---the girl waited and  waited
 some more and fell asleep.
 
-     Once Bemish  raised  the blanket, the girl got  cold  - she woke up and
+     Once Bemish  raised  the blanket, the girl got  cold---she woke up and
 stared at Bemish with her eyes, large and round like the moon. She had small
 budding  breasts with  tiny nipples,  heavy thighs and long white legs.  Her
 pubic hair  was shaved off. The  girl  looked  at Bemish  unabashedly, as if
@@ -5054,7 +5003,7 @@ earrings but you won't give me anything now."
 
      "What skirt do you want?"
 
-     "I've just seen one at a fair - a long blue silk skirt, with a "dancing
+     "I've just seen one at a fair---a long blue silk skirt, with a "dancing
 flowers" embroidering and with three bands along the  lap  with pictures  of
 fishes, animals, and birds."
 
@@ -5068,7 +5017,7 @@ about Jane. "Blessed is the world, where they just ask openly for it."
 
 #chapter("The Fifth Chapter,")[where Terence Bemish is being persuaded to drop out of  Assalah  stocks
 auction while Shavash reminds  the visitors that he is not familiar with the
-financial term dictatorship.]
+financial term dictatorship]
 
      One and a half tons of the equipment  (out of the three tons ordered by
 Bemish) arrived at the spaceport,  and the  Earthmen were  spending days and
@@ -5082,7 +5031,7 @@ iron barrel from the villa to the construction site.
 found it at Ravadan spaceport where it had been from the  beginning. He  had
 to go to Ravadan.
 
-     Passing by the nearest village, Bemish noticed an unhitched wagon - the
+     Passing by the nearest village, Bemish noticed an unhitched wagon---the
 peasants  were  gathering  at  the  wagon and unloading the  planks  for the
 assembling stage. It  seemed  to Bemish that the oldster  in charge  of  the
 construction  was the same  oldster, who  played a god on the  market in the
@@ -5105,8 +5054,7 @@ by a butterfly shaped hairpin, strewn  with the  pink pearls, and a necklace
 of the  same pearls encircled  her  neck.  She  was  talking  to Shavash and
 another man, unfamiliar to Bemish.
 
-     "Here you are, Bemish," Shavash turned around. "Let me introduce you  -
-the Empire's first minister, Mr. Yanik."
+     "Here you are, Bemish," Shavash turned around. "Let me introduce you---the Empire's first minister, Mr. Yanik."
 
      Bemish had been looking at Idari till then;  he quickly  turned to  the
 first minister. He was  a neat senior man with a head, slightly flattened at
@@ -5178,8 +5126,7 @@ hundred thousand investors, is participating in the Assalah auction?"
      "I  am  not  familiar  with  a financial  term  dictatorship,"  Shavash
 replied.
 
-     Bemish  looked  around  and noticed another  witness of  this  ruckus -
-Khanadar the Dried Date looked  at him out  of a corner. Bemish quietly came
+     Bemish  looked  around  and noticed another  witness of  this  ruckus---Khanadar the Dried Date looked  at him out  of a corner. Bemish quietly came
 to him and asked.
 
      "So, how do you like the business world?"
@@ -5192,7 +5139,7 @@ we came in, the  town  had  already  been pillaged  and  the  guys, who  had
 pillaged  it, drove us away. We were  famished  since we didn't eat anything
 for days. Even our horses croaked. Finally, we reached the coast and a town,
 and the food and the loot in the town. Then, we got friendlier to each other
-and began to hug and  we had tried to keep a ten step distance, before, - to
+and began to hug and  we had tried to keep a ten step distance, before,---to
 avoid being eaten."
 
      "I  see.  So, the Earthmen  resemble you in this trip, before you found
@@ -5210,7 +5157,7 @@ Earthman."
 
 
      The officials  attended  to Bemish extensively and soon the whole villa
-was filled by their gifts - Bemish, however, had to make gifts of his own in
+was filled by their gifts---Bemish, however, had to make gifts of his own in
 return.
 
      Shavash  send Bemish a painting as a gift. The painting was done in the
@@ -5236,7 +5183,7 @@ treasures  left and right. I think that nobody reaps as  much  money  as the
 custodians of paintings and bowls; at least one third of everything that has
 ever been painted and potted in  by Eukemen is stored  in the palace. Nobody
 except the Emperor and the custodian in charge has  access to the treasures,
-there is absolutely no order there - steal as much as you want."
+there is absolutely no order there---steal as much as you want."
 
      The headman heard this conversation and,  arching his body in the usual
 way, told Bemish that a far relative of his worked in  the  palace and would
@@ -5248,7 +5195,7 @@ showed Bemish color photographs of the astoundingly beautiful  fifth dynasty
 vessels and several paintings done  in the "morning fog" style, most popular
 at the Golden Sovereign times, and in the  "thousand scales" style. The girl
 and dragon painting was not there. Or, more  precisely, it was there and not
-one, but several of them - it  was a popular sea prince tale - but  none  of
+one, but several of them---it  was a popular sea prince tale---but  none  of
 them belonged to Koinna's hand.
 
      The official offered Bemish to sell anything the latter  would like and
@@ -5271,7 +5218,7 @@ down the sanded paths and fragrant alleys.
 
      In a light flooded hall, resembling a fragment from  a fairy  tale from
 the sky, the officials  whispered, dressed in ancient court clothes. In half
-an  hour,  a silver  curtain moved  to the side -  the  Emperor  Varnazd was
+an  hour,  a silver  curtain moved  to the side---the  Emperor  Varnazd was
 sitting on the amethyst throne. The Emperor was dressed in white,  he  had a
 sad delicate face with strikingly  made-up eyebrows, rising at the  tips. It
 looked like  a silent single  actor play. Bemish thought it to be a very sad
@@ -5335,8 +5282,8 @@ Weian.
      A street singer was brought in.
 
      Bemish  recalled how he was  driving  from the spaceport  and asked his
-interpreter - the guy had started as one of the Weians that washed dishes on
-the ground - to stop the car. He wanted to look at the street puppeteer with
+interpreter---the guy had started as one of the Weians that washed dishes on
+the ground---to stop the car. He wanted to look at the street puppeteer with
 a crowd gathered  around him on the curb.  The  interpreter answered that it
 was "uncultured." Bemish asked what was "cultured," and he found out that it
 was "cultured"  for the  whole neighborhood to attend trashy  Hollywood  and
@@ -5352,7 +5299,7 @@ themselves.
      If only they hadn't sung! Then, everything would have  been fine and it
 would  have  just  been corrupted bureaucrats' drunken debauchery. But  they
 sang so well! Bemish had a difficulty imagining state  department  officials
-coming to their boss's party and singing so well - or signing such papers at
+coming to their boss's party and singing so well---or signing such papers at
 the same party.
 
      Or was it all related? And will the poetry follow the corruption on its
@@ -5383,7 +5330,7 @@ is as smart as she is attractive, isn't she?"
 
      "Yes."
 
-     "I will never believe it! Would you like  a  bet -  I  will  take  your
+     "I will never believe it! Would you like  a  bet---I  will  take  your
 secretary  in  for  two  weeks, and  if I  am satisfied,  I  owe  you  fifty
 thousand."
 
@@ -5400,7 +5347,7 @@ night?"
 
      "How can  you  compare it?" Shavash was  offended. "Idari is a highborn
 lady  and what do  you have here? A small  briber's daughter that you bought
-for thirty thousand -  they  cheated  you by  charging twice  more  than the
+for thirty thousand---they  cheated  you by  charging twice  more  than the
 regular price."
 
      "Get  out  of  here,  vice-minister,"  Bemish said,  "before  you  hurt
@@ -5424,8 +5371,8 @@ couldn't hold it any longer and just blurted it out. I almost trounced him."
 
      "Don't give me  away to Shavash," she said. "He  is a nasty man. He has
 five  wives and a whip  for  each one. He hangs out in red light streets  at
-night and locks himself with his secretaries during the daytime - a week ago
-a secretary of his hanged himself - they said he embezzled too much. And how
+night and locks himself with his secretaries during the daytime---a week ago
+a secretary of his hanged himself---they said he embezzled too much. And how
 he entertains himself in bawdy houses!"
 
      Bemish reddened. His knowledge of  Shavash's behavior in  bawdy  houses
@@ -5450,12 +5397,12 @@ the sovereign..."
 
      "And the human rights committee," the official nodded. "I don't want to
 place you in  an uncomfortable  position, director. I assure you that Inis's
-father deserves a rope - I have his dossier here. It's pretty horrible - all
+father deserves a rope---I have his dossier here. It's pretty horrible---all
 these dirty tricks  that a small, stupid, and greedy briber  can commit, the
-dirty tricks that ended with deaths and dishonor. Can you believe that - for
+dirty tricks that ended with deaths and dishonor. Can you believe that---for
 a bribe, he switched some names on the arraignment  orders after the Chakhar
 rebellion, he accepted  as  completed a water dam that  burst in a month and
-destroyed a whole village. I assure you - if you complain to the  sovereign,
+destroyed a whole village. I assure you---if you complain to the  sovereign,
 her father will certainly be executed."
 
      "Give me back my wife," Bemish screamed.
@@ -5513,7 +5460,7 @@ Greenmailer,  par  venue,  gobbler  that  has  recently  swallowed  a  small
 automated door
 
      company with  LSV help  and used it  as  a  step to  swallow  something
-bigger;  one of the youngsters, that  Trevis made  his money with - a nobody
+bigger;  one of the youngsters, that  Trevis made  his money with---a nobody
 without Trevis. This man had  the  crappiest reputation on Wall Street. "The
 hungriest  of  Trevis's  scoundrels," the  director  of the  automated  door
 company said  about  him after  he  had been fired.  How could  Kissur,  who
@@ -5521,7 +5468,7 @@ considered  a well-behaved president of,  say, Morgan James to be  an usurer
 fit for the gallows, be friends with this financial horse thief?
 
      The friendship between the Earthman and Kissur caused a bit of harmless
-gossip  -  everybody  expected  that  either the  Earthman  calls  Kissur  a
+gossip---everybody  expected  that  either the  Earthman  calls  Kissur  a
 pedigreed bandit or  Kissur reproaches  Bemish with  the latter's passionate
 avarice. However, Kissur's presenting Bemish with his manor, caused thoughts
 and glances in the five main precincts.
@@ -5556,9 +5503,9 @@ the other bandits."
 he was hinting  that  Kissur  was in charge  of  the  capital criminals. He,
 however, thanked  him for the signature and  left. Although, Kissur did take
 him to  one of the  city's most famous  thief's taverns and  he  was welcome
-there  - Bemish learned later that if  he ambled  in this tavern  without  a
-pass, he  wouldn't  have just been killed there - the tavern's guests  would
-have been fed his body in a soup - that was their cute way of getting rid of
+there---Bemish learned later that if  he ambled  in this tavern  without  a
+pass, he  wouldn't  have just been killed there---the tavern's guests  would
+have been fed his body in a soup---that was their cute way of getting rid of
 the corpses.
 
 
@@ -5595,12 +5542,12 @@ suddenly said.
 insurance company  director.  It  was  robbed  yesterday. They  took  twenty
 million dinars in cash."
 
-     Bemish was surprised - newspapers published nothing about the robbery.
+     Bemish was surprised---newspapers published nothing about the robbery.
 
      "Why did they have so much money in cash?" Bemish inquired.
 
      "That's exactly the problem," Shavash sighed. "That's the question, who
-is the company going to pay such a sum of money to - on a holiday evening?"
+is the company going to pay such a sum of money to---on a holiday evening?"
 
      He paused.
 
@@ -5609,7 +5556,7 @@ robbed."
 
      "Will it appear to the police?"
 
-     "Yes,"  Shavash said, "since our police - if asked  - will  not inquire
+     "Yes,"  Shavash said, "since our police---if asked---will  not inquire
 why the company needed this money."
 
      Bemish finished his coffee and asked.
@@ -5624,7 +5571,7 @@ on fire, he will rush inside to get a  child  out  and, if  he  is passing a
 house that's not burning, he will set it aflame."
 
      Bemish  bit his lip.  The official was lying gently and consciously but
-he  was correct on  one point  - Kissur despised bankers  unflappably and he
+he  was correct on  one point---Kissur despised bankers  unflappably and he
 would approve of a bank  robber. The words "order," "debt,"  and "commitment
 to  the  sovereign" were never  far from his lips  but Bemish knew perfectly
 well, that this  adherent of order lived his life in such a way that  he far
@@ -5641,7 +5588,7 @@ throw it in the next canal.
      In the evening, when Bemish dropped by the hotel, yearning for the food
 of  his  childhood  and  hoping to  get  something other  than  a  marinated
 jellyfish or a guinea pig burger, somebody called  him. Bemish turned around
-and  recognized Richard  Giles and  another  Richard - MacFarlein  -  the IC
+and  recognized Richard  Giles and  another  Richard---MacFarlein---the IC
 people.
 
      "Drop it," Giles said.
@@ -5649,7 +5596,7 @@ people.
      "What?"
 
      "Drop  this  project.  You won't  get anything  out  of  it, anyway. Do
-something else - build the business center instead of Kaminsky."
+something else---build the business center instead of Kaminsky."
 
      Bemish felt his face paling with rage. It looked like Giles has already
 picked up the local officials' manners.
@@ -5669,12 +5616,12 @@ expenses?"
 
      "Mr.  Bemish,"  he  said,  "why  do  you  need  this  planet?  Bribers,
 criminals,  heretics,  zealots,  and  now,  terrorists. Have  you heard that
-yesterday an Earthman was shot in Chakhar - he owned  several plants. By the
-way, the Chakhar governor's  son did  the shooting - a Sorbonne graduate, an
+yesterday an Earthman was shot in Chakhar---he owned  several plants. By the
+way, the Chakhar governor's  son did  the shooting---a Sorbonne graduate, an
 anarcho-communist or something like that. Another lad, an Earthman, was with
 him...  "We   will   instigate  a   full-scale  terror  against  the   Earth
 exploitators,  weed  the bribers  out  and build the  Crystal Palace on Weia
-afterwards,  and erect two monuments in front of the palace - for  Karl Marx
+afterwards,  and erect two monuments in front of the palace---for  Karl Marx
 and for the sovereign Irshahchan."
 
      Bemish  stared at him dumbfounded. "Uh-huh," a thought passed his mind,
@@ -5694,10 +5641,10 @@ imported one?"
      "Kissur just casts a spear and the spear runs through a hefty birch all
 the way. And today one guy told me that I should keep away from Kissur since
 he  robbed caravans and another hinted that I  should  keep away from Kissur
-since he robbed banks. And though Kissur doesn't rob  banks - I am sure, you
+since he robbed banks. And though Kissur doesn't rob  banks---I am sure, you
 know, that if I  pass our  conversation to Kissur, and I'll do it, and I  am
-killed  afterwards  - then Kissur  will kill you, Mr.  Giles  and  you,  Mr.
-McFarlein.  And  he will  assuredly kill you -  nobody  has  heard yet about
+killed  afterwards---then Kissur  will kill you, Mr.  Giles  and  you,  Mr.
+McFarlein.  And  he will  assuredly kill you---nobody  has  heard yet about
 Kissur wanting to kill somebody and failing."
 
      Giles stepped  back. Clearly,  he didn't like all that  much  the words
@@ -5711,10 +5658,10 @@ about the spear and the birch.
 
      Richard Giles walked upstairs  to his  room still under the  impression
 from the  conversation in the  hall. Whistling through his teeth,  he dialed
-the  personal Shavash's line number - no secretaries - and, in two  seconds,
+the  personal Shavash's line number---no secretaries---and, in two  seconds,
 he said in the receiver.
 
-     "This son of a bitch, Bemish - are you still going to  admit him to the
+     "This son of a bitch, Bemish---are you still going to  admit him to the
 auction?"
 
      "I  guarantee  you,"  Shavash  replied,  "that  this man  is absolutely
@@ -5757,7 +5704,7 @@ and deflate his ego meanwhile."
 
      "Have you heard, what he said?"
 
-     "I heard it. I said - a totally alternative approach. Who finances this
+     "I heard it. I said---a totally alternative approach. Who finances this
 Bemish guy? Trevis..."
 
      Bemish left  the hotel for the city.  He spent some time in the  temple
@@ -5777,7 +5724,7 @@ respectfully and said.
      "How did you know what price we would agree on?"
 
      Bemish  grinned. He had three checkbooks in his pockets and all of them
-had the  first check filled  out - the other two checks Bemish would feed to
+had the  first check filled  out---the other two checks Bemish would feed to
 the garbage burner in an hour.
 
      Bemish signed the check and gave it to the youth.
@@ -5814,9 +5761,9 @@ the shares to a higher official that would like to acquire them."
 
      "Shavash?"
 
-     "Don't say it out loud. It works this way, Mr. Earthman -  while a word
-is in your mouth -  you are its master,  and when the  word  is out of  your
-mouth - it is your master."
+     "Don't say it out loud. It works this way, Mr. Earthman---while a word
+is in your mouth---you are its master,  and when the  word  is out of  your
+mouth---it is your master."
 
      "Why didn't your uncle give the shares to the official?"
 
@@ -5926,8 +5873,7 @@ it."
 
 
      Bemish turned the light on, put the clothes on and sat at the table. He
-sat there for a while, till he heard the door creaking. Bemish turned around
--  Kissur  and  Khanadar  the  Dried Date walked in. Khanadar  looked  quite
+sat there for a while, till he heard the door creaking. Bemish turned around---Kissur  and  Khanadar  the  Dried Date walked in. Khanadar  looked  quite
 dashing in  black  laced pants and  a brocade barbarian jacket. Kissur had a
 grey suit and a tie on.
 
@@ -5964,7 +5910,7 @@ trouble..."
 
      "Shavash was right, then," Kissur said.
 
-     "How  dare  you!"  Bemish shouted,  leaping up -  and  he  saw Kissur's
+     "How  dare  you!"  Bemish shouted,  leaping up---and  he  saw Kissur's
 contorted face in front of  him and  the white  knuckles on his fist. Bemish
 managed to duck the first punch. The second one threw him  off the chair and
 to the floor. Bemish somersaulted and bounced back on his feet, the Kissur's
@@ -6020,7 +5966,7 @@ small to push Trevis around. They should buy a new fax machine first."
      "Why is Shavash afraid of you?"
 
      "Shavash wants  a  buyer who will blink at all his frauds. It was not a
-company - they were just pumping the budget money into private pockets! Last
+company---they were just pumping the budget money into private pockets! Last
 year Shavash secretly issued more bonds! I think that this goes against even
 the bizarre local securities regulations."
 
@@ -6028,7 +5974,7 @@ the bizarre local securities regulations."
 
      "I don't know. I have never stumbled upon such a financial product as a
 secretly issued bond in  all my life. But, basically, it  means that Shavash
-re-divided the company accordingly  to his wishes - he gave his friends more
+re-divided the company accordingly  to his wishes---he gave his friends more
 and he devalued the stocks belonging to his enemies or bystanders."
 
      "What about the state's share?"
@@ -6056,14 +6002,14 @@ throat.
      Bemish licked his  lips. He didn't  doubt that Kissur would  kill  him.
 It's stupid. Terence Bemish, a successful financier, half-crook half-genius,
 had  never  considered ending his life  in a huge city  manor  of  an Empire
-ex-minister -  in the manor, where not a single servant would ever blurt out
+ex-minister---in the manor, where not a single servant would ever blurt out
 anything about  his fate or, to the  opposite,  all the servants would swear
 that Bemish left the manor gate whole and unhurt... Nobody would ever  prove
 anything. Even Shavash  would not kill him. Not because he  minded  killing,
 but because he was a rational man and he  clearly  would not want Weia to be
 declared  a  place  where  foreign investors were  found with their  throats
 cut...  Nothing is  cheaper than  hiring  a killer.  But Shavash didn't kill
-Bemish, he  went  for  Trevis  instead - it was an  order of  magnitude more
+Bemish, he  went  for  Trevis  instead---it was an  order of  magnitude more
 difficult and expensive...
 
      "If I don't sell the shares  with a rake-off,"  Bemish  said, "I'll  go
@@ -6086,7 +6032,7 @@ sheath and he left.
 
 
 #chapter("The Sixth Chapter,")[where  company AC  declares its real  name  while Mr. Shavash  mentions
-several unexpected thoughts about democracy's drawbacks.]
+several unexpected thoughts about democracy's drawbacks]
 
      The announcement of  the investment auction for the acquisition of  the
 state-owned block of shares was published in the government's White Herald a
@@ -6095,7 +6041,7 @@ auction participants should turn in a  deposit of 6% of projected investment
 and should demonstrate  reliable  proof of being able to fulfill the assumed
 financial obligations.
 
-     Trevis  hadn't called  Bemish since - it was below his  dignity. On the
+     Trevis  hadn't called  Bemish since---it was below his  dignity. On the
 other hand, the  corporate  financing department head called and told Bemish
 that he didn't need to hurry back to Trevis' headquarters since  he wouldn't
 be received anyway.
@@ -6108,7 +6054,7 @@ appeared in the registration hall at almost the same time as Bemish.
 
      Shavash, the director of the company offered for tender, ignored Bemish
 utterly. He was talking to an Earth journalist. The subject of the  talk was
-the importance of  foreign investors - only  they  were  able to force Weian
+the importance of  foreign investors---only  they  were  able to force Weian
 companies to correspond to  international audit standards and  raise  Empire
 finances to a new level.
 
@@ -6160,13 +6106,13 @@ Weian economics.
 
      By the evening, the  bored journalists, hanging out  at the cafe, could
 record in their  notebooks that  three  companies  were  interested  in  the
-state's  offer  -  Bemish's ADO,  IC  Corporation,  and Rusby  and C  - were
+state's  offer---Bemish's ADO,  IC  Corporation,  and Rusby  and C---were
 offering to buy the shares out first and to finance the  construction out of
 the galactic  company resources  afterwards.  Five or  six large  investment
 banks  were  also  interested. They were not going  to  buy  Assalah  shares
 themselves.  They mostly  offered to  the government various alternatives of
 convertible  bonds  that  these  banks  would  distribute  to  the  Galactic
-investors - the bonds would be converted, at  some date,  to Assalah  shares
+investors---the bonds would be converted, at  some date,  to Assalah  shares
 now belonging to the state. Such a large number of investment bank aspirants
 had surprised Bemish at first but he was told later that actually his modest
 person was the  source. The  players on the  fund  market  ferreted out that
@@ -6215,7 +6161,7 @@ requesting to arrest me for bribery."
      "Have you lost your mind? I've never written this crap!"
 
      "Terence, if you go to the sovereign you will be squashed flat. You can
-forget about working  in a bank -  they  won't hire you as  a cashier  in  a
+forget about working  in a bank---they  won't hire you as  a cashier  in  a
 supermarket. Got it?"
 
      "I haven't..."
@@ -6234,7 +6180,7 @@ mercy for your own country!"
 IC is  yourself.  They will just rob us and that's it. Or, were you  bulling
 me?"
 
-     "I didn't bull you, Kissur. Just get it - the contract has been signed.
+     "I didn't bull you, Kissur. Just get it---the contract has been signed.
 That's it. Finita la comedia.  These stocks  are IC's property. If they find
 out  that an international company can have its  property taken away from it
 on  your planet just  because some authorities think that  some bribes  were
@@ -6275,13 +6221,13 @@ window. He wore a long white dress, with wide sleeves fastened at the wrists
 by pearl clasps and, uncovered, his face, thin as onion  undergarment peels,
 looked somewhat lost and nave.  Shavash followed Bemish into  the  hall and
 first minister Yanik  also came in.  Shavash and Yanik  were  draped in  the
-ceremonial kaftans with  all their rank insignias  -  Bemish had  never seen
+ceremonial kaftans with  all their rank insignias---Bemish had  never seen
 them before. A red fiery dragon, with rubies sewn in his claws, on the first
 minister's dress dazed him unexpectedly  and Bemish suddenly felt  something
-he had never suspected before - a certain meagerness of  his impeccably made
+he had never suspected before---a certain meagerness of  his impeccably made
 cashmere  wool suite compared  to the  red  dragon  with  the ruby decorated
 claws. As for  Kissur, he was dressed  the same way as he had been  earlier,
-visiting Bemish, - in ragged leather pants.
+visiting Bemish,---in ragged leather pants.
 
      "You filed  a complaint, Mr.  Bemish," the sovereign said,  "could  you
 describe how you were mistreated."
@@ -6289,7 +6235,7 @@ describe how you were mistreated."
      "I  didn't  file  this  complaint," Bemish  said.  "And, having certain
 business   ethics  views,   I   consider   it   impossible   to  request   a
 re-consideration of a completed contract.  However, I have a question to Mr.
-Shavash - what  was your decision to  cancel the investment auction based on
+Shavash---what  was your decision to  cancel the investment auction based on
 and what was your decision to sell the company for a three times less money,
 than I offered, based on?"
 
@@ -6323,7 +6269,7 @@ The only  goal of his actions  was  to  put  pressure  at the future company
 management so that  they would  acquire the  stocks at  a  higher price.  To
 achieve this purpose Terence Bemish didn't shrink from anything. A foreigner
 ignoring  the ways  and customs  of  our country,  thinking only  about  his
-rake-off,  - he  abused his  position as a  manor owner forcing the peasants
+rake-off,---he  abused his  position as a  manor owner forcing the peasants
 present  him with their  shares.  Using his  highly placed  connections,  he
 browbeat a local official into giving him the Assalah shares that the latter
 acquired when their price was forty ishevik a share;  afterwards, he had the
@@ -6340,8 +6286,7 @@ compensation. "
 that the  peasants  had  received  free of charge as  compensation  for  the
 spaceport construction taking place on their land. Would you really  believe
 that  Shavash  waited for  me to seize the stocks from  the peasants? Yes! I
-confiscated  the stocks  from the official  and I  didn't pay him anything -
-because I was  going to return these stocks to the peasants. Shavash accuses
+confiscated  the stocks  from the official  and I  didn't pay him anything---because I was  going to return these stocks to the peasants. Shavash accuses
 me of violating the local  securities regulations. It would have taken place
 if  Raniko  had owned  more than  5% of  shares  and  hadn't  registered it.
 Otherwise, there  are no  violations  involved.  Unlike  me,  Shavash can be
@@ -6363,7 +6308,7 @@ delivered to the room. Shavash fished a disk out of his pocket,  inserted it
 in a slit and pressed a button.
 
      An open tavern veranda appeared  on  the  screen, together with a table
-and  a window.  Bemish sat at  the  table  with  a  small man - tensing,  he
+and  a window.  Bemish sat at  the  table  with  a  small man---tensing,  he
 recognized the  palace  official offering him the  paintings from the Empire
 treasury on sale.
 
@@ -6376,12 +6321,12 @@ his finger and he chose several more photographs. The official nodded.
 boxes to Bemish's villa and zoomed in on a girl and a dragon in his office.
 
      "This man talks about ethics," Shavash said, "buying, meanwhile,  for a
-thousand  dinars the  paintings  that cost millions - the paintings from the
+thousand  dinars the  paintings  that cost millions---the paintings from the
 forbidden  chambers that  a  mere  mortal  could  not put his eyes  on!  The
 Koinna's  painting is  a national treasure, this painting  numbers among the
 palace's  first  hundred  sacred  objects,  the  Emperor's ancestors brought
 bloodless sacrifices and prayed for  the dynasty  fortune  in  front of this
-painting  -  in his gall,  this man hung this painting above his table -  so
+painting---in his gall,  this man hung this painting above his table---so
 that  the two founders of the Alom dynasty could look at the  doughnuts that
 the Earthman eats at his table assessing the Empire value at his computer! I
 don't know,  what punishments fit the  exchange brokers,  but nobody has yet
@@ -6427,14 +6372,14 @@ catching its tail, off  his  neck, pressed the seal to  a pad saturated with
 incensed phoenix's  blood  ink  and  stamped it  on the paper. He handed the
 sheet over to Bemish and said.
 
-     "Accept  my  congratulations, Mr.  Bemish - I relieved Mr. Shavash from
+     "Accept  my  congratulations, Mr.  Bemish---I relieved Mr. Shavash from
 the company director position and appointed you at this post."
 
      "But sovereign," Shavash exclaimed with indignation. The sovereign spun
 and his embroidered sleeves cuffed Bemish in the face.
 
      "Be silent, vice-minister. I do not need foreign experts to tell me who
-is the scoundrel - you or the Earthman! And  if you dare show your tape even
+is the scoundrel---you or the Earthman! And  if you dare show your tape even
 to a frog in a road ditch, you will lose more than Assalah!"
 
      Bemish picked the paper sheet with a lifeless hand, glanced  at  it and
@@ -6456,7 +6401,7 @@ sadly. "You tired me out. Kissur, visit me tomorrow morning."
      Bemish  was  too shocked  to  think  coherently.  Having  departed  the
 pavilion, he  dragged  himself  to a rocky pond, where  white-bellied  seals
 splashed, and slumped on a flower hill, probably breaking all  the etiquette
-rules. The question was - what should he do next?  Next, Terence Bemish, the
+rules. The question was---what should he do next?  Next, Terence Bemish, the
 Assalah state company director, will sell this  company to  Terence  Bemish,
 the  ADO  director.  Dammit,  Assalah  has  to   be  sold  to  ADO  so  that
 intergalactic, instead of Weian,  securities land on the market... What will
@@ -6465,7 +6410,7 @@ stood above his shoulder and Kissur slumped on the grass nearby.
 
      "It's very clear,"  Kissur said, "that  you  haven't smelled shit. They
 used to say that  I had fish scales on my sides and my ears grew together at
-the back of my head - big deal, a spliced tape."
+the back of my head---big deal, a spliced tape."
 
      "He was ready to submit the tape to any examination,"  Bemish said. "He
 was not  bluffing. Do you  understand what  it  means? Where did he get  the
@@ -6533,7 +6478,7 @@ turned into a slave who rubs his owner's back?"
 my owner's back, I would be a  headman  there in  two years and  I  would be
 manumitted and appointed  to a minister position in two more  years. But you
 left  us  free and I  can become  the first minister on Weia with no problem
-but, you have  to agree,  that even if I emigrate - what is the chance of me
+but, you have  to agree,  that even if I emigrate---what is the chance of me
 becoming a Federation Assembly member?"
 
      Bemish  gaped.  He had  not  met  yet  such  an interpretation  of  the
@@ -6544,8 +6489,8 @@ fatherland independence concept. They drove in silence.
      "You have a guest, don't you? I will not hinder your meeting."
 
      Indeed, a white like goose down Volvo  dallied  next  to trimmed bushes
-and a  man with a colorless face  dressed in a cream colored  suit - Richard
-Giles - walked back and forth the terrace. Bemish drew himself together.
+and a  man with a colorless face  dressed in a cream colored  suit---Richard
+Giles---walked back and forth the terrace. Bemish drew himself together.
 
      "Good  day," Giles  rendered,  "I have been  waiting  for you for three
 hours."
@@ -6598,8 +6543,8 @@ that makes us nervous."
      "Gera?"
 
      "Yeah. Weia is located halfway between Gera and the Federation planets.
-It is  a  strategically important Galaxy location - an ideal  base  for  the
-defense forces - and if it gets to a war between Gera and the Federation, it
+It is  a  strategically important Galaxy location---an ideal  base  for  the
+defense forces---and if it gets to a war between Gera and the Federation, it
 would be better if..."
 
      "If  the  war  happened  around  a  corrupted planet  in  the  Galaxy's
@@ -6622,7 +6567,7 @@ for a scrap of the price. "
      "Come on!  You can build a business center on this planet  calling it a
 garbage  processing  facility. You  can  make  narcotics  using  tax  breaks
 reserved for the production of medical  drugs! A  military spaceport instead
-of a civil one - is nothing by local standards!"
+of a civil one---is nothing by local standards!"
 
      "Why are you telling me this?"
 
@@ -6635,8 +6580,8 @@ over the rails?"
      "Don't you want to help your own country?"
 
      "You are  out of your  mind," Bemish  said. "You wanted to drown  me in
-shit! You made this mucky  tape - now I understand why Shavash assured us it
-would withstand any examination - and when they sent you to hell, you have a
+shit! You made this mucky  tape---now I understand why Shavash assured us it
+would withstand any examination---and when they sent you to hell, you have a
 gall to come to me with this talk."
 
      "That's your personal aggravation. What about the good of the country?"
@@ -6688,7 +6633,7 @@ could  also  pay seven  million not  to the state but rather to Shavash, and
 then the  state will take care of the above mentioned construction. A  dummy
 front company would get the spaceport,  both  sides would share the expenses
 and,  if the reporters  on Gera  or Earth  ferreted out  anything  about the
-construction,  Earth would  have  nothing to  do with it  -  see, the  Weian
+construction,  Earth would  have  nothing to  do with it---see, the  Weian
 officials, known for their  ingrained tendency  to cheat their  own  people,
 started quietly to make a military base out of a civil spaceport."
 
@@ -6698,7 +6643,7 @@ muttered.
      "It's even cheaper than you think. Since we found out that if we openly
 start building the  military base, the Weian people  and the  sovereign  may
 have issues with it.  They  may say for  instance that  we are clandestinely
-occupying the country. Or that we are making  Weia a pawn in a big game - if
+occupying the country. Or that we are making  Weia a pawn in a big game---if
 the war with Gera starts, Weia will be attacked first as the closest to Gera
 Federation  military base. If however Weia was  in  charge of the  spaceport
 construction, all these issues would not arise."
@@ -6709,11 +6654,11 @@ money?"
      "It's not  the  question of saving money. As you acutely remarked,  the
 state unlike private  companies doesn't really care  about savings.  But you
 know perfectly well that while the President has minority in  the  Assembly,
-we  will  never  obtain funding  for  one  more military  base  - that's one
+we  will  never  obtain funding  for  one  more military  base---that's one
 problem. All the peace lovers, free ones and the ones  on Gera payroll, will
 raise their hands with banners to the sky and take it  to the streets to get
-on  the evening news - that's the  second  problem. The base  is  twice more
-important if it's kept under wraps - that's the third problem."
+on  the evening news---that's the  second  problem. The base  is  twice more
+important if it's kept under wraps---that's the third problem."
 
      Bemish   was  silent.  Somehow  the  whole   thing  seemed   especially
 disgusting.  Yes,  everybody  around traded in the sovereign's name, but, in
@@ -6725,8 +6670,8 @@ project?
      "Out  of this money,"  Giles said, "one half has already been  paid and
 quite a number of  classified  documents are in Shavash's hands. If  Shavash
 doesn't get  the second half, to squeeze  some profit he will find  a way to
-sell the papers to  Gera. It won't hurt Shavash - such deeds are  considered
-to be valiant on Weia - but what a scandal will burst in the Federation."
+sell the papers to  Gera. It won't hurt Shavash---such deeds are  considered
+to be valiant on Weia---but what a scandal will burst in the Federation."
 
      Bemish could easily imagine this, jumbo titles everywhere.
 
@@ -6766,7 +6711,7 @@ hissed.
      Thence Giles attempted to land  a right hand punch  on Bemish's temple.
 He shouldn't have done it. The bungling  spy's hand was blocked  and twisted
 and  Giles squeaked  piteously  and dropped on his knees  facing  away  from
-Bemish. He couldn't move - his hand would break.
+Bemish. He couldn't move---his hand would break.
 
      "Your training isn't any good,"  Bemish commented, "if a financier  can
 wipe your mug!"
@@ -6774,7 +6719,7 @@ wipe your mug!"
      "I will  wipe your  mug;  I will jail  you for illegal parking for five
 years... Ouch..."
 
-     At this moment, Kissur showed  up on the terrace - behind  their yells,
+     At this moment, Kissur showed  up on the terrace---behind  their yells,
 Bemish and Giles didn't even hear the rustle that the car  made entering the
 gate. Bemish freed the  spy's  wrist.  Giles hissed  something  through  his
 teeth,  picked  the folder off the  table, locked it in his black  case  and
@@ -6856,14 +6801,14 @@ has it  that the rich, but lacking in spirit, countries get conquered by the
 poor  and warlike  countries.  See, wealth  makes a country stuffed and lazy
 like a fat ram while poverty makes it sinewy and greedy like a wolf."
 
-     "In this case, Gera will conquer you first - you are weaker."
+     "In this case, Gera will conquer you first---you are weaker."
 
      "Why would they conquer us? Nobody needs us even free of charge. Wolves
 feed on sheep, not on northern moss."
 
      Bemish puffed up  and  kept silence.  It was nonsense.  Barbarians have
 indeed  gobbled empires  up because  their  citizens were  lazier  than  the
-barbarians while barbarian weapons were not any worse. While Gera - damn it,
+barbarians while barbarian weapons were not any worse. While Gera---damn it,
 Gera's  weapons  may be  the  same... Still, the analogy  is stupid. History
 doesn't  gallop  in  a  circle  anymore.  It's  funny  that  the  Federation
 Intelligence thinks along the same lines as an educated barbarian...
@@ -6894,7 +6839,7 @@ and somebody's shadow stretched at the doorstep
      "Great Wei!" Kissur cried out jumping on his feet  and  turning around.
 "Oh, it's you."
 
-     The Earthman stood in the door frame - Terence Bemish.
+     The Earthman stood in the door frame---Terence Bemish.
 
      "Have you  been  waiting  for somebody?" Bemish  was  concerned. Kissur
 looked at the altar with his head bowed.
@@ -6919,17 +6864,17 @@ Federation, the first point to attack in the case of war!"
 to the altar.
 
      "Don't sprout crap!" Bemish cried out. "If Gera  is not going to fight,
-why  would the Federation need military allies? And if it is - imagine  what
+why  would the Federation need military allies? And if it is---imagine  what
 your planet  will be  turned  into.  You will  be the  grass that  elephants
 trample as they fight! Your planet's destruction will be, of course, a great
-rallying cry for the Earth's people indignation - Earth will wake up at your
+rallying cry for the Earth's people indignation---Earth will wake up at your
 expense."
 
      "Military  ally,"  Kissur repeated for the third time. And  he laughed.
 "And did Shavash charge your government six million for such a gift?"
 
-     "And so they wanted to cover me in mud with this tape - you understand,
-Kissur, it  was our Intelligence that made the  tape for Shavash - and after
+     "And so they wanted to cover me in mud with this tape---you understand,
+Kissur, it  was our Intelligence that made the  tape for Shavash---and after
 that they have the gall to come to me and offer me a dance at their tune!"
 
      "I hope you said, yes."
@@ -6990,7 +6935,7 @@ dialed a number.
      "Is  it  Ravadan?  When  is the next Earth passenger  flight? Is  it in
 twenty  hours? No  I don't  want a stopover.  Yes, I would like  to buy  two
 tickets,  please.  Terence Bemish... hmm... Inis  Bemish. Yes, damn it, your
-Weian name - Inis. No, just one way, I don't need round trip tickets.
+Weian name---Inis. No, just one way, I don't need round trip tickets.
 
      During  the conversation, Shavash was  whispering something at Kissur's
 ear. Bemish finished the phone call,  pulled a table drawer out and took out
@@ -6999,7 +6944,7 @@ gun under his belt and left.
 
      Kissur rose to follow him but Shavash grabbed him by his hand.
 
-     "Don't do  it -  let everybody see that  he left  this  house alive and
+     "Don't do  it---let everybody see that  he left  this  house alive and
 unhurt."
 
 
@@ -7022,8 +6967,7 @@ numbers.
 
      The official raised his eyebrows.
 
-     Bemish  silently handed him a paper sheet. Shavash looked the text over
-- it was an act abolishing ishevik bills of credit."
+     Bemish  silently handed him a paper sheet. Shavash looked the text over---it was an act abolishing ishevik bills of credit."
 
      "Do you understand," Shavash said, "that without ishevik bills we would
 spend three times more in subsidies?"
@@ -7054,9 +6998,9 @@ sovereign would  turn his ear towards their reports and  they started to cut
 the other people's heads off."
 
 
-#chapter("The Seventh Chapter,")[where all investors' difficulties are solved in the best way.]
+#chapter("The Seventh Chapter,")[where all investors' difficulties are solved in the best way]
 
-     The  full  transfer  didn't  take  much  time  -  less than  five days.
+     The  full  transfer  didn't  take  much  time---less than  five days.
 Everything worked out in  the end.  Bemish became the Assalah  president and
 CEO. Richard Giles,  who believe it or  not had resigned from IC, became the
 first  vice-president.  Shavash  kept  his  appointment  at   the  Board  of
@@ -7067,7 +7011,7 @@ financing layout  developed  by  Bemish was not changed. 51% of the company,
 meaning the  whole  state stock  block,  was  sold by  the  Assalah  company
 director Terence Bemish to the ADO director Terence Bemish and the observers
 commented  acidly that the  shares were sold at not  such a high  price. The
-same day, Ronald  Trevis sent out a note that his bank assured - it would be
+same day, Ronald  Trevis sent out a note that his bank assured---it would be
 possible  to raise the money necessary for the investment through ADO bonds.
 In  a  month, ADO  issued junk bonds for two million dinars that made up the
 first-round  financing and big-league investors  fought  for the  bonds like
@@ -7076,15 +7020,15 @@ starving hyenas.
      The second-round financing was made of  convertible  bonds. These bonds
 had  8% coupons and could  be converted in  stocks  within one  year at  the
 present  stock  face   value.  This  operation  promised  to  be  incredibly
-profitable -  if  everything  worked  out,  the Assalah  stock  price  could
+profitable---if  everything  worked  out,  the Assalah  stock  price  could
 increase hundred fold. Even technically, the stocks were available only to a
-very small investors' circle - to those who were  allowed to invest money in
+very small investors' circle---to those who were  allowed to invest money in
 the derivatives of, accordingly to the Galaxy business world virtuous choice
 of  words,  "the  third reliability  category  markets." Bemish,  Trevis and
 Shavash narrowed this circle down even more, having sold the bonds mostly to
 the people they needed.
 
-     Additionally,  there were  warrants  - the  stock warrants acquired  at
+     Additionally,  there were  warrants---the  stock warrants acquired  at
 three  dinars per  warrant. In two  years, they enabled the buyer to acquire
 Assalah stocks  at their  present cost. In the worst case, the  buyer  would
 lose three dinars,  in the best he would acquire a share at a price hundreds
@@ -7102,8 +7046,8 @@ Assalah  to the capital was  built in sovereign Irshahchan times, and though
 in  sovereign  Irshahchan  times   it  was  a  miraculous  highway  enabling
 government informers to reach  Assalah in two  days and the troops,  sent to
 pacify  the rebels,  in four  days,  it didn't  really  satisfy contemporary
-requirements. From the north - from Liss, the region promising to become one
-of the Galaxy's  largest  mining areas - a modern highway stretched.  But it
+requirements. From the north---from Liss, the region promising to become one
+of the Galaxy's  largest  mining areas---a modern highway stretched.  But it
 was cut off forty kilometers  away from the  spaceport by Orkh River, one of
 the largest rivers in the  Empire. These forty kilometers also needed  to be
 connected somehow.
@@ -7114,12 +7058,12 @@ a week were normal for the new director and his team. The success thundered.
 Really,  junk bonds  and  developing  markets seemed to be  created for each
 other.  A fringe market company  acquired by a small Federation company that
 had passed Galaxy  exchange listing;  and this company  later  financed  the
-production issuing junk bonds - it was beautiful. It was bold.
+production issuing junk bonds---it was beautiful. It was bold.
 
      Neither  Kissur  nor  Shavash attended  the presentations. Kissur could
 frighten  a Swiss  mutual fond representative  or  a London insurer to death
-with his  escapades.  Shavash's position  - a finance  vice-minister of some
-dinky empire, or  even the first vice-minister - wouldn't mean  much for  an
+with his  escapades.  Shavash's position---a finance  vice-minister of some
+dinky empire, or  even the first vice-minister---wouldn't mean  much for  an
 uninformed man.
 
      Shavash asked the Empire first minister, Yanik, however, to attend  and
@@ -7127,8 +7071,8 @@ the investors rightfully concluded that  Bemish had  good relations with the
 Empire authorities. Shavash also asked an Empire ex-first minister, Nan,  or
 more precisely, David N. Streighton, to attend.
 
-     Having resigned after his adversaries ran a smear campaign - that a man
-from the  stars shouldn't be  in charge of the Empire - Nan resided on Earth
+     Having resigned after his adversaries ran a smear campaign---that a man
+from the  stars shouldn't be  in charge of the Empire---Nan resided on Earth
 and he didn't  try  to hide that his Weian  appointment made him  not just a
 millionaire, but a billionaire.  His  knowledge  of Weian current events was
 unsurpassed  and  his  active  buying  of Assalah  securities  boosted their
@@ -7156,7 +7100,7 @@ Giles should have hung on the same log with him.
      Having gotten attached  to the young headman, Bemish started to ask him
 how  he, Bemish,  had maltreated him and Adini covered with blood, sweat and
 tears confessed  that,  having been young  and silly,  he had taken part  in
-palace pilfering a year  ago -  just  a little  bit,  two  Iniss  rugs,  not
+palace pilfering a year  ago---just  a little  bit,  two  Iniss  rugs,  not
 particularly old, were the only things that he had peddled. A powerful gang,
 probably connected  to Shavash, ratted on the competitor or they  decided to
 write the stolen stuff off using  Adini. Thus, he found himself in Shavash's
@@ -7169,14 +7113,14 @@ face. Bemish said that  hanging Adini would be like an  official, castigated
 by his superior, venting his anger at his wife.
 
      Kissur agreed  with this argument but  he  claimed  that he would  keep
-Adini  and  have  some words with  him  about his pilfering  -  it's kind of
+Adini  and  have  some words with  him  about his pilfering---it's kind of
 doubtful that Adini had stolen only two rugs. Bemish agreed and he shouldn't
-have  -  the next morning  they found  Adini hung  on the gate of  Shavash's
+have---the next morning  they found  Adini hung  on the gate of  Shavash's
 luxurious mansion.
 
      Everybody  thought that  the Assalah company director himself  had gave
 this order and they respected Bemish mightily for adhering to local customs;
-Kissur proved to Bemish that it was crystal clear -  the guy was  rotten all
+Kissur proved to Bemish that it was crystal clear---the guy was  rotten all
 the way through,  complete  as  a water putrefied nut.  Hanged Adini visited
 Bemish's dreams for  a week  or two and then stopped. The  painting with the
 dragon and the princess Terence, of course,  returned to the palace the same
@@ -7193,13 +7137,13 @@ painting.
 
      In a month, Bemish arrived at Assalah accompanied by a large retinue of
 investors.  Shavash organized a  brilliant reception for them  in  a  temple
-complex located about twenty  kilometers away from the spaceport - the Black
+complex located about twenty  kilometers away from the spaceport---the Black
 Valley.
 
      About two  and  half thousand years ago, one  would have found there  a
 wonderful Temple of Isii-ratouph,  who  was depicted  then not as a squirrel
 but rather as a webbed snake and was considered to be not a woman but a man.
-Nothing was left from  the old temple besides the  huge columns - and  right
+Nothing was left from  the old temple besides the  huge columns---and  right
 around here, about a kilometer away, the  sacred gardens began  with chapels
 strewn here and there.
 
@@ -7215,7 +7159,7 @@ appointment celebration.
 for  a god (the gods were fed  smells and  the guests would be fed meat) and
 Shavash  stood  and made a  short speech. Shavash said  that he was happy to
 inform  the guests that the territory belonging to the  company had obtained
-immunity by a sovereign's bill - it was now exempt from the local officials'
+immunity by a sovereign's bill---it was now exempt from the local officials'
 jurisdiction and  the company had  revenue  and judicial rights  within  its
 territory.
 
@@ -7226,7 +7170,7 @@ for the next two years.
      Once  the  dumbfounded guests  had  digested  the  pleasant news,  that
 somewhat  compromised the  state sovereignty in the company's favor, Shavash
 continued that poor communications  was one  of  the main Assalah drawbacks,
-considered  at the examination of  the project  - the  direct highway to the
+considered  at the examination of  the project---the  direct highway to the
 capital had been  built in sovereign Irshahchan  times  and the road to  the
 rich  Liss  region  was  cut off forty kilometers away  from  Assalah by the
 second largest Empire river. Shavash was happy to inform the guests that the
@@ -7287,7 +7231,7 @@ like Shavash. Do you have slaves, Bemish?"
 
      Bemish frowned slightly. Adini was his first slave.
 
-     "Yes. These three, cleaning up the tables - but I haven't  bought them,
+     "Yes. These three, cleaning up the tables---but I haven't  bought them,
 I have obtained them as gifts from different people."
 
      "We are investing money in a funky business," Ronald Trevis muttered.
@@ -7311,8 +7255,8 @@ protecting these sheep from some lice."
 
      Bemish turned around. Kissur stood in front of him, dressed in Earthern
 clothing and not  even a bit drunk. During the whole  evening, Kissur hadn't
-caused any disturbance yet  - he hadn't broken  a single investor's jaw  and
-hadn't washed anybody in  a  pool. The reason was very  simple  - Kissur was
+caused any disturbance yet---he hadn't broken  a single investor's jaw  and
+hadn't washed anybody in  a  pool. The reason was very  simple---Kissur was
 with his wife, Idari.
 
      "Let me  introduce you," Bemish said, "Ronald  Trevis,  the head of LSV
@@ -7336,7 +7280,7 @@ Bemish, standing on a lawn and encircled by the guests, and whispered in his
 ear  that  Shavash wanted to  talk  to him in private.  Bemish  finished the
 cocktail and left the guests unnoticed.
 
-     He found Shavash on the temple tower second  floor - the small official
+     He found Shavash on the temple tower second  floor---the small official
 stood with a wine glass in his hand and he seemed to clink  the glass with a
 goddess  dancing in the alcove.  Having heard  the Bemish's steps, he turned
 around.  Bemish  brandished  his  hand welcomingly and sat in an  oak-backed
@@ -7351,8 +7295,7 @@ finances. What are you going to do with the extra money?"
      Shavash, half turned to the window, gestured with the glass. Outside of
 the window in  the sunset  light, the dense gardens' greenery and  the  even
 squares  of  rice patties  gleaned.  Ivory imps danced above  the window and
-smiled  mockingly at the official. Bemish noticed that Shavash  was drunk  -
-not as much as he  was at Weian feasts when everybody walked on their  hands
+smiled  mockingly at the official. Bemish noticed that Shavash  was drunk---not as much as he  was at Weian feasts when everybody walked on their  hands
 and  knees  by  a  night's  end,  but  much  more  that  it was customary on
 Earthmen's business meetings.
 
@@ -7389,7 +7332,7 @@ Earthman.
 
      "You understand nothing here,  Terence. I  don't need  money. I need to
 turn this country in  something  decent. It is possible only if I become the
-richest official  in  this  country.  For that -  I need money. I  need huge
+richest official  in  this  country.  For that---I need money. I  need huge
 money, money that this country doesn't have. But, the Galaxy has  this money
 and you, Terence, will deliver this money from the Galaxy to here."
 
@@ -7430,8 +7373,8 @@ pulled the official to  the side. A fish scale  flash of the dagger tore air
 right where Shavash had just sat.  Idari leaped to her feet, lithe and agile
 like a sand lizard.
 
-     Shavash stank with cognac and palm tree wine - a killer combination. He
-was boozed up to the hilt - much more than he  had been an hour  ago in  the
+     Shavash stank with cognac and palm tree wine---a killer combination. He
+was boozed up to the hilt---much more than he  had been an hour  ago in  the
 tower.
 
      "What are you doing?" the official rasped.
@@ -7473,8 +7416,7 @@ start on this woman's account."
 
 
 
-     The morning after the  reception, some guests signed a treaty of intent
-- about creating together with  Shavash and Bemish  several  joint companies
+     The morning after the  reception, some guests signed a treaty of intent---about creating together with  Shavash and Bemish  several  joint companies
 specializing mostly in  export-import operations. Weian  tariffs  were quite
 high,  but Shavash hinted to the people present that they probably  wouldn't
 have to pay them.
@@ -7539,7 +7481,7 @@ headman shut up, offended.
 
 
      Bemish had  to see Idari quite  often. A great  number of the company's
-contracts - lumber,  concrete,  tungsten glass  - in  a nutshell, everything
+contracts---lumber,  concrete,  tungsten glass---in  a nutshell, everything
 that  was cheaper and more  profitable to buy in the Empire,  passed through
 Kissur's estate and his wife was in charge of it.
 
@@ -7547,10 +7489,10 @@ Kissur's estate and his wife was in charge of it.
 fragile woman plays not only in the economics of Kissur's  estate but in the
 economics of the Empire. Thanks  to  her and only to her, not  a single  oil
 well that the  sovereign had bestowed on  Kissur passed away  or was sold to
-cover debts - to the opposite, every gift was preserved, multiplied and grew
+cover debts---to the opposite, every gift was preserved, multiplied and grew
 and this fragile woman controlled with an iron fist at least three banks and
 the  second biggest Weian aluminum plant. They said that the applicants  for
-the  bank positions  had  interviews in  front  of a curtain -  Idari didn't
+the  bank positions  had  interviews in  front  of a curtain---Idari didn't
 consider it possible to talk in private with a male stranger and Bemish  had
 never seen her in anything other than Weian dress.
 
@@ -7568,7 +7510,7 @@ Kissur ignored these words.
 
 
 #chapter("The Eighth Chapter,")[where Terence Bemish pays taxes with  fallen leaves while the rock with
-an ancient foretelling is dug out at the construction.]
+an ancient foretelling is dug out at the construction]
 
      Ashinik was born into a peasant family that was ruined during the civil
 war. His father was recruited into the local prince's army  and killed there
@@ -7577,7 +7519,7 @@ recruited,  but  by  this  time the prince's army had  dwindled down to five
 hundred  people and the prince was called  a  prince no longer  but  he  was
 rather called  a  bandit. When  the  prince heard  that  nothing was left of
 Khanalai's army, conducting  a siege on the capital, but  two barns of ashes
-and that the new masters - the people from the skies - were giving orders in
+and that the new masters---the people from the skies---were giving orders in
 the  capital, he was scared  and rushed in to beg for  peace.  The sovereign
 forgave  him and the people from the stars gave everybody a fancy can with a
 picture of meat in sauce drawn on it. Ashinik hid the can under his head and
@@ -7604,11 +7546,11 @@ already been sold to it, even  if  the people that sold the  land didn't own
 it. The Earthman had seen that he was being hoodwinked and now he kicked out
 everybody who came with a complaint about the land as cheaters.
 
-     "I didn't get much  from the Earthmen for my field - an empty can and a
+     "I didn't get much  from the Earthmen for my field---an empty can and a
 kick  in the butt," Ashinik  thought. Ashinik  left for his relatives in the
 neighboring province, but he got sick on  the way. An old  couple picked him
 up and ministered to him. Having learned that the total strangers washed him
-and  spoon fed him, the youth burst into  tears - it was the fourth  year he
+and  spoon fed him, the youth burst into  tears---it was the fourth  year he
 lived as a snail without a shell, only a lazy man wouldn't step on him.
 
      The  people, who  nursed Ashinik back to health,  were tanners. Ashinik
@@ -7622,11 +7564,11 @@ barbarians and rebels for iron men but then a  rebel would become an Emperor
 and  it would become clear that the prophecy  was not about him. The masters
 hinted to  Ashinik a number of times that Earthmen  were these  iron demons,
 and that they wanted to destroy the Empire and that the mine, he was invited
-to work on, was  nothing else but a hole to hell - the demons would drag him
+to work on, was  nothing else but a hole to hell---the demons would drag him
 down there and eat him.
 
      At  first, Ashinik  didn't  really believe it. He had  also heard  some
-really dirty gossip  about zealots - they were rumored to entice people with
+really dirty gossip  about zealots---they were rumored to entice people with
 their lies,  nurse the infirm, pick up orphans, and then preach stupid stuff
 and  engage  them in orgies and even worse  on  their meetings. But  he felt
 uncomfortable arguing with the elders who had saved his life and he also had
@@ -7644,7 +7586,7 @@ and a kick in the butt," Ashinik thought. "But if I consider everybody I got
 a kick  in  the  butt from  to be  demons,  there  would be more demons than
 people." Finally,  these thoughts hurt him so  unbearably that  once in  the
 repair shop Ashinik fainted and crashed to the ground.  When he came back to
-his senses, people were crowded around him - it appeared that a great spirit
+his senses, people were crowded around him---it appeared that a great spirit
 had seized him and he had been preaching.
 
      Ashinik  was taken  to the  teachers, they housed  him with them. Since
@@ -7664,8 +7606,7 @@ them since they wouldn't see the gut sense behind the  false reasoning.  And
 on the fourth level, he was told again that the prophecy  should  be treated
 metaphorically!
 
-     When he achieved the seventh level - there were ten of them all in  all
--  Ashinik  couldn't  distinguish  anymore  where a metaphor  was, where the
+     When he achieved the seventh level---there were ten of them all in  all---Ashinik  couldn't  distinguish  anymore  where a metaphor  was, where the
 reality was and where the  deep meaning of  both of  them was. Talking to  a
 commoner, he spoke as if he was  on the  first level. Talking to an educated
 man, he spoke  as if  he  was on  the  second  level. He  believed what  his
@@ -7673,7 +7614,7 @@ audience could believe. Thanks to that, his sermons gathered huge crowds. He
 was also taught to prophecy right at the meetings and  he usually remembered
 what he had said.
 
-     Four years passed this  way - Ashinik was  now  twenty. Once the  White
+     Four years passed this  way---Ashinik was  now  twenty. Once the  White
 Elder called and  commanded  him  to  leave for Assalah  village on  Chakhar
 border. He said,
 
@@ -7690,7 +7631,7 @@ society head died. Go to Assalah and take his place."
 
 
      This  time  the trip  to the  capital took eight  hours  instead of two
-months  - the  next day's morning a yellow bus left Ashinik at the road fork
+months---the  next day's morning a yellow bus left Ashinik at the road fork
 going to spaceport.
 
      Ashinik threw  his  sack  over his  shoulder and  started  walking. The
@@ -7705,7 +7646,7 @@ pick you up.
 
      Suddenly a car  slowed  down. Ashinik  nervously saw  that it was not a
 truck but  rather a  passenger car shaped like a tiny bug. The  driver threw
-open a door - after a brief hesitation Ashinik climbed inside. They drove in
+open a door---after a brief hesitation Ashinik climbed inside. They drove in
 silence for a while.
 
      "Are you going to the construction site?" the driver asked. He spoke in
@@ -7715,7 +7656,7 @@ demon's brogue.
 
      "Who are you going to?"
 
-     "My uncle called me in. His son died - maybe he will adopt me."
+     "My uncle called me in. His son died---maybe he will adopt me."
 
      "There  are  a lot of  zealots," the driver  said,  "in  this  village.
 Following the Way. Are you one of them?"
@@ -7726,7 +7667,7 @@ Following the Way. Are you one of them?"
 
      "What do you know about levels?"
 
-     The driver looked the lad over - he had a round good-natured face, wide
+     The driver looked the lad over---he had a round good-natured face, wide
 lips and adjoining thick eyebrows over his beautiful brown eyes.
 
      "A  week ago," the driver said, "the local Following the Way  man died.
@@ -7748,9 +7689,9 @@ you. They have already killed two people this way."
 
      "It's  difficult  to get any  worse.  They drink, steal,  and make  the
 newcomers do the  same. There are gangs among them. Two of them  were caught
-yesterday - they sold an  anti-corrosion  paint box.  How much do  you think
+yesterday---they sold an  anti-corrosion  paint box.  How much do  you think
 they sold it for? They sold it for a rice vodka  crock! Yesterday, one guard
-shot  at another  guard -  he was boozed up. They  arrested  him, started an
+shot  at another  guard---he was boozed up. They  arrested  him, started an
 investigation  and discovered that he was wanted in the capital  for robbery
 and  murder.  Everybody  who wants  to  escape  the  capital  after screwing
 something up there, go here."
@@ -7763,7 +7704,7 @@ surprising that the demons' servants steal anti-corrosion paint from them."
      Bemish was so upset by  this comment that he lost his self control. His
 true nature emerged and  Ashinik noticed  at  once that  Bemish's  head  was
 really just a meat egg. Ashinik felt himself very uncomfortable. "What if he
-asks now - do you really think I am a demon?"
+asks now---do you really think I am a demon?"
 
      But Bemish didn't ask anything like  this,  he shook  his meat egg  and
 said.
@@ -7794,9 +7735,9 @@ next to a  computer  screen rather on the  construction site, Bemish visited
 the  latter  only occasionally,  being engrossed completely in  the  capital
 business maelstrom.
 
-     He started up a hedge fund acquiring  Weian stocks  -  it was quoted in
+     He started up a hedge fund acquiring  Weian stocks---it was quoted in
 the intergalactic system. Trevis raised money for him, a sum unheard-off for
-a developing market - five hundred  million  dinars. He  acquired the broker
+a developing market---five hundred  million  dinars. He  acquired the broker
 house  DJ securities and  used it to conduct  the hedge fund operations;  he
 also acquired 12% shares of the bank that Assalah Company had an account in.
 
@@ -7835,9 +7776,9 @@ Bemish as the bad heritage of two thousand years of socialism.
      As  Bemish realized looking  back,  a  lot of  things would  have  been
 different  if the  construction  had started not when the peasants  had been
 planting rice  and when every  pair  of  hands  had  been precious.  But the
-construction started right  in the spring  - the peasants didn't  let  their
+construction started right  in the spring---the peasants didn't  let  their
 lads  go to the  construction  site and  the guys who came later  met with a
-construction  lifestyle  already  in  place  - the  lifestyle  of lost  city
+construction  lifestyle  already  in  place---the  lifestyle  of lost  city
 dwellers,  bums and simply  bandits  that stole watermelons from the fields,
 trampled  rice  down,  fought  the village lads en masse and considered hard
 porn with stereo effects to be the highest achievement of the alien culture.
@@ -7847,7 +7788,7 @@ and the sect's head, a tall old man with a grey beard, pointed his finger at
 him and  started calling him a sorcerer  of the basest type. Bemish inquired
 what exactly his sorcery was and received an answer.
 
-     "All your flashy  labels and commercials, cigarettes  and movies - they
+     "All your flashy  labels and commercials, cigarettes  and movies---they
 are all your  dirty  magic  and rituals.  You  use  all this to  get  people
 together."
 
@@ -7858,7 +7799,7 @@ together."
      "This is even worse," the old  man grinned. "It means that you have one
 culture   for  small  people  and  another  one  for  big  people.  This  is
 ill-conceived because everything can be  different  for small people and for
-big people - what they own and  what they wear - but their culture should be
+big people---what they own and  what they wear---but their culture should be
 the same. The spring day is celebrated by a farm hand and in the palace. And
 if  your workers go  to  see The  Triple Strike and you don't...  What's the
 point of talking about it?!"
@@ -7896,7 +7837,7 @@ there. As for the construction... let's be honest, mafia started to rule the
 construction.
 
      At some point,  a  name appeared among  the  private  cofounders of new
-import-export companies - O'Hare -  the same O'Hare who had  been introduced
+import-export companies---O'Hare---the same O'Hare who had  been introduced
 to Bemish in the thief's tavern and who had taken care of the presentation.
 
      Bemish  crossed the  cofounder's  name out with red ink commenting that
@@ -7913,11 +7854,11 @@ village to, say, Chakhar in three days or just burned it to the ground.
 
      Unlike them, Bemish would  not be able to drive a tank over the village
 or land in the middle of it, "as a miss", a sixty thousand ton space freight
-ship - as Shavash suggested to  him altogether  seriously. And not a  single
+ship---as Shavash suggested to  him altogether  seriously. And not a  single
 international legal  system  existed  that  would ban  planet  dwellers from
 singing songs and going nuts en masse.
 
-     Now, Bemish found  himself  in a  classical chess fork -  if he started
+     Now, Bemish found  himself  in a  classical chess fork---if he started
 arresting the zealots himself, even the most pro-Earthmen officials would be
 indignant. If he asked for the authorities' help, it would be a sign of  his
 utter powerlessness.
@@ -7977,7 +7918,7 @@ conference dealing with developing countries investments issues.  Bemish was
 presented there both as a speaker and an exhibition object.
 
      Bemish  conversed with  the relevant people  and, immediately after the
-talk he left for the spaceport, having picked up a man named Born - a United
+talk he left for the spaceport, having picked up a man named Born---a United
 Galactic  Fund representative  who was  observing  the  situation  with  the
 stabilization credit allocated for the Empire.
 
@@ -8006,8 +7947,8 @@ paint in the nearest kiosk."
      "Mr. Bemish,  is  it true  that  you paid  taxes  this year with  Weian
 National Bank bonds at their face value?"
 
-     Here,  Bemish's  escort -  he, accordingly to a local  custom, obtained
-himself  three  beefy flatheads - socked  the peppiest journalist on his jaw
+     Here,  Bemish's  escort---he, accordingly to a local  custom, obtained
+himself  three  beefy flatheads---socked  the peppiest journalist on his jaw
 and the newspapermen bolted.
 
      On  the  return  helicopter  trip  to  Assalah, Born  inquired  why the
@@ -8043,8 +7984,7 @@ nationalized it, restructured its loans and turned them into bonds."
 didn't say anything.
 
      Bemish asked Born what Weian official he liked the most, and Mr. Gerald
-Born named  Shavash without hesitation.  And he added, "What do you think  -
-would Mr. Shavash agree to resign from  his  Empire appointment and head the
+Born named  Shavash without hesitation.  And he added, "What do you think---would Mr. Shavash agree to resign from  his  Empire appointment and head the
 developing markets department in our bank?"
 
      Bemish almost gaped.
@@ -8062,12 +8002,12 @@ slander at him being unable to endure one honest man in their midst. I think
 that  the  best  solution  for him  would be  to leave  this planet.  Do you
 disagree?"
 
-     "No, not really," Bemish  said, "Shavash is  an amazing  man -  you are
+     "No, not really," Bemish  said, "Shavash is  an amazing  man---you are
 right."
 
      Bemish wanted to pass Born into Giles's hands, so that the latter dealt
 with the guest till the take off, but Giles  vanished somewhere and even his
-cell was off - Bemish resolved to thrash him soundly.
+cell was off---Bemish resolved to thrash him soundly.
 
      Bemish personally walked his old acquaintance to the boarding ramp. The
 latter was  pleasantly  surprised  having learned that the  spaceport had an
@@ -8085,7 +8025,7 @@ story with Golden Deer Company? I heard that you detained their freight."
 of electronics there  and  they paid tariffs for five tons  only.  Why don't
 they pay everything required and pick it up."
 
-     "Terence, be so kind. Their guy will drop by - stamp his papers and let
+     "Terence, be so kind. Their guy will drop by---stamp his papers and let
 him go." And Shavash put the receiver down not waiting for a reply.
 
      Giles announced himself  in  half  an hour. He  shakily walked  in  the
@@ -8187,7 +8127,7 @@ with zealots. If you step on the zealots' tails, you will help Bemish."
 
      The guy looked at the vice-minister with animosity. Weian crooks didn't
 attack zealots as  a rule. The pickings would be slim, and the zealots would
-go totally mad  -  if you touched them they wouldn't rest  till they cut the
+go totally mad---if you touched them they wouldn't rest  till they cut the
 whole gang down and declare it to be gods' wrath.
 
      "I have a feeling that the zealots blighted you, not Bemish," the thief
@@ -8233,7 +8173,7 @@ people's stocks, I possibly wasted my own company."
      "I thought that you finished assembling the first  line of landing pads
 a week before you planned."
 
-     "I  mean the mood  at  the construction  - zealots  and crooks. I can't
+     "I  mean the mood  at  the construction---zealots  and crooks. I can't
 eradicate them.  Shavash tricked me when he obtained legal immunity for  the
 construction." Idari was silent.
 
@@ -8243,8 +8183,8 @@ Empire,  so  that his hands are clean and the Earthmen's  hands  are smeared
 with shit?"
 
      "What am I saying?"  a thought passed in Bemish's  mind.  "I am sitting
-with a woman that I would  give  all of  Assalah away for  - ok, not all  of
-Assalah  but  at least thirty percent  of it - and I am talking to her about
+with a woman that I would  give  all of  Assalah away for---ok, not all  of
+Assalah  but  at least thirty percent  of it---and I am talking to her about
 god knows what and she considers me to be a greedy and cowardly Earthman."
 
      "He is not fully satisfied with you," Idari said.
@@ -8285,8 +8225,8 @@ else."
 
 
 
-     The next evening, the phone rang in  Bemish's office. Ross called  - an
-ex-colleague of Giles - now his deputy on security issues.
+     The next evening, the phone rang in  Bemish's office. Ross called---an
+ex-colleague of Giles---now his deputy on security issues.
 
      "We have an emergency," Ross said. "A packer boy was knifed. We got the
 killer."
@@ -8303,7 +8243,7 @@ somehow nobody saw anything.
 
      Bemish  was  leafing through a  draft  of  the  yearly  company  report
 prepared  by the PR department on Earth when two  wide-angled guys  from the
-security  department  brought the killer  in the  office -  an inconspicuous
+security  department  brought the killer  in the  office---an inconspicuous
 sixty-year-old man in washed out jeans and  a jacket with white trim showing
 that he worked  in the fifth roadwork team. The  killer's hands were twisted
 behind his head and locked with handcuffs.
@@ -8325,13 +8265,13 @@ to speak to you.  I made an  appointment with you, see, three  times and you
 were just cooling it off. I make another appointment today, come in and they
 tell  me,  "the  boss ain't here  for  you, Weian peasant  mug,  the boss is
 driving a big dog around the  construction, it's not your lawn anymore, move
-it - go back to your barrack. So, I went back and it put me out. Why won't I
+it---go back to your barrack. So, I went back and it put me out. Why won't I
 do something that the boss notice me?"
 
      Bemish  didn't interrupt the  man yet. He had realized a while ago that
 sooner or  later the  bandits would visit him but  he  hadn't suspected that
 they would choose such an original way. And this knave is also reminding  in
-a subtle way - I have no problem knifing a boy down or you, boss...
+a subtle way---I have no problem knifing a boy down or you, boss...
 
      "That was not a good idea," Bemish grinned, "because they will cut your
 head off now."
@@ -8349,8 +8289,8 @@ Bemish. Concerning his head though...
 
      "What order?"
 
-     "What's  all this mess around?  They pick up stuff,  swear  - you  know
-what's going on - steal materials, drink people away. Say, yesterday, a gang
+     "What's  all this mess around?  They pick up stuff,  swear---you  know
+what's going on---steal materials, drink people away. Say, yesterday, a gang
 came  in and started  to  play, six  people sold themselves into slavery. So
 they are slaves and what  happens next? They work  and their owner rubs  his
 belly and gets paid. We, on the other hand, would tidy things up."
@@ -8499,8 +8439,8 @@ it?"
 war?"
 
      "How are you  to make war with the  bandits?" Kissur  got  angry. "I am
-telling you - if you want to kill the zealots off, take a gun and shoot at a
-zealot - he will approach  you himself! You don't want to shoot  at a zealot
+telling you---if you want to kill the zealots off, take a gun and shoot at a
+zealot---he will approach  you himself! You don't want to shoot  at a zealot
 that  will stick his belly at you. Do you think that a bandit will stick his
 belly at you?"
 
@@ -8509,7 +8449,7 @@ belly at you?"
      "You  are  a  chicken,  Terence.  You  turned  the  construction  in  a
 shithouse.  Just  recently Shavash was  amazed  how you accounted  for  some
 equipment in such a way that you managed to shave the tax by  half a million
-and he was so amazed by this - even he didn't know this trick. And while you
+and he was so amazed by this---even he didn't know this trick. And while you
 were accounting  your contraptions and books..." and  Kissur grinned. "Well,
 if gods didn't give you the ability to shoot, you will have to make peace."
 
@@ -8556,10 +8496,10 @@ shouldn't I?"
 and seeing Kissur and Bemish rushing out of the office, followed them.
 
 
-#chapter("The Ninth Chapter,")[where the demons' boss makes a pact with the pious people.]
+#chapter("The Ninth Chapter,")[where the demons' boss makes a pact with the pious people]
 
      Adera's temple  floated in the  night lit with torches from  below. The
-crowd was  huge - people in woolen jackets and  grass overcoats girdled with
+crowd was  huge---people in woolen jackets and  grass overcoats girdled with
 red belts crowded in the broken hall where the sky instead of a roof covered
 a hurriedly  built  stage.  Kissur and two Earthmen,  dressed in  rural hemp
 overcoats, were ignored. Only when  Bemish, while elbowing  energetically to
@@ -8568,7 +8508,7 @@ rudely, "Don't push like a demon!"
 
      On the left and on  the right of the stage, huge copper lanterns burned
 and a round basin with fragrant water steamed on the altar. At the very edge
-of the stage, Ashinik stood - the young preacher of  Following  the Way. His
+of the stage, Ashinik stood---the young preacher of  Following  the Way. His
 face, thin as an  onion peel, reddened, his eyes glistened in the torchlight
 and the crowd responded with an ardent bellow to his every word. Ashinik was
 dressed in a red hooded  overcoat embroidered with red winged bulls reaching
@@ -8581,10 +8521,10 @@ clothing sewn by demons should not be worn.
 
      "Two  hundred years ago, in  the last years of Emperor Sashar's  rule,"
 the man  in  the  red overcoat  gleaning  in the  torchlight was saying,  "a
-fashion spread among the people from the country of  Great Light - a fashion
+fashion spread among the people from the country of  Great Light---a fashion
 to wear the clothing  made out of wool brought  in by barbarians.  It  was a
 clear omen that the barbarians  would  conquer  the  country. And now people
-wear the clothing sewn by demons - a clear omen that the demons will conquer
+wear the clothing sewn by demons---a clear omen that the demons will conquer
 the country. So, everyone wearing their foul jeans or jackets is, basically,
 walking  naked.  You should know  that everything  that demons make is  just
 phantom and deceit. And they can't make anything but phantoms. Although they
@@ -8604,15 +8544,15 @@ harshly, "Since many  people call you Irshahchan  reborn but,  truly, even a
 white cloud dirties itself over an unclean mole."
 
      Kissur unhurriedly ascended the stage and poked the youth in the chest.
-Ashinik's  bodyguards stirred agitatedly -  didn't Ashinik see Kissur in his
+Ashinik's  bodyguards stirred agitatedly---didn't Ashinik see Kissur in his
 last sovereign prophecy?
 
      "You are a dog and you are a dog's bone," Kissur shouted with the  same
 voice he  used  to  command an army of  many thousand  troops and the  voice
-carried above the quelled  crowd  without any speakers - you addle  people's
+carried above the quelled  crowd  without any speakers---you addle  people's
 minds and prattle a lot of nonsense and you say that white is  black and mix
 up hell and Big Galaxy and nothing but harm to the state comes from zealots.
-And if you think that everything Earthmen make is phantoms - do you see what
+And if you think that everything Earthmen make is phantoms---do you see what
 this is?"
 
      "It's a weapon of theirs," Ashinik said.
@@ -8683,7 +8623,7 @@ armpit.
 
      Strangely, the crowd stopped for a moment.
 
-     Bemish turned to  the crowd spreading  his  palms  -  a local  greeting
+     Bemish turned to  the crowd spreading  his  palms---a local  greeting
 gesture.
 
      "What are you  blaming me for?" he asked. "Not  all the Earthmen,  just
@@ -8743,8 +8683,8 @@ stage.
 
      "If Ashinik became a boss, everything would be really different."
 
-     Ashinik was silent.  Bemish waited - what kind of  man is he and what's
-stronger in him - the desire to hurt the people from the stars or the desire
+     Ashinik was silent.  Bemish waited---what kind of  man is he and what's
+stronger in him---the desire to hurt the people from the stars or the desire
 to help the peasants.
 
      "You  know my beliefs, Mr.  Bemish," Ashinik uttered. "Do  you think  I
@@ -8753,7 +8693,7 @@ will exchange them for your window they disburse money from?"
      "I," Bemish said, "Believe in the freedom of conscience. The freedom of
 conscience is  not, when you let  your employees believe in  what  you like,
 it's when you let your employees believe  what they  want to. If you want to
-consider me a demon -  go  ahead. If  you are  afraid that a close encounter
+consider me a demon---go  ahead. If  you are  afraid that a close encounter
 with me will weaken your beliefs, then they aren't worth much."
 
      "All right," Ashinik said, "I accept your offer."
@@ -8772,8 +8712,8 @@ and dragged him to the village, somehow the bandit happened to be torn apart
 on the way.
 
      Not informing local police, Bemish  called special  troops in masks but
-with an  evident  barbarian  accent  from the  capital -  mostly  they  were
-Kissur's  ex-warriors  -  and  they  scoured  the  hired  workers'  barracks
+with an  evident  barbarian  accent  from the  capital---mostly  they  were
+Kissur's  ex-warriors---and  they  scoured  the  hired  workers'  barracks
 mercilessly fishing  everybody suspicious  out. They found about fifty  such
 people, beat them senseless, deposited them in a net and attached the net to
 a freight helicopter. The helicopter  made three triumphal circles above the
@@ -8802,8 +8742,8 @@ latter.
 
      During that week, order and  cleanliness came to rule the construction.
 Bemish didn't entertain any illusions about the  methods the zealots used to
-attain  this  cleanliness  -  he saw  how two  janitors were  whipping their
-colleague for a rug that he hadn't washed at his  shift's end - they whipped
+attain  this  cleanliness---he saw  how two  janitors were  whipping their
+colleague for a rug that he hadn't washed at his  shift's end---they whipped
 him bloody with cries and brined whips.
 
      For two weeks,  Bemish wordlessly signed Ashinik's requests including a
@@ -8855,9 +8795,8 @@ reference letter.
 arrived  with the  Earthmen,  since  he had mostly been responsible  for the
 distribution of  the above mentioned loans. Bemish answered that Shavash had
 been busy.  In fact,  Shavash had called an hour before the  flight and said
-that he would come on  one  condition only -  if he could take back with him
-Ashinik's head  in  a  sack.  Shavash  expressed himself exactly  this way -
-"head."
+that he would come on  one  condition only---if he could take back with him
+Ashinik's head  in  a  sack.  Shavash  expressed himself exactly  this way---"head."
 
      "Do  you know,"  Shavash  asked,  "That  these  Following  the Way guys
 organized the last attempt at my assassination?"
@@ -8888,7 +8827,7 @@ haven't noticed you leaning this way before."
 
      Bemish choked.
 
-     "I  am kidding.  Since  you  love a different  - woman,"  Shavash  said
+     "I  am kidding.  Since  you  love a different---woman,"  Shavash  said
 heavily and with a hidden meaning. And he dropped the receiver.
 
      This evening, when Ashinik was having a dinner in the common cafeteria,
@@ -8901,7 +8840,7 @@ Bemish sat next to him. After tea, Bemish asked.
      "Shavash is a briber and a scoundrel."
 
      "Ashinik, sonny,  all Weian officials  are bribers and scoundrels. You,
-however, dislike Shavash much  more than, say, Khanida  or Akhaggar  - while
+however, dislike Shavash much  more than, say, Khanida  or Akhaggar---while
 they cause just as much harm."
 
      "Khanida hasn't tried to destroy us."
@@ -8930,8 +8869,8 @@ you do, is necessarily bribed or seduced?"
 told  the Earthman that nothing was more  efficient at killing  the  zealots
 than discords  among  the  sects.  And  the  whole  thing  just  looked like
 Shavash's  doing. Yes, this official  stole,  embezzled and  it  was not  an
-accident  that a joke about him traveled around -  out of  all  gods Shavash
-envied ten  handed Khagge the most - imagine how much you can steal with ten
+accident  that a joke about him traveled around---out of  all  gods Shavash
+envied ten  handed Khagge the most---imagine how much you can steal with ten
 hands? At the same time, only Shavash among all the bribers surrounding  him
 could be seriously concerned with the future danger of Following the Way.
 
@@ -8951,11 +8890,10 @@ unfinished  sector. The  lad was holding  Bemish's gun that he  had probably
 picked up in a drawer in the office  and, having extracted the battery,  was
 contemplating the "doughnut" thoughtfully. Ten meters away from  Ashinik,  a
 huge basalt rock arose; it had been left on the field since it was too heavy
-to transport. Now, a  regular  Atari could drag the rock away in two trips -
-it  was  cut in  half and black basalt foam  bubbled  at the  jagged wound's
+to transport. Now, a  regular  Atari could drag the rock away in two trips---it  was  cut in  half and black basalt foam  bubbled  at the  jagged wound's
 edges.
 
-     The  light on the "doughnut" top blinked  red  -  the battery was dead.
+     The  light on the "doughnut" top blinked  red---the battery was dead.
 When Bemish approached, the zealot threw the gun on the grass and asked.
 
      "Why didn't Kissur shoot me?" Bemish rolled on his feet.
@@ -9001,7 +8939,7 @@ told Bemish  about  the  fits and Bemish  didn't  know anything till, in two
 weeks, Ashinik fainted at a morning business meeting.
 
      He  recovered  quickly but  Bemish, not  letting  him  open  his mouth,
-dragged him to the health services -  to Isaak Malinovskii who was in charge
+dragged him to the health services---to Isaak Malinovskii who was in charge
 of influenza, accidents and malaria at the construction  and who  also  kept
 terrorizing Bemish with the possibility of a cholera epidemic.
 
@@ -9027,7 +8965,7 @@ wall tied around me and began choking me."
 
      "Why are you asking this question?"
 
-     "I have visions.  I read this thick book  -  a  psychiatry textbook. It
+     "I have visions.  I read this thick book---a  psychiatry textbook. It
 said that if a man saw what others didn't, it meant that something was wrong
 with his brains."
 
@@ -9061,7 +8999,7 @@ flowers and grasses. A hazy silk belt tied with a  five-petal knot fluttered
 behind her back like butterfly wings.
 
      The girl smiled  at Ashinik  shyly and  Ashinik  suddenly smiled  back.
-Something  scurried  between them  -  Ashinik imagined for a moment  a furry
+Something  scurried  between them---Ashinik imagined for a moment  a furry
 little animal jumping out one smile into another.
 
      "Mr. Bemish said that you should stay in bed and should not get up."
@@ -9111,7 +9049,7 @@ running fake accounts through the company."
 afraid  of these scary answerers that Earthmen always carried with them like
 handkerchiefs and at every  third  word took  them  out of their pockets and
 spread open. Seeing them always reminded him one  of  the most  popular sect
-myths  - that demons  took  their souls out  and put them  in these  organic
+myths---that demons  took  their souls out  and put them  in these  organic
 silicon  handkerchiefs or iron boxes and  the demons'  souls felt lonely and
 blinked on the monitors with multicolored lights.
 
@@ -9132,23 +9070,22 @@ some orders and Ashinik always drove there with a visible delight.
 
      Soon  Inis  appeared  in  Bemish's  office  again  as  a  secretary and
 Ashinik's frequent trips to the villa came to an end. Ashinik  and Inis were
-quite a bit younger than Terence Bemish - she was seventeen, he was twenty -
-but  Bemish just  didn't  notice how  Inis'  blushed when his  young  deputy
+quite a bit younger than Terence Bemish---she was seventeen, he was twenty---but  Bemish just  didn't  notice how  Inis'  blushed when his  young  deputy
 entered  the company  director's office and how often Ashinik  and Inis  ate
 together  in the company cafeteria or in one of the  port's restaurants that
 had grown around like mushrooms.
 
      Although, Terence  Bemish declared at his first meeting with  Inis some
 words  about the freedom of will, in reality  this  freedom of will extended
-only  as far as  him making Inis  his secretary  - while Inis was a nice and
+only  as far as  him making Inis  his secretary---while Inis was a nice and
 kind girl, blindingly  bright she was not. Bemish  was quite  happy when she
 handed  him a clean shirt and socks in the morning, excellent coffee at noon
-and spent nights in his bed - when, of course,  the Assalah company head was
+and spent nights in his bed---when, of course,  the Assalah company head was
 not having fun  in a capital bordello or  at  a high rank official reception
 that would usually come to an end in the same bordello.
 
      Bemish took as good care of her as he  did of expensive house furniture
-but he knew that nothing better than a secretary  could come out of Inis - a
+but he knew that nothing better than a secretary  could come out of Inis---a
 nice pleasant  girl with a warm heart and, let's admit it, not a  very smart
 head. And Terence Bemish assigned  automatically any unintelligent person to
 a place at the very bottom of his rating list.
@@ -9227,7 +9164,7 @@ front of him and read, stretching the vowels slightly.
 
      Are salted with the salt of human tears...
 
-     Bemish lowered his eyes looking at the front page - it was Percy Bysshe
+     Bemish lowered his eyes looking at the front page---it was Percy Bysshe
 Shelley.
 
      "Ah," Bemish  said, "Unfathomable means bottomless. It's a poetic word.
@@ -9270,7 +9207,7 @@ papers?
      "So would you like me to sign anything?"
 
      Bemish  hesitated.  On  one  side,   two  papers  indeed  required  the
-sovereign's signature  - he would have to wait three weeks to get it. On the
+sovereign's signature---he would have to wait three weeks to get it. On the
 other hand, what if Shavash gets displeased? He will think that Bemish crept
 into the garden, found the sovereign behind the Shavash's back, told him God
 knows what, left Shavash  without  rightly earned  gifts  and,  to conclude,
@@ -9281,7 +9218,7 @@ acted improperly.
      "I am  sorry.  I know that  my signature doesn't mean  much but I often
 forget that it can also cause damage."
 
-     Oh, my  God!  -  Bemish was astonished - he understands everything! But
+     Oh, my  God!---Bemish was astonished---he understands everything! But
 why...
 
      "I would like to do something nice for you," the sovereign said.
@@ -9293,21 +9230,21 @@ why...
      "Let's go."
 
      In five  minutes,  they passed  through the sovereign's bedroom into  a
-light room  with eight  corners. The guards  gaped,  if any  Earthmen -  Van
-Leyven or Nan - had found themselves in the  guarded halls, at least, it had
+light room  with eight  corners. The guards  gaped,  if any  Earthmen---Van
+Leyven or Nan---had found themselves in the  guarded halls, at least, it had
 happened a long time ago.
 
-     Bemish  wasn't  mistaken  -  the   sovereign's  Varnazd  drawings  were
+     Bemish  wasn't  mistaken---the   sovereign's  Varnazd  drawings  were
 wondrously good. He probably wasn't a genius painter, he likely followed one
-of the old  masters - every  single drawing was done in a traditional manner
-with light watercolors, slightly  faded from the beginning, - and there  was
+of the old  masters---every  single drawing was done in a traditional manner
+with light watercolors, slightly  faded from the beginning,---and there  was
 something  sad and  defenseless in all  of them,  something  that  resonated
 surprisingly well with the face of the sovereign of Great  Light Country. "I
 wouldn't hire him even as a department head," Bemish thought.
 
      Bemish stopped for a  long  while in  front of a  certain  drawing.  It
-depicted a view out of a window - probably a palace one, judging by a curled
-frame  corner  - a view of a winter garden. Huge  wet snow sheets pushed dry
+depicted a view out of a window---probably a palace one, judging by a curled
+frame  corner---a view of a winter garden. Huge  wet snow sheets pushed dry
 flowers to the ground, four commoner  gardeners looking  like  sparrows with
 ruffled  feathers, were starting  a fire  in the  middle of  a  large  black
 clearing. A forlorn  spear was poised behind the fire. It was clear that the
@@ -9332,7 +9269,7 @@ best."
 are my guards. Do you see the spear?"
 
      Bemish  paled. Yes,  sovereign Varnazd  was a Khanalai's prisoner seven
-years ago and not just a prisoner - Khanalai did everything but starved him,
+years ago and not just a prisoner---Khanalai did everything but starved him,
 wiped his  fingers at Varnazd's  hair during his feasts, and just waited for
 the full victory to execute an unworthy emperor...
 
@@ -9343,25 +9280,23 @@ then to pity myself."
 peasants that guard you."
 
      They left the eight cornered room for a terrace.  A light armchair with
-a golden head and spreading  wings at the sides - it seemed to  be  flying -
-stood next  to the balustrade and several foot stools stood next to  it. The
+a golden head and spreading  wings at the sides---it seemed to  be  flying---stood next  to the balustrade and several foot stools stood next to  it. The
 sovereign sat in  the armchair and showed Bemish  to a stool. They sat down,
 the sovereign paused and asked.
 
      "They write in  your newspapers that I should have a parliament elected
-and transfer the  power to  the people - that  is, they say, the only way to
+and transfer the  power to  the people---that  is, they say, the only way to
 manage corruption and power  abuse. And my officials keep  pointing out that
 the  people  are  poor, lost and  embittered  and that there  are  a lot  of
 underground sects  in  the  country. If  only rich are  allowed  to  vote, a
 rebellion  will fire up and  if  everybody is allowed to vote, crazy zealots
-will make one half of parliament and the officials bribed by the criminals -
-another  half. They  also  say that an  assembly  can rule only during  easy
+will make one half of parliament and the officials bribed by the criminals---another  half. They  also  say that an  assembly  can rule only during  easy
 times,  and  one man  should rule during uneasy times. It  is in assemblies'
 nature to  think  slowly  and in  the  uneasy  times one has  to  make  fast
 decisions and any slow decision in uneasy times will be a wrong one. What do
 you think?"
 
-     Bemish  felt  uncomfortable  sitting  on  a gilded perch - he wasn't  a
+     Bemish  felt  uncomfortable  sitting  on  a gilded perch---he wasn't  a
 parrot, was he? He stood and said.
 
      "I  think that one can always find a thousand reasons why  democracy is
@@ -9385,7 +9320,7 @@ sovereigns who consider themselves be perfect, exist."
      "I  apologize,  sovereign, but it's  not really  evident  that you have
 chosen this way."
 
-     "I was talked out of it," Varnazd said, "By  the Earthmen - Nan and Van
+     "I was talked out of it," Varnazd said, "By  the Earthmen---Nan and Van
 Leyven.  They started arguing that an election would cause anarchy, that the
 people would consider it to  be a shame and a concession to the Earthmen who
 forced their decisions  on the  freed  emperor, that even Khanalai  realized
@@ -9423,19 +9358,17 @@ minister after the election?"
 
      "Shavash! I don't believe that my people will elect a zealot or a fool!
 They will elect a smart man. Shavash will bribe everybody and everybody will
-like him, he will even find  a path to the zealots' hearts using his spies -
-but  while I  am alive,  Mr. Bemish,  I will not  allow Shavash  to rule  my
+like him, he will even find  a path to the zealots' hearts using his spies---but  while I  am alive,  Mr. Bemish,  I will not  allow Shavash  to rule  my
 people. We don't have a god similar to your Satan but believe me, if we did,
 Shavash would be his son."
 
      Before leaving Bemish, the sovereign Varnazd suddenly brought his guest
 to  a pavilion where  the  paintings  drawn the previous centuries hung. The
-paintings  covered the  wall like a spotty carpet  -  like  an iconostasis -
-small  marble altars,  braziers and  gold basins  with  fresh pine  branches
+paintings  covered the  wall like a spotty carpet---like  an iconostasis---small  marble altars,  braziers and  gold basins  with  fresh pine  branches
 floating in them, stood in front of the most beautiful paintings.
 
-     Bemish saw a girl and a dragon immediately - an altar stood in front of
-it  - and Bemish thought  worriedly  whether  the brazier  smoke  harmed the
+     Bemish saw a girl and a dragon immediately---an altar stood in front of
+it---and Bemish thought  worriedly  whether  the brazier  smoke  harmed the
 drawing or, to the contrary, protected it.
 
      "I would like to give it to you," the emperor said. Bemish bowed.
@@ -9471,12 +9404,12 @@ accepted in, put on his  shoulders and  he kneeled  and kissed the emperor's
 hand and the golden brush attached to the roll's right corner.
 
      The very fact, that the emperor bestowed one of his own  paintings to a
-man from the stars, brought forth many rumors - Terence Bemish was the first
+man from the stars, brought forth many rumors---Terence Bemish was the first
 man born on the sky that received such a gift. The whispers started that the
 foreigner would soon be offered a Chakhar governor or  a minister of finance
 position but better  informed people shook their  heads and said that nobody
 would  change a  bill prohibiting people from the stars from taking Empyreal
-appointments - this bill had been designed specially to kick Nan out  of the
+appointments---this bill had been designed specially to kick Nan out  of the
 country.
 
 
@@ -9486,22 +9419,21 @@ country.
 
 
      The  day  that  Bemish spent talking to  sovereign  Varnazd,  his first
-deputy Ashinik spent at the  new site A-33. The place was barely developed -
-a tractor path wove in the middle of it but it was enough to step ten meters
+deputy Ashinik spent at the  new site A-33. The place was barely developed---a tractor path wove in the middle of it but it was enough to step ten meters
 away to see birds  fluttering out of the grass and lizards  presenting their
 green back to the sun on the spotty rocks. When lunch time came, the workers
 climbed in a jeep and drove to the  cafeteria. Ashinik wanted to  spend some
 time alone. He  walked up a sunlit hillock, sat on the grass and uncovered a
-rug his lunch was wrapped  in - two flatbread  pieces  with sheep cheese and
+rug his lunch was wrapped  in---two flatbread  pieces  with sheep cheese and
 butter.
 
      Somebody settled down on the grass  next to him. Ashinik turned around.
-Near him, a man sat in a rough hay overcoat and a yellow repairman belt - it
+Near him, a man sat in a rough hay overcoat and a yellow repairman belt---it
 was not a repairman, however, but a man named Yadan. Yadan was the very same
 zealot that had  taught Ashinik and raised him to the third level. Yadan was
 not  the  head  of the  zealots,  there  was one man  above him  who was not
 supposed to be  called by his  name and  whom  everybody called White Elder.
-White Elder was not a nickname - it was a position. If the White Elder died,
+White Elder was not a nickname---it was a position. If the White Elder died,
 Yadan  would  become the White  Elder.  Yadan was  the  most  uncompromising
 Earthmen's opponent in the sect and he was the second in its hierarchy.
 
@@ -9558,7 +9490,7 @@ already?"
 selling cheap Weian food. The bun was frankly of the simplest kind, the same
 one  as women had baked here for  the thousands  of years and the cheese was
 homemade sharp goat cheese rolled  in small white  balls. But red  hot sauce
-between cheese and onions - here Yadan was totally right - came not from the
+between cheese and onions---here Yadan was totally right---came not from the
 local places  but  out of an imported demons' can. Ashinik went cold. Even a
 month ago, he, Ashinik, would  have noticed himself that it was demons' food
 and here he  just bought the  bun  and  wrapped it in the rug automatically.
@@ -9578,10 +9510,10 @@ banquet table and, though  Ashinik  could handle hunger, he couldn't  handle
 the understanding and relaxed look that Terence Bemish  glanced at Ashinik's
 empty plate with.
 
-     Then - either a meeting after which Inis  gets a  pizza or working till
-late night and a hamburger - it's difficult to live with  the demons and not
+     Then---either a meeting after which Inis  gets a  pizza or working till
+late night and a hamburger---it's difficult to live with  the demons and not
 eat their  food. Forget about the  food, it such a shame that  Ashinik has a
-suit  hanging in his closet  - made out of the same  demons' cloth  that  he
+suit  hanging in his closet---made out of the same  demons' cloth  that  he
 frightened the believers with.
 
      "Do you eat demons' food often?" Yadan repeated his question.
@@ -9589,7 +9521,7 @@ frightened the believers with.
      "I have to sometimes," Ashinik uttered.
 
      "So, that's what is happening,"  Yadan  grinned.  "The gods addled  the
-demons' minds and turned them into the gods' tool - did we  suppose that the
+demons' minds and turned them into the gods' tool---did we  suppose that the
 demons would handle their main construction over to us..."
 
      And he stood suddenly.
@@ -9609,7 +9541,7 @@ refuse...
 meeting. What  does  it  mean?  Do they approve of his actions? Or  are they
 going to bring him to a trial and the sixth will become his life's last day?
 Or  he  will be  commanded to make up for his crime by killing the very same
-man that tempted him away from the true road - Terence Bemish?
+man that tempted him away from the true road---Terence Bemish?
 
      Ashinik stood up abruptly. He suddenly  felt how his body became sticky
 with  sweat and he also felt horrible hunger  pangs. Really, he hadn't eaten
@@ -9653,7 +9585,7 @@ need to fix some stuff."
 doors opened finally, Giles jumped in and left.
 
      Ashinik twitched  his mouth  and opened  the door to  Bemish's personal
-office. He told Giles the truth and nothing but the truth - he  did need his
+office. He told Giles the truth and nothing but the truth---he  did need his
 yesterday's report.  Leaving for the capital, Bemish said  that he scribbled
 some remarks on it and  Ashinik needed to fix the report accordingly  to the
 remarks and hand it over to Bemish when the latter returned.
@@ -9669,7 +9601,7 @@ soundproof glass, faced  the landing pads. A personal elevator could deliver
 the owner to the bedroom and  the guests even higher, to the  very tower top
 where a rocky garden  with  cactuses and agaves  was  set out. Other  plants
 didn't take well to this height, either wind  got in their way or it was the
-nonstop roaring  of  the ships taking off -  there was  no  soundproof glass
+nonstop roaring  of  the ships taking off---there was  no  soundproof glass
 around the plants.
 
      Going to his bedroom, Bemish generally used, instead of the elevator, a
@@ -9682,7 +9614,7 @@ he had sent Ashinik  after them. Ashinik,  after  a brief hesitation, walked
 upstairs.
 
      Semi-darkness and cleanliness ruled the bedroom and Ashinik noticed the
-blasted  report at once - it lay under the bed, next  to Bemish's  slippers,
+blasted  report at once---it lay under the bed, next  to Bemish's  slippers,
 and one could see  how mercilessly it had been scribbled over  even  all the
 way  from the door.  Then, something  moved  to  the side next  to a mirror.
 Ashinik turned his head and saw Inis.
@@ -9718,7 +9650,7 @@ undressed her in his thoughts.
      Inis laughed and ran to  the  door on her toes. Her  hand groped  for a
 switch. She turned the light  off. However, it was still quite bright in the
 bedroom, thanks to wide windows going across the whole wall. The windows had
-no  curtains  - a  layer of  special  compound  inside them of them  blocked
+no  curtains---a  layer of  special  compound  inside them of them  blocked
 incoming light either partially or completely. Now, the windows were working
 part way, softening blinding  lights of  the launching pads and, the lights'
 positions told  Ashinik  that a  ship in K1 pad was  going  to take  off any
@@ -9793,8 +9725,8 @@ having found the transparency regulator, made the window slightly darker.
 
      They were silent. Ashinik felt  a  strange fury thinking  that tomorrow
 night she would be  lying with  Bemish the same way and everything  that she
-was able to do - and she was able to do a lot and she had demonstrated it to
-Ashinik - all of it she learned from the man from the stars.
+was able to do---and she was able to do a lot and she had demonstrated it to
+Ashinik---all of it she learned from the man from the stars.
 
      "In the past,"  Insis said thoughtfully sorting  Ashinik's  hair, "they
 put adulterous concubines in sacks and threw them alive into a river."
@@ -9831,10 +9763,10 @@ surveillance bugs even in Ashinik's pants.
 
      Ashinik raised  his head  bewildered. Bemish was telling him something,
 but  he missed it all. Ashinik nodded and only  then he noticed the  company
-director's swollen cheeks and dark  circles under his eyes - he had probably
+director's swollen cheeks and dark  circles under his eyes---he had probably
 had a lot of fun yesterday.
 
-     Yikes, bordellos - demons' pastime  where corrupted officials put Weian
+     Yikes, bordellos---demons' pastime  where corrupted officials put Weian
 girls in the demons' beds...
 
      "Yes, I got it."
@@ -9860,7 +9792,7 @@ found Ashinik not lying in bed but, to  the contrary, sitting hunched on the
 floor  and reading  a  book.  Bemish  approached  him  and looked  over  his
 shoulder. The lad shuddered. The book was a Lassal's demolition manual.
 
-     "It's an old  manual,"  Bemish said.  "Let's  go  - I'll try  to find a
+     "It's an old  manual,"  Bemish said.  "Let's  go---I'll try  to find a
 better book."
 
      They  walked to Bemish's  office  and the construction  director having
@@ -9871,9 +9803,9 @@ Feinstein's textbook.
 
      Ashinik held the book tightly like a shepherd would  hold a  sick lamb,
 hunched and walked to the door. Bemish watched him carefully. It seemed that
-Ashinik was expecting a question  - why would he need  a  demolition manual,
+Ashinik was expecting a question---why would he need  a  demolition manual,
 though why would a  manager at the construction  that uses up three kilos of
-TNT equivalent a week - not read this manual."
+TNT equivalent a week---not read this manual."
 
      Ashinik pushed the door open.
 
@@ -9925,7 +9857,7 @@ meeting?"
 
      Ashinik  had  barely  stepped out  of  the  office, when Giles took his
 place.  Strangely,  Bemish and  spy became good friends. The reason was that
-Giles demonstrated good businessman qualities -  he  scurried around all the
+Giles demonstrated good businessman qualities---he  scurried around all the
 country, looked for the best agreements, contrived, plotted, gave bribes and
 pushed  himself  to the limit for  the company. He, also, appeared to  be an
 amiable companion. He often  slept over  at the  villa where  he, like  most
@@ -9965,14 +9897,13 @@ morning this guy was cleaning his room."
      "I will ask Ashinik..."
 
      "Nobody  besides  Ashinik's  people  could've warned  him. It's a funny
-combination - Following the Way sect and an anarcho-syndicalist demon, isn't
+combination---Following the Way sect and an anarcho-syndicalist demon, isn't
 it?"
 
      "It's totally unbelievable."
 
-     "There is something even more unbelievable - the guy came here from one
-of  Kissur's manors. And his reference letter was signed by Kissur. You know
-- that he was a diligent worker and gathered hay just great...By the way, he
+     "There is something even more unbelievable---the guy came here from one
+of  Kissur's manors. And his reference letter was signed by Kissur. You know---that he was a diligent worker and gathered hay just great...By the way, he
 is an old acquaintance of Kissur's."
 
      Bemish paused.
@@ -9985,7 +9916,7 @@ instance, he was interested in the  situation  when several hours  before an
 announcement  about  transnational Metal Uranium buying a totally non-liquid
 uranium mine came  out, you had bought  two hundred  thirty million worth of
 this  mine's shares. And you sold them in  two  days at  three billion.  Oh,
-there is another strikingly interesting accident - Shavash's friend Igon who
+there is another strikingly interesting accident---Shavash's friend Igon who
 was  in charge of the country's international loans, claimed that  Weia  was
 considering  postponing  paying off the interest on  the international  loan
 known as Iron  Bonds.  Since, say,  some  bearer's bonds had been  stolen at
@@ -10013,7 +9944,7 @@ export-import  companies that existed for two months only, till the deadline
 for  the first tax declaration, was the most innocent  trick out of what was
 happening.
 
-     But there was nothing else to do - so many gifts were required, so many
+     But there was nothing else to do---so many gifts were required, so many
 unofficial expenses  were  needed on  the top of official  ones, and  Bemish
 sadly  realized  that the larger was the embezzlement  scale, the  safer the
 embezzlement was.
@@ -10082,8 +10013,7 @@ acquaintance with it."
 
 
      In  two  days, Shavash  finally  appeared at  the  spaceport. It was an
-official visit - Shavash accompanied a Joined Economics Assembly committee -
-and  they were in  public  during the  entire  visit.  At the second  chute,
+official visit---Shavash accompanied a Joined Economics Assembly committee---and  they were in  public  during the  entire  visit.  At the second  chute,
 Shavash leaned to the company director's ear and asked quietly,
 
      "Where is your deputy, Ashinik, by the way?"
@@ -10099,7 +10029,7 @@ somebody's "resurrection" and working meetings of the circles' heads.
      "These people are very dangerous," Shavash shook his head. "We have  to
 smile and tell the world community that the  people who consider Earthmen to
 be demons  are  no more important  than the people on Earth who spend  their
-time in mental  institutions  and claim  themselves  to be Napoleons - but I
+time in mental  institutions  and claim  themselves  to be Napoleons---but I
 warn you, Terence, that even you don't know how dangerous they are."
 
      "What are you whispering about?" a committee member asked.
@@ -10111,10 +10041,10 @@ supports and started explaining the problems they had with supplies.
 
 #chapter("The Tenth Chapter,")[where Terence  Bemish becomes familiar  with  provincial  life  of  the
 Empire  while Mr. Shavash offers an  original plan for the restructuring  of
-the state debt.]
+the state debt]
 
      Giles  returned from Earth in three days and he brought  a bulky bundle
-of  papers sealed with  vacuum  tape - for authorized personnel only.  Giles
+of  papers sealed with  vacuum  tape---for authorized personnel only.  Giles
 handed the bundle to Bemish and locked the door, and Bemish mounted his legs
 on the table and engrossed himself in the papers.
 
@@ -10151,7 +10081,7 @@ one of his bailiffs. These letters cost ten "pinkies"  a piece on  the local
 black market. Would you like me to get a dozen for you by tomorrow?"
 
      "A month ago Kissur flew  to Cassandra.  He met an old  acquaintance of
-his there - this guy."
+his there---this guy."
 
      And Giles fished a photo out of his pocket and put it down in  front of
 Bemish.
@@ -10163,8 +10093,7 @@ He has on his account..."
 
      "Really? Shavash was quite interested."
 
-     "I would  recommend to  you not to discuss these matters with Shavash -
-you and Shavash have different goals."
+     "I would  recommend to  you not to discuss these matters with Shavash---you and Shavash have different goals."
 
      "What do you mean?"
 
@@ -10180,10 +10109,9 @@ start one. Of course, a terrorist visited  Kissur. Kissur is too  colorful a
 figure not to be visited. So what? I didn't see Shavash right when  you were
 asking him this question but I could swear that he was dying of laughter. If
 he had answered you honestly, he would have said on  the spot that a man who
-dared to compare the sovereign Irshahchan  with  this wasted Earthman Marx -
-this  man was risking taking  a bath  in  a  swimming pool right there.  But
+dared to compare the sovereign Irshahchan  with  this wasted Earthman Marx---this  man was risking taking  a bath  in  a  swimming pool right there.  But
 Shavash didn't say that because Shavash hates Kissur. You dished an idea out
-to Shavash - he  will find the proofs. He will find  terrorists' liaisons to
+to Shavash---he  will find the proofs. He will find  terrorists' liaisons to
 Kissur  and  he  will  train  them  what  they  should  say.  Kissur  is  an
 unpredictable  man but Shavash can  predict even  him.  If a  man approaches
 Kissur and says, "Let's bomb this bank for a glorious future's sake," Kissur
@@ -10237,11 +10165,11 @@ blocks. Tree stumps stuck out far away on a knoll like teeth leftovers in an
 old man's mouth and  a  cheerful red  tractor was pulling  them out of earth
 amidst din and screech.
 
-     The new  road ended unnoticed  - the riders  raced  down  an old Empire
+     The new  road ended unnoticed---the riders  raced  down  an old Empire
 track with yellowish stone  ruts, wide palm  trees  and  narrow pyramids  of
 poplars planted  along the road  accordingly  to  the ancient  laws... Green
 knolls and rice paddies covered with water flashed far away. Bemish spun his
-head excitedly - the beauty around seemed to be like a photo.
+head excitedly---the beauty around seemed to be like a photo.
 
      A squirrel  sat on  a poplar  branch and ate  a  nut.  Amusing himself,
 Khanadar the Dried Date shot at the nut and knocked it out of the squirrel's
@@ -10265,7 +10193,7 @@ there."
 
      And they raced. Bemish felt as  good as he had  never felt in his life.
 He  wanted to cancel all  the  meetings in the world, he  didn't give a damn
-about the spaceport and the investment funds - he  just wanted to ride  down
+about the spaceport and the investment funds---he  just wanted to ride  down
 this road  where his car would get stuck and his bulldozer would  just  tear
 up.
 
@@ -10328,9 +10256,9 @@ you."
 
 
 
-     The  guests  came in  the  next  morning  - the  Federation  envoy, Mr.
+     The  guests  came in  the  next  morning---the  Federation  envoy, Mr.
 Liddell, Shavash  and his  direct boss,  the finance  minister  Sarjik.  The
-finance  minister  was in  really bad shape -  his bald head  shook  and his
+finance  minister  was in  really bad shape---his bald head  shook  and his
 watery eyes kept running.  Shavash  extracted  this  man  from somewhere  in
 Chakhar province where  he had  been sitting since sovereign Neevik's times.
 Accordingly to  the non-confirmed rumors,  the  finance minister didn't have
@@ -10338,8 +10266,7 @@ credit cards and, seeing other people using them,  he would shake his  head,
 "Nothing good will come out of it I assure you! Say, Shakunik Bank had  also
 issued private  money and then the bank  was  confiscated and the money  was
 lost!  What  if the Federation government runs out of  money and confiscates
-your bank?" The old minister firmly grasped in his youth the  following rule
-- the  richer is an entrepreneur, the more the state covers his riches - and
+your bank?" The old minister firmly grasped in his youth the  following rule---the  richer is an entrepreneur, the more the state covers his riches---and
 he couldn't change himself.
 
      They  abandoned the minister in a  room and Shavash drove examining the
@@ -10391,15 +10318,15 @@ outskirts and  it  seemed  that every  kilometer,  put  between  him and the
 capital, was transposing him backwards  in time. Cute manors  with satellite
 dishes disappeared first, foreign goods on the road stands disappeared next,
 factory-made  shirts  on  people around  him  disappeared last.  A different
-landscape  stretched  around him -  rice paddies  covered  with  water, clay
+landscape  stretched  around him---rice paddies  covered  with  water, clay
 villages where dogs barked and drums boomed in precincts  and where peasants
 in hemp pants sang thousand-year-old songs while collecting the harvest, and
 only a  perfect  highway,  like a  bridge  spanning over time for a  curious
 observer, connected a sprightly rolling jeep with the faraway world of glass
 and steel.
 
-     In thousand  kilometers  the  road  finally  ended - the  jeep  started
-hopping  down  a rocky  mountain  path  -  the  highest  achievement of  the
+     In thousand  kilometers  the  road  finally  ended---the  jeep  started
+hopping  down  a rocky  mountain  path---the  highest  achievement of  the
 construction  methods in  sovereign Irshahchan's  times.  The animals became
 more audacious  and  began crossing the road.  Occasional  people,  however,
 dashed away  from a weird cart into the woods. Rice paddies disappeared; the
@@ -10434,8 +10361,7 @@ government will sleep with their women for them."
      Bemish was assigned the best den  in the  tavern  and Kissur sent him a
 girl.  The  girl had been washed  and she was quite cute.  She  stood  shyly
 tugging at a mat with her bare toes. Bemish seated the girl on his knees and
-started fingering her necklace.  There were numerous coins on the necklace -
-several heavy silver  asymmetric coins  with a  hole  inside and a partially
+started fingering her necklace.  There were numerous coins on the necklace---several heavy silver  asymmetric coins  with a  hole  inside and a partially
 rubbed off Gold Sovereign's  seal,  a dozen  of dimes and quarters, a  Swiss
 frank  and even as far  as Bemish could decipher  German, one Cologne subway
 nickel token.
@@ -10485,13 +10411,13 @@ nobody has taken it."
 
      The  mountain road winded like a pumpkin vine. Heavy rain shredded with
 snow started suddenly. The  wipers were  not able to handle  it. Bemish  was
-horrified  for Kissur  - he was not old Shun, of course, but he  still could
+horrified  for Kissur---he was not old Shun, of course, but he  still could
 break his neck.
 
      This mountainous  area was  wild to the utmost. Trade had flourished in
 the coastal regions and three dozens years ago  local cities such as  Lamass
 or Kudum could  brag about their good communities and  abundant traders. The
-civil war in the Empire turned everything around -  the castles' inhabitants
+civil war in the Empire turned everything around---the castles' inhabitants
 straightened up, the traders' sons left for the castles' regiments and their
 daughters became concubines. The  demand for warlike Alom nobility was  such
 that  an  average  knight could rob  more in two month in the Empire than an
@@ -10561,7 +10487,7 @@ from the road. "Son of a bitch!" Bemish said loudly.
 
      It was  getting dark quickly.  There  was no way to  fix the car. A dog
 behind the  boysenberry fence tried to compensate for a  lacking fire alarm.
-More and more dogs were joining  it. As for the  people - the village seemed
+More and more dogs were joining  it. As for the  people---the village seemed
 to be dead.
 
      "Hei," Bemish shouted, "is anybody there?"
@@ -10585,7 +10511,7 @@ the man.
      The guy shut the door. Bemish kicked the car thoughtfully. He threw the
 fan emitter on  his left shoulder,  a daypack on his right shoulder and took
 the small bike off  the rack. "Fan  laser," he  thought, thinking about  the
-gleam in the opened door, "No way, it's a fan laser, damn it - it's at least
+gleam in the opened door, "No way, it's a fan laser, damn it---it's at least
 a plasma rocket launcher."
 
 
@@ -10595,7 +10521,7 @@ a plasma rocket launcher."
 
 
      The guards let  Bemish into the castle without any surprise; bike or no
-bike  - who can  understand these Earthmen? "Yes,"  Bemish thought,  "people
+bike---who can  understand these Earthmen? "Yes,"  Bemish thought,  "people
 here are very different from the plains' dwellers, they  hugged their swords
 in  silence  for  a thousand years and  now  they silently hug their  rocket
 launchers, every trial verdict starts a vendetta here..."
@@ -10627,10 +10553,10 @@ nervously and he didn't appear to Bemish to be drunk.
      "Aren't there any communication devices in the castle?"
 
      "Oh," the  servant  said,  "what communication are you  talking about?!
-Look  - even  the cloth is homespun. She would burn anything else."  And  he
-pointed at  his dress. Bemish felt  his sleeve -  it  really was  burlap. He
+Look---even  the cloth is homespun. She would burn anything else."  And  he
+pointed at  his dress. Bemish felt  his sleeve---it  really was  burlap. He
 hadn't understood that at first and thought in surprise that the servant had
-a very luxurious jacket - thick knotted cloth like this was fashionable this
+a very luxurious jacket---thick knotted cloth like this was fashionable this
 year.
 
      Bemish  didn't sleep at night and tossed;  old pines  squeaked behind a
@@ -10638,7 +10564,7 @@ narrow window,  designed to  shoot out from not  to look  out  of, and their
 squeaking branches made sounds  like a  hanged man's  rope. Bemish pulled an
 antenna out  of  a small radio and started listening. Suddenly while  he was
 searching  for  a station,  he  heard his  name and a long  string of  words
-spitted out in Alom -  Bemish didn't make them out through the noise. Bemish
+spitted out in Alom---Bemish didn't make them out through the noise. Bemish
 turned the dial again but the conversation had ended. "Hmm," Bemish thought,
 "Somebody in this castle hid a transmitter away from old Elda."
 
@@ -10659,10 +10585,8 @@ luxury and an assault rifle was a necessary tool.
      He reached the car and stopped in surprise.
 
      The car  stood at  the same place and the busted wheel still hunched in
-the rut. The other three wheels had  disappeared  in an unknown direction  -
-the lonesome car sank on its axles. The wipers  were gone off the windshield
-and the  windshield  was  also  gone.  Bemish's eyes traveled into the car -
-radio,  head  supports,  rugs,  handles and  all  five  windows  beside  the
+the rut. The other three wheels had  disappeared  in an unknown direction---the lonesome car sank on its axles. The wipers  were gone off the windshield
+and the  windshield  was  also  gone.  Bemish's eyes traveled into the car---radio,  head  supports,  rugs,  handles and  all  five  windows  beside  the
 windshield  had carefully packed up and left. An untouched first aid kit sat
 in the back seat.
 
@@ -10675,7 +10599,7 @@ gazed  at the engine. Bemish was  quite familiar  with the car's design.  He
 immediately realized that  the night  thieves were  much  more familiar with
 this design.
 
-     Bemish  looked around - geese and turkey with red snot  surrounded  him
+     Bemish  looked around---geese and turkey with red snot  surrounded  him
 and the  same rocket launcher old guy was digging cabbage  in his garden. He
 didn't  have the  rocket launcher  next  to  him,  probably  thanks  to  the
 daylight.
@@ -10701,11 +10625,11 @@ behind his ear and handed the sandals back to Bemish.
 
      He looked  at himself suddenly with the  peasant's eyes. He looked at a
 well  dressed alien coming  out of the world that all the people, who worked
-well and obeyed the authorities, would go to after death - and he looked  at
+well and obeyed the authorities, would go to after death---and he looked  at
 this half bare destitute village where no  phones  existed  but news about a
 car  that  could be  stripped  spread quickly without the  phone,  where  no
 toilets  existed but  mortars  were available, and everybody knew everything
-but would  say nothing  about his neighbors -  and he  realized  with  utter
+but would  say nothing  about his neighbors---and he  realized  with  utter
 clarity that even if the night adepts  had stripped the car in  the view  of
 the whole village and it probably had happened  this way, not all the police
 in the world would be able to find out who had done this.
@@ -10716,8 +10640,8 @@ in the world would be able to find out who had done this.
 
      Bemish turned around.  Behind him in a sport  car, turquoise and narrow
 like  an orchid petal,  Kissur's  brother, Ashidan  sat. A perfect shirt,  a
-precise hairdo, the  smell of  cologne - a starting manager and a  Cambridge
-graduate - Bemish felt his world pleasantly coming back to him.
+precise hairdo, the  smell of  cologne---a starting manager and a  Cambridge
+graduate---Bemish felt his world pleasantly coming back to him.
 
      Terence Bemish sardonically raised the bark footwear.
 
@@ -10748,14 +10672,14 @@ and the criminal is not apprehended, the lord should  arrest several village
 inhabitants and keep them  as  hostages till they  die  or  till  the others
 deliver the guilty party."
 
-     Bemish stared  at Ashidan with wide opened eyes. The charming boy - and
-he was a very beautiful  lad - looked very  much like a  successful manager.
+     Bemish stared  at Ashidan with wide opened eyes. The charming boy---and
+he was a very beautiful  lad---looked very  much like a  successful manager.
 "In this  voice his  ancestors  spoke generation  after generation,"  Bemish
 thought, "It looks like progress here is characterized by the lord putting a
 peasant in a car's trunk instead of tying him to a horse's tail."
 
      "This man," Ashidan said, pointing at Bemish, "is a named brother of my
-brother  and a  guest  of  my ancestors. My  brother is coming today  -  the
+brother  and a  guest  of  my ancestors. My  brother is coming today---the
 servants  brought news that  he  got stuck at  the  Trekking Pass and took a
 detour via Lokh."
 
@@ -10786,7 +10710,7 @@ the white peasant's dress with a load of mud and rushed away.
 
 
      Kissur reached  the castle only by  noon. The  rumors  appeared  to  be
-correct  -  an  avalanche  had descended off the  Trekking Pass  and it  had
+correct---an  avalanche  had descended off the  Trekking Pass  and it  had
 brushed by  the  people  and the horses.  Everybody was  alive  but Kissur's
 horse, Stargazer, with a white arrow on  his forehead and  wide hooves,  was
 dragged down and only a red spot blinked in the snow for a moment. They took
@@ -10797,7 +10721,7 @@ ripe cherries because of the horse. Kissur glanced at Bemish and snapped,
 
      Bemish didn't pursue him. Something scary suddenly hung in the air, the
 stone  gods'  masks  grimaced with  their mouths at the Earthman and clanged
-their teeth. Bemish turned around  - pale Ashidan stood  next to him rubbing
+their teeth. Bemish turned around---pale Ashidan stood  next to him rubbing
 his temples.
 
      Kissur  locked  himself in a  corner tower  and  didn't let anybody in.
@@ -10815,10 +10739,10 @@ the guy over and said,
 
      "One," the guy answered without blushing.
 
-     Bemish looked at the guy's feet -  he stood in a pool wiggling his bare
-toes.  The Earthman walked around  the car and unlocked the trunk - the case
-bristled  there  self-importantly.  Bemish opened the case  - underwear  and
-clothing was there, only two shirts were wet - clearly, they had been washed
+     Bemish looked at the guy's feet---he stood in a pool wiggling his bare
+toes.  The Earthman walked around  the car and unlocked the trunk---the case
+bristled  there  self-importantly.  Bemish opened the case---underwear  and
+clothing was there, only two shirts were wet---clearly, they had been washed
 and ironed. Bemish extracted leather boots out of the case.
 
      "Hold it," Bemish said, "That's a gift for you. The guy gasped and took
@@ -10856,7 +10780,7 @@ that they grew in this field. He was going to  ask for how long the peasants
 had  been growing this  stuff but  the bailiff  rushed towards  him.  Bemish
 turned around and drove away.
 
-     It was just before the sunset - he drove down a forest till  he found a
+     It was just before the sunset---he drove down a forest till  he found a
 nice lawn to  the  road's left. He drove  into the lawn, turned the ignition
 off, lifted the hood and gazed at the engine.
 
@@ -10884,33 +10808,32 @@ from the whole Galaxy could visit the castle.
 have disabled  access." And  he squeezed  himself  nimbly onto a narrow  and
 incredibly steep staircase spiraling along one of the outside walls.
 
-     Merriness ruled  the castle in  the evening  - the  grooms braided  the
+     Merriness ruled  the castle in  the evening---the  grooms braided  the
 horses'  tails,  servants  dragged out  of the  closets huge  yew  old bows,
 wrapped in old rotten cloth  with silver inscriptions. Bemish glanced into a
-semi-dark  stable and froze  -  Kissur,  smiling coldly, was hiding a stubby
+semi-dark  stable and froze---Kissur,  smiling coldly, was hiding a stubby
 black assault rifle in a saddlebag.
 
      Bemish stepped inside. Kissur lowered the woven bag lid.
 
      "What game," Bemish asked, "are we going to hunt tomorrow?"
 
-     "In  this area,"  Kissur  said, "people  have been hunting big  game  -
-boars, bears - since old times."
+     "In  this area,"  Kissur  said, "people  have been hunting big  game---boars, bears---since old times."
 
      A  question hung on Bemish's tongue tip, "What  kind of boar  would you
 hunt with an assault  rifle?"  But Bemish licked  his lips and swallowed the
 question.
 
      They rode out before the crescent left the black sky, equipped the same
-way as eight or hundred  years ago - Kissur  wore  grey  suede  tall  boots,
+way as eight or hundred  years ago---Kissur  wore  grey  suede  tall  boots,
 decorated with  lilies, with high red heels but  without  spurs, green pants
-and  a red jacket girdled with a heavy belt made  out of gold plates - every
+and  a red jacket girdled with a heavy belt made  out of gold plates---every
 plate depicted a beast or a fish. Kissur's overcoat was also green, with two
 wide lanes  sewn with golden mesh. A bow hung  on his shoulder and a leather
 quiver hung behind his back; arrow  feathers, white like plastic foam, stuck
 out of the quiver. A throw-axe  hung at his belt and two yew javelins  and a
 sword hung at the saddle. The  other nobles  were  dressed the same way.  It
-would  be  wrong  to call  it carnival dress  - Kissur, like the majority of
+would  be  wrong  to call  it carnival dress---Kissur, like the majority of
 Weians, dressed archaically even  in  the capital and he  practically always
 wore  a wide necklace,  made  out  of  jade  plates  set  in woven  gold and
 depicting falcons. As for Bemish, he clearly understood that his hunting bib
@@ -10929,14 +10852,13 @@ grant fortune without  a sword since the road to the other  world went along
 its edge and they brought and took away beasts down this road.
 
      They  watched  the sunrise from  a  mountaintop, aerial wind danced  in
-their horses'  tails - they  said that  this wind used to  mount fillies  in
-ancient times and black horses with white spots had been born of this wind -
-shells scrunched occasionally under the hooves reminding that a sea had been
+their horses'  tails---they  said that  this wind used to  mount fillies  in
+ancient times and black horses with white spots had been born of this wind---shells scrunched occasionally under the hooves reminding that a sea had been
 there millions of years ago. Then, Kissur espied a deer that also decided to
 enjoy the sunrise and they released the dogs and rode following them.
 
-     There  were five nobles  -  Kissur,  Ashidan, Khanadar the Dried  Date,
-Aldon and Bemish, there were also eight dogs and three servants - they drove
+     There  were five nobles---Kissur,  Ashidan, Khanadar the Dried  Date,
+Aldon and Bemish, there were also eight dogs and three servants---they drove
 the deer at Kissur and he, having opened his eyes  wide and screamed wildly,
 threw a spear handed to him by one of  the servants. Painted yellow,  with a
 green  pinecone on the end, the spear  almost  pierced  the deer all the way
@@ -10955,7 +10877,7 @@ the tree.
 
      "Don't do it," Kissur told his brother, "It's a bad omen."
 
-     But Ashidan had already pulled his bow  and shot - the cub let the tree
+     But Ashidan had already pulled his bow  and shot---the cub let the tree
 go and  fell. Ashidan  jumped off the saddle and ran to the cub. The  bushes
 were pulled  apart, a roar issued forth and a huge black and  brown she-bear
 barged in.
@@ -10982,9 +10904,8 @@ moment the pile of seemingly dead meat moved and Kissur materialized.
 
      "Damn," he bared his teeth, "sword..."
 
-     But the sword, after they had turned the bear over, appeared to be fine
-- it had entered  her belly almost all the way to the guard.  They  examined
-her snout - the bullet hit the bear right in her eye.
+     But the sword, after they had turned the bear over, appeared to be fine---it had entered  her belly almost all the way to the guard.  They  examined
+her snout---the bullet hit the bear right in her eye.
 
      Yes,  the hunt was excellent,  even Dried Date  who  was not capable of
 smiling screamed and hooted. He sat at the  fire next  to Kissur's knees and
@@ -11002,7 +10923,7 @@ to money.
 
      After the bear cub accident, Ashidan  saddened  and it happened somehow
 that Kissur and his retinue raced in front and Bemish lagged behind them and
-rode next to Ashidan. The latter was  pale - either due to the weed that the
+rode next to Ashidan. The latter was  pale---either due to the weed that the
 peasants  grew in a  local field  or  because of Cambridge. Bemish leaned to
 Ashidan and asked quietly,
 
@@ -11038,21 +10959,21 @@ Khanalai's hand and if people are killed, their souls enter their swords."
 
      "He took me prisoner," Ashidan answered.
 
-     Bemish  stared  at the  youth -  he  was  young, slim like a  snake and
+     Bemish  stared  at the  youth---he  was  young, slim like a  snake and
 incredibly beautiful, with  golden hair and grey eyes heavily mascara coated
 for the hunt.
 
      "Oh, my God! How old were you?"
 
      "I  was fifteen, almost fifteen. Kissur entrusted me with five thousand
-horsemen and Dried Date  and Aldon's uncle - Aldon  the  Striped - were with
+horsemen and Dried Date  and Aldon's uncle---Aldon  the  Striped---were with
 me.  We should have waited for Kissur  in  the Black Mountains. But we heard
 that down there, in the town of Lukhun, merchants had come in for a fair and
 were bunched all together there because of the war. We decided to seize this
 town because we would get more loot if we didn't wait for Kissur.
 
      So, we approached this town  with a guide and when the sun came out  we
-realized  that  it was  a trap  - Khanalai's army encircled us. Khanalai was
+realized  that  it was  a trap---Khanalai's army encircled us. Khanalai was
 going to catch Kissur."
 
      Ashidan rocked in the saddle.
@@ -11062,13 +10983,13 @@ image of the White Falcon on it; Khanalai thought that Kissur himself got in
 his trap. He really didn't want to fight but he had to accept the challenge.
 He was afraid that his captains would mock him.
 
-     There is not much to say about  this fight - Khanalai split my shoulder
+     There is not much to say about  this fight---Khanalai split my shoulder
 and threw me to the ground like a kitten  and  then he  removed my helmet to
 cut  my  head  off. He was really surprised  and he asked me,  "Who are you,
 brat,  to wear a White Falcon shield?"  I told him that  my name was Ashidan
 and that my brother Kissur would avenge me and why wouldn't he just shut his
 lousy trap and cut my head off. I was a  very cute boy and Khanalai suddenly
-took pity on  me. He raised his sword and then he thought, "I will die - and
+took pity on  me. He raised his sword and then he thought, "I will die---and
 these words contained all  the horror of irreversible, you couldn't sleep at
 night having heard them. So, would it be worth it to  bring the sword down?"
 At  least, that's what  he  told me  afterwards. So he threw me like a wench
@@ -11118,7 +11039,7 @@ dung in his childhood.  He cut one of Khanalai's aides head off, threw it in
 a sack  and raced  to Kissur  with this ransom. And he  also gave Khanalai's
 sword to Kissur."
 
-     Ashidan paused and said,  "I also met Khanalai's son there - we were of
+     Ashidan paused and said,  "I also met Khanalai's son there---we were of
 the same age and the lad was quite gifted. I  think that Khanalai took mercy
 on  me because  of him. He asked me once, "What if Kissur gets a hold  of my
 son? Do you think he will let him live like I let you?"
@@ -11148,14 +11069,14 @@ you?"
 
      "Aldis  the  White Falcon is  buried  next  to  the old  altar  and two
 families were  assigned  to take care of the  grave.  But they ignored their
-duty  and Aldis ate  them  and he liked it  - he started  climbing out every
+duty  and Aldis ate  them  and he liked it---he started  climbing out every
 night,  chased passersby with all his retinue and herded them into his place
 for a feast. A traveler passes by and sees a  manor with lights on, and only
-his  bones  are left by the morning. People took notice - if on a  new  moon
-night  there were fire  and commotion at the old  altar house  -  then, some
+his  bones  are left by the morning. People took notice---if on a  new  moon
+night  there were fire  and commotion at the old  altar house---then, some
 family would wail  somewhere soon enough. They  would  have pounded a  stake
 down his coffin long time ago if he had been a  commoner but they are afraid
-of doing it - you know, he is Kissur's great grandfather." Ashidan grinned.
+of doing it---you know, he is Kissur's great grandfather." Ashidan grinned.
 
      "It's  not  fitting  to  visit  ancestors'  graves  with   an  Earthman
 outlander,"  he said, "It's  enough for a stranger that  we took  him for  a
@@ -11178,7 +11099,7 @@ the fence. Ashidan's face acquired a pallid color of toothpowder.
      The  riders quietly dismounted, Kissur petted  his horse so it wouldn't
 neigh  and stuck covertly a stubby assault rifle  under his overcoat. A pine
 tree, that  had fallen last year, crushed the fence and miraculously  spared
-the chapel - they took a look over the tree  log into a wide yard. There, on
+the chapel---they took a look over the tree  log into a wide yard. There, on
 a stone site, a  small space boat Orinoko-22 stood looking  like  a  striped
 squash. People in body suits were standing  in a line and passing sacks from
 the altar house to the boat.
@@ -11187,12 +11108,12 @@ the altar house to the boat.
 longer fly without engines!"
 
      He bounced over the log and stepped in the lit  circle. Frankly, it was
-Kissur that looked more like  a  ghost here  - a  hunter in an ancient green
+Kissur that looked more like  a  ghost here---a  hunter in an ancient green
 caftan  with  a yew bow hanging over his shoulder and his  face painted with
-blue  stripes for the hunt - amidst people in  flying suits  who froze for a
+blue  stripes for the hunt---amidst people in  flying suits  who froze for a
 moment next to  a  cargo hatch. The people dropped plastic sacks. Three guys
 jumped out  of  an  altar house window  with  long  barreled lasers in their
-hands.  A  horse quietly neighed - Khanadar and Ashidan stepped out into the
+hands.  A  horse quietly neighed---Khanadar and Ashidan stepped out into the
 light from the other side, leading their horses.
 
      "False alarm," somebody said, "these are the landlords."
@@ -11292,8 +11213,7 @@ apart."
      "Don't pick a fight with him," another Earthman said, "he is livid."
 
      "You would become livid  here," Khanadar the Dried Date objected, "when
-your own serfs don't pay you their taxes fairly and you brother cheats you -
-hasn't Ashidan promised you Kissur's protection?"
+your own serfs don't pay you their taxes fairly and you brother cheats you---hasn't Ashidan promised you Kissur's protection?"
 
      Kissur and the pilot disappeared in  the  hatch opening. Ashidan sat on
 the  log  not raising his pale  face. Bemish's mind was  reeling.  If Kissur
@@ -11318,8 +11238,7 @@ stair.
      The Earthman shrugged his shoulders and bended down to the dusty boot.
 
      At this  moment, Kissur  kneed the  pilot  under  his  chin. The  pilot
-squealed. His body flew upwards and Kissur's joined hands crushed his neck -
-his backbone crunched.
+squealed. His body flew upwards and Kissur's joined hands crushed his neck---his backbone crunched.
 
      Out of  the corner of his eye,  Bemish barely managed to  see how Aldon
 plucked  Ashidan and  threw him into  the bushes. Kissur  went flat behind a
@@ -11352,8 +11271,7 @@ stood over the knife.
      Date extended his hand and helped Bemish get up. They climbed the loose
 rocks uphill to the lighted altar house and space boat.
 
-     Everything had already  been  done there. Bemish  counted the corpses -
-sixteen  people, five wore body suits or jeans and the  others were  locals.
+     Everything had already  been  done there. Bemish  counted the corpses---sixteen  people, five wore body suits or jeans and the  others were  locals.
 The gunpowder smell  of shots  mixed with the smell of fresh hemp and blood.
 Ashidan sat on a rock holding his head in his hands.
 
@@ -11511,14 +11429,14 @@ co-founders.  Mr. Bemish  will  fit perfectly  there  and as for you,"  here
 Shavash smiled  charmingly at  the  banker,  "I would  like you,  Ronald, to
 handle the negotiations with the bonds' owners."
 
-     Ronald Trevis leaned  forward - his  eyes reflected the lights from the
+     Ronald Trevis leaned  forward---his  eyes reflected the lights from the
 candles  burning  on  the table and the  green illumination coming from  the
 counter surveillance device. "He will never stop," a thought passed Bemish's
 mind, "He will handle the most fantastic  deals for Shavash because  Shavash
 can offer  him what nobody has ever done  in the Galaxy  yet.  He will  be a
 consultant if Shavash asks him to privatize the ministry of finance."
 
-     Three days later, Bemish dropped by Assalah, for a couple of hours - he
+     Three days later, Bemish dropped by Assalah, for a couple of hours---he
 was accompanying a Galactic Bank committee.
 
      The  committee  was shown a  new section  of finished  launching  pads,
@@ -11538,7 +11456,7 @@ layer of dust.
 
      "By the way," Giles said, "satellites observed  a space  boat explosion
 in this area. It was something like a Colombine or a Trial with a boosted up
-engine - they use them to traffic drugs. By any chance, have you heard about
+engine---they use them to traffic drugs. By any chance, have you heard about
 it?"
 
      "I witnessed it," Bemish  said. "Kissur blew  up the boat. Before that,
@@ -11591,19 +11509,19 @@ head!"
      "But Shavash is Kissur's friend..."
 
      "Friend? The only thing he wants is to get into  Idari's bed! If Kissur
-keels over, before a year goes by,  Idari  will have a choice - either to go
+keels over, before a year goes by,  Idari  will have a choice---either to go
 bumming or to marry Shavash!"
 
      Giles looked at Bemish and said suddenly,
 
-     "I think that Mrs. Idari  will also have  the  third  alternative -  to
+     "I think that Mrs. Idari  will also have  the  third  alternative---to
 marry the  Assalah spaceport  director.  Not that a barbarian from the stars
 could really allure her..."
 
 
 #chapter("The Eleventh Chapter,")[where  Terence Bemish's assistant  goes  to  the  sectants' meeting  in
 Imissa while  Kissur the White  Falcon looks around the Galaxy for abandoned
-warheads.]
+warheads]
 
      Two days later, Ashinik returned to the spaceport and  he didn't drop a
 word about the Inissa meeting. It could not  be ruled out  that the  zealots
@@ -11624,7 +11542,7 @@ would like to meet you. "
 
      Bemish was quite impressed.  He cleaned up  his office and  changed his
 jacket, just in case; he hung his regular one in the closet and picked out a
-light grey jacket that had one very useful feature - it could resist a laser
+light grey jacket that had one very useful feature---it could resist a laser
 burst at a three meter distance.
 
      Ashinik led into the office an eighty-year-old man in peasant clothing,
@@ -11758,7 +11676,7 @@ due to the  accounting error I  made yesterday. If it's something  else, why
 don't you tell me about it?"
 
      Bemish smiled  slightly imagining Inis advising him.  She, however, was
-right - he, indeed, needed advice.
+right---he, indeed, needed advice.
 
      Bemish climbed out of bed and,  having walked to the bathroom, dialed a
 number. Surprisingly, he heard  an answer  immediately even  though  it  was
@@ -11780,10 +11698,10 @@ May I see you?"
 
 
      Idari  met him  in  the large  living room.  Bemish  didn't  ask  about
-Kissur's  whereabouts  - the  majordomo  had already  whispered to  him that
+Kissur's  whereabouts---the  majordomo  had already  whispered to  him that
 Kissur was on a pub crawl accompanied by two barbarians and one bandit.
 
-     Idari wore a solemn house mistress dress - long black pants and a black
+     Idari wore a solemn house mistress dress---long black pants and a black
 blouse.  The blouse's sleeves  were embroidered  with  entwined  flowers and
 stems. She  was girdled  by a  wide belt of  silver segments. She  walked by
 Bemish  carefully stepping on the  beasts and grasses weaved on the rugs and
@@ -11835,8 +11753,8 @@ they could catch him with?"
      The hotel's  malachite columns gleamed and the mirrors  on the  lobby's
 walls were inlaid with the thinnest silver layers on top. Above the mirrors,
 where  the gods had been depicted in the past,  elegant clocks were now set;
-they showed the local time, Melbourn time - Melbourn being the Federation of
-Nineteen capital during this decade - and time  in London, New  York, Khoine
+they showed the local time, Melbourn time---Melbourn being the Federation of
+Nineteen capital during this decade---and time  in London, New  York, Khoine
 and in a dozen other largest Galaxy's business centers.
 
      A certain disturbance was taking place in the hotel's  lobby, a  palace
@@ -11996,12 +11914,12 @@ the multiple screens hanging in a lounge that Ashinik was passing through.
      Ashinik stood in  silence  boring  the screen through with his eyes.  A
 worker passed by and slid a note  into the lad's hand. He unwrapped and read
 it; the note  ordered him to attend  a meeting at one  of the sect's  secret
-places -  an  old  temple next to a tavern  three hundred kilometers to  the
+places---an  old  temple next to a tavern  three hundred kilometers to  the
 north from Assalah.
 
      Ashinik paled and hurried to an exit.
 
-     They waited  for him  at  the  exit -  two people  in  black  and white
+     They waited  for him  at  the  exit---two people  in  black  and white
 uniforms of the  security  service silently blocked his way. Ashinik made an
 attempt to turn aside.
 
@@ -12112,7 +12030,7 @@ with Inis? She is a dumb broad; you can get a bunch of them for an ishevik."
 and Bemish. Wind and engines howled behind a huge dark window, the glares of
 the  beacons  darted  across  the landing field  and  chunks of pollen  from
 blooming  nut  trees  traveled  back  and  forth  over  the  landing  space.
-Technicians  cursed under their breath - the pollen found its way inside all
+Technicians  cursed under their breath---the pollen found its way inside all
 the hardware. Superstitious  locals said  that  it was  a bad  omen.  Pollen
 whirlwinds were always considered to be  witches  and the places where  they
 moved particularly high were known to be damned.
@@ -12159,7 +12077,7 @@ will get out of there alive only if you agree to kill Terence!"
      "Don't touch me, demon!" the youth suddenly screamed.
 
      Bemish leaped  up. Ashinik's face was contorted and foam bubbled on his
-lips - a fit started.
+lips---a fit started.
 
 
     #dinkus()
@@ -12174,7 +12092,7 @@ of it; it was Shavash.
      "Are you sure that a meeting will occur?" Giles asked.
 
      "I  am  three hundred percent sure," Shavash replied.  "The top  of the
-sect will  be there. It's our only  chance  -  to pick them all and cut them
+sect will  be there. It's our only  chance---to pick them all and cut them
 down to a demon's snot!"
 
      "It's your only chance," Bemish said through his teeth.
@@ -12199,7 +12117,7 @@ join BOAR stock owners..."
      "I will think about it," Bemish said in a suddenly low voice.
 
      Shavash didn't insist. He knew that the Earthman  had never exchanged a
-friend's life before for a certain - even  if very large  - amount  of money
+friend's life before for a certain---even  if very large---amount  of money
 and he thought that a man had to get used to such a thought.
 
      He stopped talking and he excused  himself soon. Giles  stepped out  to
@@ -12261,7 +12179,7 @@ other accidents.
 
      Ashinik stuck his  nose  into  a  couple of offices.  They  were mostly
 filled  with medical equipment. Two rooms teemed with plastic paint  buckets
-and other construction  paraphernalia  - they  were being  furnished.  Sharp
+and other construction  paraphernalia---they  were being  furnished.  Sharp
 paint smell hadn't disappeared completely yet and the  workers laboring here
 during the day had left a window ajar.
 
@@ -12271,7 +12189,7 @@ during the day had left a window ajar.
 paint was. Yes!  A small white roll, about  an elbow wide, was there, behind
 the plastic buckets. It  was not  a rope, no;  it  was  just sound resistant
 insulation tape that  was used for seal soundproofing linnit blocks. Ashinik
-knew,  however,  that  the tape  was  incredibly  strong - the  construction
+knew,  however,  that  the tape  was  incredibly  strong---the  construction
 workers  loved  to  sell it  on the  side  to the peasants  who  wove  horse
 harnesses out of it. The tape length in a standard pack was sixty meters but
 the workers  had  already utilized  some. By  Ashinik's estimate, about  one
@@ -12287,7 +12205,7 @@ the other one.
 
      In  five  minutes, Ashinik jumped down onto a sidewalk and  ran at  top
 speed across stiff and booming thermoconcrete. This spaceport's  sector  was
-relatively empty -  two helicopters stood  next to  its  border and a  hefty
+relatively empty---two helicopters stood  next to  its  border and a  hefty
 trans-galactic liner was being loaded far away. With an open mouth,  Ashinik
 stared at the  containers floating into the cargo hatch for several moments.
 What if he just crept in the ship and flew away  from this damned planet? At
@@ -12299,12 +12217,12 @@ jeep that was perched at the curb. Earlier, he had asked a worker to leave a
 car there.
 
      Ashinik jumped  into  the jeep and  stuck his  hand under  the driver's
-seat. Thank God  -  the car keys were right where they were  supposed to be,
+seat. Thank God---the car keys were right where they were  supposed to be,
 wrapped in a dirty rag. Ashinik turned the ignition on and a cold gun barrel
 touched his temple  and somebody said quietly,  "Be nice and drive straight,
 cutie."
 
-     Ashinik glanced aside -  he  could  see  the  speaker  in  the rearview
+     Ashinik glanced aside---he  could  see  the  speaker  in  the rearview
 mirror. Ashinik recognized him to be a personal bodyguard of Shavash's,  one
 out of five that he was rumored to hold in his complete confidence.
 
@@ -12402,8 +12320,8 @@ among the people with two goblets, a white and a black one. Everyone put his
 hand into one goblet and then into the other one.
 
      Dush also  lowered  his hand  into  the white goblet and then  into the
-black one. He had a dry bean in his hand - he was supposed to drop it in one
-of the  goblets  -  nobody  could see in which  one. Ashinik didn't have any
+black one. He had a dry bean in his hand---he was supposed to drop it in one
+of the  goblets---nobody  could see in which  one. Ashinik didn't have any
 difficulties, however, guessing that Dush chose the white one.
 
      The  boys walked around all six people and then they turned the goblets
@@ -12497,7 +12415,7 @@ and banged into the road cover face on.
      The driver  banged his forehead on  the steering wheel and hurt himself
 quite a bit.  Shavash obtained a minor concussion and got the driver's blood
 all over  his  excellent  suit. The bodyguard had  been  sitting in the back
-seat, against the regulations, and he was not so lucky  - he sustained a rib
+seat, against the regulations, and he was not so lucky---he sustained a rib
 fracture and a lacerated spleen.
 
      Having  learned  about  serit  explosives,   Bemish   went  cold.  This
@@ -12522,7 +12440,7 @@ quietly even though they were alone.
      "Being me, I will not wait till Shavash addresses this issue."
 
      In an hour Inis entered Bemish's office. Bemish raised his eyes and got
-a surprise - Inis  was very serious,  her eyebrows were furled and her  face
+a surprise---Inis  was very serious,  her eyebrows were furled and her  face
 was pale. She even wore a skirt that almost reached to the  ground though it
 was somewhat transparent.
 
@@ -12537,7 +12455,7 @@ away."
      Bemish paused.
 
      "Terence, I swear to you that he  is  not guilty!  These people... they
-just used  him as a dummy front! It's their technique - they  decided to get
+just used  him as a dummy front! It's their technique---they  decided to get
 rid of  the man who is  half Earthman already and they decided to do it with
 Shavash's hands!"
 
@@ -12627,7 +12545,7 @@ you arrest Ashinik who is  not particularly strong in his faith,  thanks  to
 your efforts,  he will tell  us everything.  Three days later, after Ashinik
 tells us everything, nothing will be left of the sect."
 
-     "Nothing will be left except the reasons for its existence - poverty of
+     "Nothing will be left except the reasons for its existence---poverty of
 the people, embezzling officials and rude Earthmen."
 
      Shavash grinned.
@@ -12668,8 +12586,7 @@ corridor. Shavash threw the door wide open.
 
      Bemish noticed a pile of bloody rags in a corner, some pliers in a bowl
 and Ashinik's dead eyes. Completely naked, he was hanging head down on metal
-rings attached to a wall and Bemish's attention was pulled to his right hand
-- all the nails there had been torn out. Then Shavash stepped forward moving
+rings attached to a wall and Bemish's attention was pulled to his right hand---all the nails there had been torn out. Then Shavash stepped forward moving
 his friend  aside  and said in a tired  and  ironic voice, "The first set is
 finished. Take the pear off the branch."
 
@@ -12683,7 +12600,7 @@ them, baring his rotten teeth, silently stuck a gun into Bemish's side.
 
      Ashinik's  eyes were as  empty as RAM in a turned off computer. Then he
 whispered something. His lips didn't work. Bemish understood only the end of
-the sentence - Ashinik swore dirty.
+the sentence---Ashinik swore dirty.
 
      "That's not an answer." Shavash said.
 
@@ -12700,7 +12617,7 @@ approached the prisoner again.
 
      He spun to Bemish.
 
-     "Choose, Terence - this guy or the controlling stock block of BOAR."
+     "Choose, Terence---this guy or the controlling stock block of BOAR."
 
      The  single second, that  passed by,  seemed like  eternity to Ashinik.
 Then the Assalah general director pushed the gun,  pointed at  him, away and
@@ -12795,7 +12712,7 @@ I saved your life. It's one to one. I don't owe you anything."
 
      "You will find  here your last check  from Assalah Company, two tickets
 to Earth, and an application form to Havishem; it's one of the best business
-schools. I talked to Trevis - they will  accept you to Havishem. Trevis will
+schools. I talked to Trevis---they will  accept you to Havishem. Trevis will
 pay your tuition fees."
 
      Ashinik pulled the  papers out of the  folder. His bandaged  right hand
@@ -12906,8 +12823,8 @@ that   the  construction  of  one  S-field  missile  cost  as  much  as  the
 construction of twenty five subsidized houses for the underprivileged.
 
      The world shed tears. Instead of  building missiles  and  employing the
-same underprivileged as  a workforce  - that would  enable them to buy their
-houses with their earned income - the Federation  signed a treaty offered by
+same underprivileged as  a workforce---that would  enable them to buy their
+houses with their earned income---the Federation  signed a treaty offered by
 Gera and started constructing houses for the poor.
 
      Now  Gera  now  didn't have to  build  expensive missiles  and  it  put
@@ -12916,7 +12833,7 @@ not be covered by the treaty and would be cheaper.
 
      Some  missiles had been destroyed outright and  some had been partially
 disassembled and brought to a "relatively disabled" stage. The missiles from
-three bases - Arcon, Mino and Delos - had been transported to Nordwest.
+three bases---Arcon, Mino and Delos---had been transported to Nordwest.
 
      The accompanying  documentation pointed out that there were one hundred
 forty  six "relatively disabled"  missiles.  The  whole  Galaxy thought that
@@ -12939,7 +12856,7 @@ why Denny Hill conducted the census on his own.
 
      In two weeks on a  planet  with the beautiful name of Grace, two people
 approached  Denny Hill who was spending his vacation there. Denny would have
-ever  taken  them  for students - both  guys  were well-built and  lean like
+ever  taken  them  for students---both  guys  were well-built and  lean like
 pedigreed greyhounds and the senior  guy  had an old horrible scar above his
 neckline. They were Kissur and Khanadar.
 
@@ -13011,7 +12928,7 @@ base and the only thing that the regulations were good for was taking memory
 in the computer.
 
      Denny Hill counterfeited a backup copy of the loading papers and locked
-it in a safe. He was not able to fake the files in the computer itself - the
+it in a safe. He was not able to fake the files in the computer itself---the
 computer was protected too well.
 
      Three days later Denny shoved Jack the Ripper virus into the  computer,
@@ -13026,7 +12943,7 @@ hard drive removing the last traces of his real activities.
 registered at the planet of  Agassa, to  reach Lakhan spaceport.  Lore Sigel
 was  in charge of freight  shipping at the spaceport. A  while ago, Lore had
 been a very promising young man but his social-anarchy tendencies interfered
-with  his career. He spent three days in jail for offending the public  - he
+with  his career. He spent three days in jail for offending the public---he
 attempted to  register a pig bought  at a  pig  farm  as  a candidate on the
 presidential elections in Austria. He was a witness at a number of notorious
 terrorist trials and he  had a habit of constantly  moving from one place to
@@ -13097,7 +13014,7 @@ storage facility."
 
      "Why don't you load it into 17B?"
 
-     17B storage was  empty - it had been built for military  equipment  and
+     17B storage was  empty---it had been built for military  equipment  and
 its walls, covered with lead sheets, insulated all irradiation.
 
      "What about Giles?"
@@ -13120,11 +13037,11 @@ its walls, covered with lead sheets, insulated all irradiation.
 
      "Send them to 17B storage."
 
-     In half an  hour Ashinik  came to Bemish to get  storage "keys"  -  its
+     In half an  hour Ashinik  came to Bemish to get  storage "keys"---its
 electronic locks required an ingenious system of codes and, additionally, it
 had a microprocessor  that could recognize the  owner's retina  pattern. The
 lock could store ten retina patterns in its memory but it currently had only
-two - Bemish's and Giles'. Only Bemish, however, knew the password.
+two---Bemish's and Giles'. Only Bemish, however, knew the password.
 
      The cargo delivered by Laissa was registered as medical equipment. That
 was  not surprising.  Every  day,  three hundred  tons of  medical equipment
@@ -13146,7 +13063,7 @@ green color, moving inside the classified storage area.
 
      Having returned to his office, Bemish checked Ascon Company out. It had
 been registered  two  months  ago and  it  was an IC  offshoot. Out  of  its
-cofounders,  two  were anonymous  -  they  were  probably colonel  Giles and
+cofounders,  two  were anonymous---they  were  probably colonel  Giles and
 Shavash.
 
      That's  our  Giles,  that's our fighter for democracy! No surprise here
@@ -13168,12 +13085,12 @@ planet  what Marx  wrote  about  five  centuries ago  and  Shrainer  half  a
 century... Of course, Irshahchan was limited  by his epoch  and culture but,
 generally, his  actions  were  correct.  And I don't  think that anybody has
 achieved more for the recovery of Irshahchan's and Marx'  ideals than Kissur
-has. Now, we - six Earthmen - should be proud that we are helping, albeit to
+has. Now, we---six Earthmen---should be proud that we are helping, albeit to
 a small degree, to fix the world that our countrymen, obsessed by the spirit
 of capitalism, have corrupted."
 
      Everybody agreed that, generally, the sovereign Irshahchan had  thought
-a lot in unison with Marx and Shrainer - half a century ago - even though he
+a lot in unison with Marx and Shrainer---half a century ago---even though he
 had been somewhat backwards compared to the abovementioned thinkers.  He had
 still been a despotic ruler of a patriarchic society.
 
@@ -13206,12 +13123,12 @@ resort. He swam too far out in the local ocean and drowned.
 
 #chapter("The Twelfth Chapter,")[where the Emperor  of  the Country  of  Great  Light finds out the real
 purpose of the Assalah construction from  the opposition press and expresses
-his confusion.]
+his confusion]
 
      In the beginning of May a large  article filled  a quarter of a page in
-one  of the  most influential  newspapers  - MegaMoney. A well known economy
+one  of the  most influential  newspapers---MegaMoney. A well known economy
 journalist and a Ronald Trevis' fan Christopher Blant figured out (or got  a
-hint) to perform the simplest calculation - he took secondary balances  that
+hint) to perform the simplest calculation---he took secondary balances  that
 large  banks had  to publish and  added  up all the credits  granted to  the
 Empire of Great Light.
 
@@ -13226,13 +13143,12 @@ devalued."
 
      The investors  clutched their heads. They demanded the Weian government
 to publish the real debt figures. During next week, the government published
-three different figures - eighty, hundred and hundred and thirteen billion -
-all of them signed by the finance minister.
+three different figures---eighty, hundred and hundred and thirteen billion---all of them signed by the finance minister.
 
      It only spread the panic further.
 
      Somebody  started  a rumor that the payments on the two billion  dinars
-credit  obtained  by Weia from Galactic Bank would be postponed first - this
+credit  obtained  by Weia from Galactic Bank would be postponed first---this
 credit had been turned into securities and distributed  on the market  after
 the bank had gone public.
 
@@ -13240,7 +13156,7 @@ the bank had gone public.
 came out with a restructuring plan.
 
      The  two  billion loan  would be taken over  by a new company BOAR that
-would obtain in exchange - at  no cost - one of the largest nickel and other
+would obtain in exchange---at  no cost---one of the largest nickel and other
 non-ferrous metals deposits in  the Galaxy  where the government had already
 built an ore enrichment facility. The concern  and all the  other  companies
 registered  at its  territories would  not have to pay anything  towards the
@@ -13253,13 +13169,13 @@ on the  state's  debt that the company would  have to make. The  bond prices
 skyrocketed at once to 97% of their face value.
 
      The bankers were tearing their hair out in shock. The newspaper article
-resulted -  without any responsibility from the Weian government's side - in
+resulted---without any responsibility from the Weian government's side---in
 devaluation  of the bonds. Their  value  could have dropped to  even  30% if
 somebody hadn't bought devalued securities through Ronald Trevis.
 
      Inissa governor came, probably, the closest to the understanding of the
 true reasons behind the panic; he didn't really like Shavash and he sent him
-a birthday gift - a disinfectant can with a label "for avarice."
+a birthday gift---a disinfectant can with a label "for avarice."
 
      Bemish started visiting Earth often on BOAR business  and every time he
 would  wonder  at  a skyline  awkwardly constricted  by the buildings and  a
@@ -13387,7 +13303,7 @@ with BOAR company."
 conversation with him moved slowly and started surrounding Ashinik.
 
      In a while after Shavash had  left, Ashinik realized suddenly with cold
-curiosity  that  he  felt  good  about Shavash's nodding to him  - the  same
+curiosity  that  he  felt  good  about Shavash's nodding to him---the  same
 Shavash that he had been  trained in his previous life to exterminate like a
 mongoose exterminates snakes.  In the hierarchy  of his  new life  this  nod
 immediately distinguished him out of the other young people and it was as if
@@ -13397,14 +13313,14 @@ beacon as moths fly towards light.
      The  door slammed behind Ashinik  and  Bemish still  sat  the  same way
 looking absent-mindedly at a field through the window. He picked up a lot of
 Empire's customs in his two  years on Weia. One thing  he  hadn't apparently
-done yet - he had never killed a man because he wanted his wife.
+done yet---he had never killed a man because he wanted his wife.
 
      Now, in seven months after their last meeting,  Bemish  didn't have any
 feelings towards ex-zealot Ashinik who started to resemble, frighteningly, a
 polished novice broker. He only  felt quite annoyed thinking about  the lost
 BOAR  shares.  On  the  other hand,  the  accident  brought  Bemish  certain
-benefits.  It had somehow leaked out - probably via Shavash who  didn't find
-anything appalling there - and it improved Bemish's reputation tremendously.
+benefits.  It had somehow leaked out---probably via Shavash who  didn't find
+anything appalling there---and it improved Bemish's reputation tremendously.
 The biggest people on Weia knew that the Earthman hadn't  turned his  friend
 into for money and it was  a Weian custom not to betray friends. It would be
 fine  to send  an innocent  man  to  the gallows  to  help your friend or to
@@ -13414,8 +13330,8 @@ nice.
      Bemish didn't  need  Ashinik. But he realized with  a surprise  that he
 needed Inis. While his concubine had been  next to him and he could take her
 any minute, could walk upstairs with  her or  simply  lock the office  door,
-caress her soft  body  and  think  about  another  woman  -  unavailable and
-forbidden - then  it seemed  to Bemish  that  talking  about love  would  be
+caress her soft  body  and  think  about  another  woman---unavailable and
+forbidden---then  it seemed  to Bemish  that  talking  about love  would  be
 stupid. Do you love your car? You just use it and  if you  crash it, you buy
 another one.
 
@@ -13433,10 +13349,10 @@ Terence Bemish, had turned Weian to a greater degree than he expected.
 
      A  penetrating beep of  the phone  interrupted Bemish's  contemplation.
 Having answered the call, Bemish stood up  abruptly. It was time to face the
-truth  - he called  Ashinik to Weia to take his wife away from him. It would
+truth---he called  Ashinik to Weia to take his wife away from him. It would
 possibly not work on Earth.  But here, on Weia, where Bemish was no longer a
 man that would be called "businessman" on Earth but rather became a man that
-would be called "prince" - nobody would dare refuse him.
+would be called "prince"---nobody would dare refuse him.
 
      When Bemish  with a large  wrapped gift package  entered a hotel  room,
 Inis sat next to a mirror. She turned around and froze  seeing the Earthman.
@@ -13504,7 +13420,7 @@ door was slightly open and an immobile silhouette sat on the bed.
 
      It was not Inis sitting on the bed, it was Yadan.
 
-     It  was  difficult  to  recognize  the  zealots'  leader -  he  wore  a
+     It  was  difficult  to  recognize  the  zealots'  leader---he  wore  a
 well-tailored suit with a fashionable standing collar and a wide tie.
 
      "Are you back?" Yadan asked.
@@ -13620,7 +13536,7 @@ wildly  as  if  they  were  trying to follow something invisible filling the
 room. His  vision became  obscured by a  red wavering  veil  that seemed  to
 separate this place from the otherworld and it could  fall apart any moment.
 Noises and voices were buzzing in his ears as if a TV set had fifty channels
-on simultaneously... Ashinik was quite familiar with this state - it used to
+on simultaneously... Ashinik was quite familiar with this state---it used to
 precede an event that his  brothers in sect  called an "appearance  of gods"
 and Earthmen called a fit.
 
@@ -13670,7 +13586,7 @@ mind, "she left for the Earthman!"
 
      Ashinik walked unsteadily to the living room and opened the door.
 
-     A cute maid looked at him with certain sympathy - the young financier's
+     A cute maid looked at him with certain sympathy---the young financier's
 suit was wrinkled and bedraggled  and the suit's  owner  stood there swaying
 with disheveled hair and black circles under his eyes.
 
@@ -13692,14 +13608,14 @@ rolling on the floor?
 
      Wincing, Ashinik swallowed two cups  of coffee  and walked back  to the
 bedroom to change his clothing. Only now he noticed what  he had not noticed
-half an  hour ago - a white woman's arm on the carpet, on the other side  of
+half an  hour ago---a white woman's arm on the carpet, on the other side  of
 the bed, closer to the window.
 
      Ashinik moved nearer and froze.
 
      Inis lay on the carpet on the other  side of the bed and the pearls set
-in silver were scattered all around her - the  necklace did snap. A red mark
-darkened  her neck but  that  was not all of it - her  body was  hacked  and
+in silver were scattered all around her---the  necklace did snap. A red mark
+darkened  her neck but  that  was not all of it---her  body was  hacked  and
 covered in blood and a knife with a bone handle lay next to her.
 
      "Inis!" Ashinik screamed desperately clutching at his wife's face.
@@ -13711,7 +13627,7 @@ had happened at first and a fit  followed it. Is it possible  that he killed
 his wife during  the  fit? It's possible. The  police  will  certainly think
 along these lines. It will be a gift worthy of an Emperor for Shavash...
 
-     What  if it was not him?  He refused to  follow Yadan's  orders - Yadan
+     What  if it was not him?  He refused to  follow Yadan's  orders---Yadan
 knows that Ashinik loses himself completely during a fit; one of Yadan's men
 could have been there  watching them and he  could have punished Ashinik for
 being obstinate!
@@ -13771,12 +13687,11 @@ Ashinik there.
 
      "He figured out why  I called him  to  Weia," Bemish thought. He leaned
 back in the armchair and dialed Ashinik's hotel room number.  Nobody  picked
-up a receiver  - the room was empty. Bemish called his villa and his headman
+up a receiver---the room was empty. Bemish called his villa and his headman
 told him that the mistress  hadn't arrived yet and that everything was ready
 for her arrival accordingly to Bemish's orders.
 
-     With a smile Bemish  called  the border control chief -  just in case -
-and told him not to let  Ashinik and Inis  off  the  planet. Time  and again
+     With a smile Bemish  called  the border control chief---just in case---and told him not to let  Ashinik and Inis  off  the  planet. Time  and again
 later he blamed himself that he  hadn't called  police at  once,  though  it
 would have made no difference by then.
 
@@ -13788,7 +13703,7 @@ would have made no difference by then.
 
      In two days at five in the morning,  a phone call woke Bemish up at the
 villa. It was Shavash's personal secretary and Bemish's heart skipped a beat
-because a phone call so early could be only about Inis - she and Ashinik had
+because a phone call so early could be only about Inis---she and Ashinik had
 disappeared out of  the hotel room without  a trace like a rotting  mushroom
 would disappear in the earth in the fall.
 
@@ -13809,7 +13724,7 @@ terrace.
 
      His secretary, pale with  fear, handed the newspapers to him. The front
 page had it all, "The Earthmen  are building  a  military base  next to  the
-capital  - Weia is now a hostage in the superpowers' fight." The second page
+capital---Weia is now a hostage in the superpowers' fight." The second page
 boasted  another  title,  "The last bribe of Shavash's. What's the  price of
 your country?" The phone rang. It was Kissur.
 
@@ -13829,7 +13744,7 @@ details.  The bribe received  by  Shavash  had actually been  thirty percent
 higher. Terence Bemish was called "a professional spy, an  experienced agent
 who  wormed his  way  into  the  confidence  of  some  people  close  to the
 sovereign." There was even some bullshit story about Bemish being kicked out
-of Gera  three years  ago for  espionage - it didn't speak  in  favor of his
+of Gera  three years  ago for  espionage---it didn't speak  in  favor of his
 spying skills.
 
      They were already awaiting him  in the carved halls. Sweetish smoke was
@@ -13851,7 +13766,7 @@ really, should the Emperor of the Country of Great Light find what you do to
 my country out of newspapers?"
 
      Precisely at that moment,  the doors of the golden peacocks moved apart
-and another character - Giles - walked in.
+and another character---Giles---walked in.
 
      Bemish turned to him and said vengefully, "Well, what have  I told you?
 We got it."
@@ -14030,7 +13945,7 @@ there for a while and then he stood up.
 and  I will hang  another one. Take this  into account  when  you  plan your
 investments."
 
-     And he  ran up jumping over three stairs at a time - however, they were
+     And he  ran up jumping over three stairs at a time---however, they were
 quite low.
 
      Still  airborne  on his  way to Assalah, Bemish spent  an  hour  giving
@@ -14044,7 +13959,7 @@ month. Parliament elections  and the subsequent rise of the country's rating
 would increase the bonds' value. Accordingly to Bemish's calculations,  they
 should cost a hundred and three to a hundred  and four  cents for a dinar in
 two to three months. Even now they reached a hundred and one point one cents
-for a dinar - under  these conditions  even a bond bought at the price above
+for a dinar---under  these conditions  even a bond bought at the price above
 its  face  value still brought  thirteen  percent. Accordingly to  the IPO's
 conditions, rise (and fall) of the bonds' value caused the interest rates to
 adjust so that  the  bonds would cost  hundred cents  per dinar. New Assalah
@@ -14060,8 +13975,7 @@ bonds, Bemish calculated, should make eleven to twelve percent.
 
      In half an hour  Bemish stood in a far corner of  his luxurious garden,
 next to a carved gazebo entwined with ivy. He stood near an  ornamental well
-that was a necessary  feature - together with a hermit's hut and tame deer -
-of a country  manor. Nobody used  it  for the original purpose since running
+that was a necessary  feature---together with a hermit's hut and tame deer---of a country  manor. Nobody used  it  for the original purpose since running
 water available was available. But tame beasts started behaving strange next
 to the well and three hours ago a meticulous  gardener had taken a look into
 it in case something was wrong.
@@ -14082,7 +13996,7 @@ director of  Assalah  Company  swayed and, unconscious, slowly  collapsed in
 Giles's hands.
 
 
-#chapter("The Thirteenth Chapter,")[where the nation expresses its will with unpredictable results.]
+#chapter("The Thirteenth Chapter,")[where the nation expresses its will with unpredictable results]
 
      Two  months  passed by. Preparations  for  the elections were at  their
 peak. Throughout  the whole country,  the officials had their precinct gates
@@ -14113,9 +14027,9 @@ grieved so much because he knew  who the  man  behind the murder  was but he
 could avenge it only by destroying his business in the process. Frankly, the
 comments hit reasonably close to the truth.
 
-     Another rumor  was  also popular - the Earthman had knifed the woman to
+     Another rumor  was  also popular---the Earthman had knifed the woman to
 demonstrate his grief and to alleviate  the suspicions  about his  love  for
-another woman - they mentioned Idari quite loudly.
+another woman---they mentioned Idari quite loudly.
 
      They searched  for Ashinik very thoroughly, sometimes suspecting him of
 his  wife's murder and sometimes  thinking that he had  been killed together
@@ -14207,7 +14121,7 @@ Directors.
 
      Together  with the majority  of the Earthmen living and working  in the
 Empire Bemish found himself facing a strange problem. On one hand, the local
-Earthmen understood perfectly well - better than  the local officials - what
+Earthmen understood perfectly well---better than  the local officials---what
 exactly  the so-called party  of the people's  freedom,  led by  co-chairmen
 Yadan  and  Ashinik, was about. It would  not be difficult  to start a large
 scale  media campaign against these  people. But such a campaign would crash
@@ -14245,8 +14159,8 @@ insider trading in Bemish's funds.
 growth lagged noticeably behind the general fund index.
 
      But the worst for  Bemish was that, due  to the elections,  Kissur  and
-Shavash -  two people that meant a  lot  for the  planet and quite a bit for
-Bemish personally - quarreled. Their breach started  almost unnoticeably, at
+Shavash---two people that meant a  lot  for the  planet and quite a bit for
+Bemish personally---quarreled. Their breach started  almost unnoticeably, at
 the  moment  when  Kissur declared  openly  that  he  was  against  all  the
 elections.  Shavash  had  opposite  views. When the  sovereign  declared  in
 Shavash's face  that he would never appoint him as a first minister, Shavash
@@ -14256,7 +14170,7 @@ volition.
      Practically  immediately, in a  great  hurry, Shavash channeled all his
 power  and money into a huge political campaign and into the creation of his
 own party. Shavash's methods were as primordial as  they were effective. The
-doors to the vice-prefect's manor stood wide  open for the poor - they could
+doors to the vice-prefect's manor stood wide  open for the poor---they could
 get there free soup and pies day and night.
 
      The minimal  wage law  was under  consideration at that time. The first
@@ -14277,7 +14191,7 @@ an ultimate stupidity that Weia needed just as much as somebody would need a
 fur hat amidst a hot summer.
 
      The  final  quarrel  happened at  a party in one of  Shavash's  country
-houses.  Bemish attended it - he needed to meet some officials from  Chakhar
+houses.  Bemish attended it---he needed to meet some officials from  Chakhar
 and hand a check for the election campaign to Shavash.
 
      They  were all drunk; Kissur was somewhat more  sober while Shavash was
@@ -14397,7 +14311,7 @@ to ask me to give him my wife!"
 
      The elections for the first Weian parliament took place on the fifth of
 Shuyun,   July,   17th  by   the  interplanetary  calendar.   The
-overwhelming majority of the electorate - 67.5% - voted for the party of the
+overwhelming majority of the electorate---67.5%---voted for the party of the
 people's freedom, the ex-sect Following the Way.
 
      The  same day, the sovereign  declared the results invalid  and  issued
@@ -14485,7 +14399,7 @@ anymore. Bemish also acquired  a  lot  of promissory notes  of the companies
 that  he had some designs for and the state helped him to exchange the notes
 into the stocks of these companies.
 
-     The Assalah securities didn't take this  interview well -  their  price
+     The Assalah securities didn't take this  interview well---their  price
 plummeted by thirty points.
 
      Bemish  ordered  his  employees to  compile  and send to Earth a  small
@@ -14559,8 +14473,7 @@ motherland being  traded away for a jar of sour cream." Bemish, on the other
 hand, claimed that they were not peasants but staunch zealots.
 
      The  traffic  on  the highway  connecting  Assalah to  the  capital was
-completely  paralyzed. Two monorails,  Assalah  - Sky  City  and  Assalah  -
-I-Chakhar, were used  for  cargo  transport.  The  blocked-off  area in  the
+completely  paralyzed. Two monorails,  Assalah---Sky  City  and  Assalah---I-Chakhar, were used  for  cargo  transport.  The  blocked-off  area in  the
 vicinity  of  the  monorails  was  controlled  by  the  satellites  launched
 specifically for this purpose; the satellites called alarm three times a day
 and the  trains had to be stopped; the cargo transportation schedule went to
@@ -14575,7 +14488,7 @@ temporarily hired  by the spaceport security were ready to tear the  zealots
 apart.
 
      The  media approach shocked Bemish somewhat.  They would  interview  an
-ardent zealot - a professional  agitator who  had been bumming  around fairs
+ardent zealot---a professional  agitator who  had been bumming  around fairs
 since the age  of five and who was  lost in  his own lies to such  an extant
 that he no longer knew whether or not  Earthmen were demons. They would call
 him  a  "Weian peasant who came  to  Assalah to fight for the freedom of the
@@ -14780,8 +14693,8 @@ Kissur  accompanied by Khanadar the Dried Date and  by  ten  fighters walked
 into  the  main office where  all the upper company  management had  already
 gathered;  Trevis was also  there  with two aides. Bemish and  Giles came in
 slightly  later.  They were both armed. Bemish took a  note that Kissur  was
-dressed  very carefully - he wore a perfect white shirt, a proper black suit
-and an  unassuming tie of correct width  -  the  clothing  item that  Kissur
+dressed  very carefully---he wore a perfect white shirt, a proper black suit
+and an  unassuming tie of correct width---the  clothing  item that  Kissur
 loathed the  most. On the other hand, a  gun under Kissur's armpit was large
 enough  that  even  a perfectly designed  suit  failed  to conceal it. Giles
 slapped Kissur on the shoulder and said, "Damn it,  Kissur! You are the man!
@@ -14826,7 +14739,7 @@ are under arrest!"
      "It's not a joke, dog! Get down! Down!"
 
      Giles was lost; he  looked at  the  Star  in  his  hands and pulled the
-trigger. The gun only clicked - it was not loaded.
+trigger. The gun only clicked---it was not loaded.
 
      Several employees started slowly rising out of the table with the hands
 up.
@@ -14840,7 +14753,7 @@ with the fighter's solar plexus. The latter moaned and sagged to the floor.
 the useless gun  and the guys started twisting his elbows back. Giles butted
 one of them with  his  head in the stomach and threw the other one over. The
 fighter  dropped his rifle  and Giles snatched the falling weapon. The  next
-moment a rifle burst sounded -  Kissur was firing. One after another,  heavy
+moment a rifle burst sounded---Kissur was firing. One after another,  heavy
 bullets with zinc outer layer were making holes in the clothing and the body
 of the  security service  chief. Giles swayed. His face showed astonishment.
 He looked at his jacket stained with  blood, muttered, "Why?" and crashed to
@@ -14863,11 +14776,11 @@ and changed it and  he felt now how the cloth  under his armpits and  behind
 his back was getting wet and sticky with his sweat.
 
      "Raise your hands, Terence," Trevis muttered lying on the floor, "Don't
-you see - they are nuts."
+you see---they are nuts."
 
      The next  moment  Bemish dove  forward  and his hand locked on Kissur's
 wrist. In a moment the  gun flew  to the side  and Kissur  and Bemish rolled
-over the floor in  a  tight embrace. The fighters didn't  dare shoot  - they
+over the floor in  a  tight embrace. The fighters didn't  dare shoot---they
 were afraid of hitting  their master and they also believed that to kill one
 of the enemies locked in personal combat was not cool.
 
@@ -14949,15 +14862,15 @@ take any hostile actions towards us.
 practically every lounge, custom corridor,  restaurant and shop jerked their
 assault rifles up at the ready position and screamed, "Everybody down on the
 floor! Ass up, hands behind your  head! Go! The majority of people submitted
-obediently, dropping in the  process  the souvenirs they  just bought - Inis
+obediently, dropping in the  process  the souvenirs they  just bought---Inis
 lacquered figurines and flat wooden bottles with Chakhar  vodka.  This order
 effectively stopped panic (that was to be treated as resistance). Occasional
 gun bursts  above the  heads took  place; five  spaceport  security  service
-employees attempted to escape  - four were shot dead and the fifth died  two
+employees attempted to escape---four were shot dead and the fifth died  two
 hours later at a surgery table.
 
      In the  air  traffic  control room, assault rifles  were aimed  at  the
-workers and  the latter unquestioningly obeyed  Khanadar's  directions -  to
+workers and  the latter unquestioningly obeyed  Khanadar's  directions---to
 announce Assalah, without getting into any extra details, to be a closed-off
 zone. Therefore, the ships  that  were not on  the landing  trajectory  yet,
 should go  land  anywhere the hell they want  but  not in Assalah; the ships
@@ -14966,8 +14879,7 @@ that were already moving on the landing trajectory should continue landing.
      The pilots are a well trained crowd and they were accustomed to landing
 the  way they were told  to. The last two ships had time to figure  out that
 they were landing in a spaceport taken over by terrorists.  Attesting to the
-professional  level of their crews,  the ships didn't vacillate in the air -
-that could've been very dangerous  - and  landed in the spaceport. After the
+professional  level of their crews,  the ships didn't vacillate in the air---that could've been very dangerous---and  landed in the spaceport. After the
 landing, they immediately required a  permission  to  launch; the permission
 was refused.
 
@@ -15025,7 +14937,7 @@ me."
 there. A  lot of journalists were there  and  nobody  obstructed from taking
 pictures. Kissur and his brother sat at a table together with the leaders of
 the party  of people's freedom. Kissur  told the  journalists  to save their
-film - he  was going to take them  on a trip through the spaceport  and they
+film---he  was going to take them  on a trip through the spaceport  and they
 would get good shots there."
 
      "What happened next?"
@@ -15117,7 +15029,7 @@ six times higher than a civilian spaceship would require. They also..."
      "We are not discussing technical parameters of  military chutes at this
 hearing. Did you only see chutes?"
 
-     "No. There were  several storage areas there - 17A, 17B  and 17C - that
+     "No. There were  several storage areas there---17A, 17B  and 17C---that
 had walls and locks designed in a different way. In particular, the storages
 had  radiation  shielding.  Mr.  Bemish was brought  in and  he  opened  the
 storage."
@@ -15146,8 +15058,7 @@ functional Cassiopeia missiles."
 
      "The storage areas  were  computer controlled and the  computer had eye
 retina  recognition lock system. There  were only  two retina  images loaded
-into  the computer  memory, the  spaceport  director's  and  his  deputy's -
-Terence Bemish and Richard Giles."
+into  the computer  memory, the  spaceport  director's  and  his  deputy's---Terence Bemish and Richard Giles."
 
      "Therefore, the missiles could be  stored there only if the above named
 persons were involved. Is it correct?"
@@ -15170,7 +15081,7 @@ landing field. A beetle shaped passenger bus crawled down the ramp.
 pointedly to the wall; the pain in his twisted hand made him hiss sharply.
 
      "Hello to a TV star," Kissur said,  "They will show you tomorrow on all
-the channels - together with 17B storage area."
+the channels---together with 17B storage area."
 
      Bemish turned and hissed again.
 
@@ -15232,8 +15143,7 @@ Weian zealot behind a VIS operating terminal?"
      "I  will  release all the  Earthmen  hostages,"  Kissur repeated,  "The
 personnel  staying here  are citizens of the  Empire. I assure you that  all
 Earth journalists will say that  I released the hostages since they consider
-only Earthmen  to  be the  hostages.  The  Empire's  officials  don't care -
-hostages or no hostages - we have never considered it to be a crime to begin
+only Earthmen  to  be the  hostages.  The  Empire's  officials  don't care---hostages or no hostages---we have never considered it to be a crime to begin
 with."
 
      Bemish shut his  eyes and groaned. It was correct. If Kissur was saying
@@ -15298,7 +15208,7 @@ gluttonous  foreigners  would  resist  them.  We  demand  that  the  current
 government  resign and that  the corrupted officials  are persecuted  by the
 court. We demand that Kissur the White Falcon leads the Empire as he did ten
 years ago. We  demand that the foreign  concept of elections is  crossed out
-from the government's edicts - this concept  is not  fitting for  the  Weian
+from the government's edicts---this concept  is not  fitting for  the  Weian
 people's spirit. Since our  party won your  stupid elections, we are clearly
 acting in the majority's  interests. We demand all the companies that belong
 to the  foreigners  to be  unconditionally nationalized.  We demand  all the
@@ -15317,11 +15227,11 @@ Mr.  Bemish!  Not  after  they  took a  walk  down your storage  areas  with
 cameras!"
 
 
-#chapter("The Fourteenth Chapter,")[or the first minister as an international terrorist.]
+#chapter("The Fourteenth Chapter,")[or the first minister as an international terrorist]
 
      At 19.54  they crammed Bemish  into his  own Mercedes and an  unsmiling
 Khanadar drove him to the last post located in front of the old village. The
-village  seemed  to  be dead.  Dust  hovered above  the field -  a  flock of
+village  seemed  to  be dead.  Dust  hovered above  the field---a  flock of
 military skyers had just passed by.
 
      About two hundred meters away from the post, a  roadblock gate had been
@@ -15335,7 +15245,7 @@ taken over by  the terrorists from the normal world populated with corrupted
 officials and stupid Earthmen. It was two hundred meters for the ex-director
 of  Assalah  Company,  Mr. Bemish.  On  his  neck,  he  carried  a  suitcase
 containing the terrorists' demands to nationalize his company and a key from
-the handcuffs - his hands were still locked behind his back. For two hundred
+the handcuffs---his hands were still locked behind his back. For two hundred
 meters sun rays and the red lights of laser sights danced on his face.
 
      Bemish stepped behind the gate.  The red lights went out and  people in
@@ -15355,13 +15265,13 @@ take care of this cargo."
 
      "We know  how  the missiles got there," the  second guy said. "They got
 there  from  NordWest  base.  It's a  base  located on Agaia's moon. An  old
-acquaintance  of Kissur's -an anarchist -  used  to work  in  one of Agaia's
+acquaintance  of Kissur's -an anarchist---used  to work  in  one of Agaia's
 spaceports. He visited Weia six months ago and Kissur went Agaia last month.
 A week after his  arrival, an accident occurred. This anarchist Lore and his
 five  friends missed a sharp  turn on a  road and  fell into a chasm. It was
 just an accident. The same day, another accident occured  a light year and a
 half  away from Agaia; a  mechanic at the base, Denny  Hill,  simply drowned
-next  to  a crowded  beach - he was on a vacation. It's  quite  clear  where
+next  to  a crowded  beach---he was on a vacation. It's  quite  clear  where
 Kissur got the missiles.  On  the  other hand,  how  did you  get  them, Mr.
 Bemish?"
 
@@ -15400,8 +15310,8 @@ they praise a scoundrel who took eight thousand people hostage?!"
 
 
      Shavash rushed towards Bemish right from the villa staircase. He hadn't
-come to meet him - he was scared! The small official was deathly pale  and a
-sleeve of his velvet coat was dirty - it looked out of place on usually tidy
+come to meet him---he was scared! The small official was deathly pale  and a
+sleeve of his velvet coat was dirty---it looked out of place on usually tidy
 Shavash.
 
      "What is  he doing?!" Shavash cried out. "Has he  demanded anything  of
@@ -15439,8 +15349,8 @@ point your finger at me?"
 
 
 
-     Ten minutes later,  in the main  villa's hall - it was a  charming hall
-decorated with blue  and pale yellow silk - the  Assalah emergency committee
+     Ten minutes later,  in the main  villa's hall---it was a  charming hall
+decorated with blue  and pale yellow silk---the  Assalah emergency committee
 opened a  session. The following  people took place in the meeting: six high
 Weian officials, Terence Bemish as the  director of the  company where  this
 whole  disgrace was taking place, the Earth envoy, three  military advisors,
@@ -15457,13 +15367,12 @@ Kissur is an ex-first  minister of Weia; his political  views are those of a
 strong  armed state  supporter  if  not  of  an  outright  fascist. He hates
 everything  that  weakens state's  power. It's natural for him to hate sects
 and heresies. Ignoring the liberal media's views, the zealots, even the ones
-that studied at Hevishem - here the  Envoy glanced at Bemish reproachfully -
-consider Earthmen to be demons. Kissur  doesn't think so. The demands of the
+that studied at Hevishem---here the  Envoy glanced at Bemish reproachfully---consider Earthmen to be demons. Kissur  doesn't think so. The demands of the
 nationalization of  the  foreign companies clearly  come  from  the zealots.
 However  extravagant Kissur's  views  are,  the  presence of Mr. Bemish here
 demonstrates  that Kissur  is capable of  a  very  good  attitude towards  a
 foreign swindler... I think that it would be enough  just to stall  it for a
-while and this coalition will fall apart on its own  - they  just don't have
+while and this coalition will fall apart on its own---they  just don't have
 anything in common..."
 
      "Can't you  see what  they  have  in  common?!"  Shavash  cried  out in
@@ -15530,7 +15439,7 @@ said,  "I  protest  fully against  allowing  the  Federation  troops on  its
 territory.  And  I would like to remind the people present here that if they
 start using Federation troops to solve their internal problems..."
 
-     "Don't teach us, Earthman,"  an  enraged  Shainna screamed - he was the
+     "Don't teach us, Earthman,"  an  enraged  Shainna screamed---he was the
 deputy chairman of Weia Central Bank and a buddy of Shavash's.
 
      "I will teach you!" Bemish  screamed just as loudly, "You  don't give a
@@ -15612,9 +15521,8 @@ hostages go, they'll roll over him."
 he is afraid of is that Kissur will hang him on the tallest catalpa? He went
 nuts from fear."
 
-     "That's right," the envoy said. "I have never seen it before in my life
--  Mr. Shavash made a public statement supporting a certain decision and  he
-took all the  responsibility. Can you imagine that  - he  signed the request
+     "That's right," the envoy said. "I have never seen it before in my life---Mr. Shavash made a public statement supporting a certain decision and  he
+took all the  responsibility. Can you imagine that---he  signed the request
 for the  Federal  troops himself! All the ministers there kindly passed this
 honor to him..."
 
@@ -15645,7 +15553,7 @@ market. Now it occupied the front  pages of newspapers. A number of channels
 started delivering  hourly news from Assalah. Everybody was waiting for  the
 broadcast that  was assigned to start (after minor  technical arguments with
 Kissur)  at  fifteen  thirty.  Even  if  Kissur  hadn't given  his  horrible
-ultimatum  -  five shot  hostages for every  minute  of  delay  - few people
+ultimatum---five shot  hostages for every  minute  of  delay---few people
 would've missed such a possibility to peep at history.
 
 
@@ -15701,8 +15609,8 @@ signed in the past were also confirmed.
      Luxury cars had  been imported labeled as assistance to  the victims of
 natural disasters and ancient Lamass vases had been exported as scrap brass.
 Laws and regulations  had been flouted  at an incredible scale. The takeover
-of  the spaceport  looked  like  a  desperate  attempt -  however  cruel and
-despicable  it was - to  demonstrate  the scale of current  administration's
+of  the spaceport  looked  like  a  desperate  attempt---however  cruel and
+despicable  it was---to  demonstrate  the scale of current  administration's
 thievery, corruption and  treachery.  Several Earth auditors  and financiers
 unwillingly confirmed Ashinik's calculations of the chicanery that had taken
 place at the spaceport.
@@ -15837,8 +15745,8 @@ the  spaceport.  The  hostages  cried, but  were  incredibly  obedient.  The
 fighters  screamed that  they  would shoot anybody  who would cut  the  line
 trying to get into a bus and nobody tried cutting the line.
 
-     Five LSV bank  employees  and  Ronald Trevis - bearing  some  cuts  and
-biting  his lips  -  left  with one of the buses.  Journalists  ambushed him
+     Five LSV bank  employees  and  Ronald Trevis---bearing  some  cuts  and
+biting  his lips---left  with one of the buses.  Journalists  ambushed him
 leaving  the  bus but  he blocked  his face  with  his  hands,  bolted to  a
 helicopter and  flew to  Arvadan. Two hours later he left Arvadan for  Earth
 and became completely inaccessible. Journalists yearned to question the king
@@ -15848,7 +15756,7 @@ yearning  satisfied  and  they  had  to  limit  themselves  with  their  own
 commentaries. These commentaries were not particularly benevolent.
 
      By 18:00  the  last  train  with  passenger hostages left the platform.
-About eighty employees stayed in the spaceport - they were necessary for the
+About eighty employees stayed in the spaceport---they were necessary for the
 crucial spaceport's systems to  function.  Five hundred  armed  fighters and
 several thousand Weian zealot peasants also stayed.
 
@@ -15865,7 +15773,7 @@ out of their  bellies and sturdy guys  in bulletproof uniforms  were jumping
 out.
 
      Bemish  walked down where the  same two  counter-intelligence guys were
-meeting the division commander - colonel Rogov, short and sturdy like a ball
+meeting the division commander---colonel Rogov, short and sturdy like a ball
 bearing.
 
      "I think," The colonel  said, "that Mr. Bemish should also take part in
@@ -15945,21 +15853,21 @@ Rogov on the spaceport's specific details, walked into the garden.
 
      Bemish had never run into the Federation Army before even though he had
 recently  become acquainted to the Federation Counter Intelligence. He liked
-colonel  Rogov -  Bemish  had considered  military people to  be  much  more
+colonel  Rogov---Bemish  had considered  military people to  be  much  more
 stupid. One thing astounded him. There  were  dozens of populated planets in
 the  Galaxy.  Weia was located in the backyard of  the civilized world.  How
 could a Federal Army colonel  know about the enmity between Weians and Aloms
 who had conquered the former a number of times? When did they start teaching
 galactic  ethnography in  military  academies? Even he,  Bemish,  had needed
 quite a bit of time to realize how deep was the gap between the peoples that
-outsider observers  considered  to belong  to the  same race  -  the "Empire
+outsider observers  considered  to belong  to the  same race---the "Empire
 people" and the "mountainous barbarians."
 
      Bemish stood and looked at the night bustling with people. Somewhere an
 engine yelped piteously like a cat that somebody  kept stepping on the tail.
 The  crackling  of cicadas mixed with  rustling  of faraway  power stations.
 That's  it. Tomorrow  this  division  would  throw  all  its  force  at  the
-construction  -  he had  dedicated the last two  years of  his  life to this
+construction---he had  dedicated the last two  years of  his  life to this
 construction  and he had put his soul  into it. They would hack the roadways
 with their  tanks, turn  buildings and terminals  into  dust.  Crazy zealots
 would face the  tanks  with  prayers and spells; they would be sure that all
@@ -16083,7 +15991,7 @@ financing than medicine.
      "We enlist anybody who agrees to serve in the army."
 
      Here Bemish turned around  and noticed that two more people entered the
-living room attracted by the argument - the Earth envoy, Mr. Severin and the
+living room attracted by the argument---the Earth envoy, Mr. Severin and the
 emergency committee head, Mr. Shavash.
 
      "But  three  hundred  credits  is  four  times  less  than unemployment
@@ -16162,11 +16070,11 @@ troops were left."
 impossible.  We  are  talking about  a totally different time; they are just
 commandos, for God's sake!"
 
-     A moan  -  or maybe a  squeal  - sounded next to Bemish..  The Earthman
-turned  around. Shavash  - the emergency committee's  chairman, the official
-who called Federation  troops in to Assalah to destroy his enemies - covered
+     A moan---or maybe a  squeal---sounded next to Bemish..  The Earthman
+turned  around. Shavash---the emergency committee's  chairman, the official
+who called Federation  troops in to Assalah to destroy his enemies---covered
 his face with his  hands and was  slowly sliding down the door  frame to the
-floor.  Shredding  cloth  crackled  -  Shavash's jacket  caught on  a  brass
+floor.  Shredding  cloth  crackled---Shavash's jacket  caught on  a  brass
 decoration  on the  door  frame,  the jacket ripped apart and  the  official
 fainted and fell all the way to the floor.
 
@@ -16179,7 +16087,7 @@ fainted and fell all the way to the floor.
      Bemish stepped across his partner in export-import cooperative, Assako,
 and walked outside.  Stars  sparkled  in the garden  and  the  engine of  an
 armored troop carrier still roared just as rhythmically as  it had roared an
-hour ago - something was wrong with it. The army  still bustled in the dark.
+hour ago---something was wrong with it. The army  still bustled in the dark.
 It  was  not evident anymore,  however, what side the  army was on.  Half of
 these people were White  Falcons' vassals. The  vassal oath was not inferior
 in  any way  to a military one! And  nobody could claim  that  White Falcons
@@ -16208,7 +16116,7 @@ bands. They often sing their own songs."
      "Do they sing about Kissur?"
 
      "They  sing  about  Kissur,  about  his  father,   grandfather,   great
-grandfather, and so on - all the  way to the original clan founder who, if I
+grandfather, and so on---all the  way to the original clan founder who, if I
 am not mistaken, married a forest mermaid."
 
      "You are mistaken. He  didn't marry her, he raped her.  And that caused
@@ -16268,7 +16176,7 @@ Bemish.
 
      Bemish  didn't  fall  asleep  till  four  am,  he  watched  the  camp's
 inhabitants escaping it like rats running away from a sinking ship. He saw a
-helicopter  with the Federation  envoy lifting - the latter suddenly decided
+helicopter  with the Federation  envoy lifting---the latter suddenly decided
 to visit  the  capital.  A  couple  of  officials left afterwards.  Then the
 counter-intelligence  officers left. Strangely, Shavash was the last one  to
 sneak away to the  capital.  Three officials, whose names decorated the list
@@ -16291,7 +16199,7 @@ he crashed down on the bed and almost immediately fell asleep.
 gauze  curtain  inside  and the  sun  beat and  hopped on a  marble  table's
 surface.
 
-     Bemish turned  around  still feeling  groggy - something was lacking in
+     Bemish turned  around  still feeling  groggy---something was lacking in
 his  attire. What  was it,  jacket or, excuse  me,  underwear? Bemish turned
 around again, feeling the empty gun holder flatten under him. Everything was
 there except for the gun.
@@ -16319,18 +16227,18 @@ to Bemish's head. The  latter barely  heard Kissur screaming at the soldier,
 then, the  walls  and  floor around  him  turned  into  thousands  of  fiery
 butterflies and flew at him. Bemish fainted.
 
-     He regained his  senses much later  -  he  sat in a military helicopter
+     He regained his  senses much later---he  sat in a military helicopter
 that had,  probably,  just taken  off the  villa's roof. Bemish's hands were
 handcuffed to a  stand behind the pilot's chair and commandos guarded him on
 both sides. Bemish thought  that he  was unlikely  to  escape  but here  the
 helicopter  jerked in the air. Bemish dropped his head on an Alom's shoulder
 and fainted again.
 
-     Next  time, he recovered in the  spaceport - in his  own  office,  well
+     Next  time, he recovered in the  spaceport---in his  own  office,  well
 known  to him. His wrists were still  handcuffed and  somebody  thoughtfully
 deposited  him on a black leather sofa located behind his own working table.
 Having  turned his head slightly, he could barely make out the tall back  of
-his own armchair - the armchair that  Ashinik had  boorishly sat in two days
+his own armchair---the armchair that  Ashinik had  boorishly sat in two days
 ago.  However,  nobody  was  present  in  the  armchair now. Kissur adroitly
 operated Bemish's own  computer  sitting  slightly  to  the  side,  where  a
 department's head would usually be.
@@ -16351,16 +16259,16 @@ that you won the fight with Federation."
      "Oh, are you going to send me more troops? Thank you, it's very kind of
 Earthmen."
 
-     "Cretin! How many of you,  Aloms,  are in the army -  twenty  or thirty
-thousand? Do  you  think  that  ten  thousand -  even if they are very  well
-trained cutthroats - can  win a fight with the Federation of twenty billion?
+     "Cretin! How many of you,  Aloms,  are in the army---twenty  or thirty
+thousand? Do  you  think  that  ten  thousand---even if they are very  well
+trained cutthroats---can  win a fight with the Federation of twenty billion?
 With all our equipment? They will just press a button and eliminate you."
 
      "How?"  Kissur asked him, "Are you  going to drop a nuclear bomb on us?
 Or is it going to be a meson one?"
 
      Bemish  bit his lip.  It was true. To use standard shock troops against
-Kissur would be either dangerous - if there were Aloms among them- or simply
+Kissur would be either dangerous---if there were Aloms among them- or simply
 useless. The  troops would  meet  with  at least equally  trained Federation
 paratroopers. To use nuclear weapons  against a  tiny bit of barbarians on a
 backwards  planet  would   demonstrate   Federation's  incredible   military
@@ -16369,7 +16277,7 @@ official and unofficial human rights regulations.
 
      "You  are  free," Kissur said. "You  can go to the  capital. Tell them,
 that our conditions changed. We demand Federation representatives to come to
-Assalah - we would like  to discuss the future relationship between Weia and
+Assalah---we would like  to discuss the future relationship between Weia and
 the  Federation. The Federation president  or the first minister should come
 with the delegation."
 
@@ -16420,7 +16328,7 @@ faked?
 
      "I am sorry, Terence, I am so sorry. It was a complete and utter fake."
 
-     "But Yadan,  you  and  Yadan,  you and  Ashinik  - it's  not  possible,
+     "But Yadan,  you  and  Yadan,  you and  Ashinik---it's  not  possible,
 Shavash! The fanatics hate you."
 
      Kissur  left  the room, smiling; he  was probably  going to  give  some
@@ -16437,13 +16345,12 @@ huge cargo crane RV-37 into the middle of the field. The crane was generally
 used to correct the positioning  of rockets  and to load containers  heavier
 than 700 tons. This time, the crane's load was much smaller than the maximum
 allowed  weight.  The crane's  jib  pointed to the  sky  and  twelve...  no,
-thirteen bodies were swinging under it and Bemish recognized his ex-deputy -
-young Ashinik - hanging  to  the  side. Two squeaking  yellow  vultures were
+thirteen bodies were swinging under it and Bemish recognized his ex-deputy---young Ashinik---hanging  to  the  side. Two squeaking  yellow  vultures were
 already circling the crane...
 
      "The zealots and rebels," Shavash  said coolly, "disturbed the  Empire,
 babbled too much and  addled  people's minds. It was  not possible to  catch
-them all  at once -  they hid, showed up  only separately  and threatened to
+them all  at once---they hid, showed up  only separately  and threatened to
 avenge the deaths of their comrades. Now we gathered  all of the zealots  in
 one place and destroyed  this filth once and forever. Now,  when  we are not
 bothered by the crazy gangs, we can negotiate  with the Federation as a real
@@ -16470,10 +16377,10 @@ you stole enough from your own people."
 
      Shavash laughed.
 
-     "I  was not  always rich - have you forgotten that?  Do you know how  I
+     "I  was not  always rich---have you forgotten that?  Do you know how  I
 became literate?  I stood  next  to announcement  boards  and  compared  the
 herald's words  with  letters.  My  father  was  the  poorest  shaman in the
-village; I stole on the streets and drank out of mud  pools. I was lucky - I
+village; I stole on the streets and drank out of mud  pools. I was lucky---I
 met Nan and instead of ending  up in a gang, I ended up in  the White Buzhva
 Lycee. Not that it would make any difference to an Earthman... When I was an
 official  seven years ago,  I  had been  waiting  for my arrest, torture and
@@ -16484,7 +16391,7 @@ pit."
      "I don't argue that," Bemish agreed. "The earth pits are a strong point
 of your civilization."
 
-     "They are  a strong  point, indeed, Terence  - life lacks spice without
+     "They are  a strong  point, indeed, Terence---life lacks spice without
 them. It's like meat without salt." Shavash swung his hand sharply.
 
      "When  you convey our demands for negotiations Terence, don't forget to
@@ -16502,7 +16409,7 @@ lot of bribes."
 
 
      Accompanied by Kissur, Bemish  walked down the main spaceport building.
-It was  in  somewhat better  condition than he had expected  - he  saw  even
+It was  in  somewhat better  condition than he had expected---he  saw  even
 occasional unbroken bottles in the bars. The floor had been cleaned recently
 and  the main hall's announcement board still  carried the  old slogan "Long
 live the party of people's freedom."
@@ -16576,7 +16483,7 @@ glass and steel  where  staircase  moved on their own and  announcement  ran
 across  the ceiling,  where they couldn't even squat in a  corner to take  a
 crap.  Few of them walked away, returning to their homes,  on the second day
 of their stay in the spaceport, especially since "yellow coats"  blocked the
-roads.  It became clear why Kissur  had let the passenger  hostages go -  he
+roads.  It became clear why Kissur  had let the passenger  hostages go---he
 didn't want any witnesses around and he didn't  want them  to get in the way
 accidentally.
 
@@ -16593,20 +16500,19 @@ technician of the heating systems. He was the only heating systems tech left
 in the spaceport and they almost got themselves into a crisis. Thankfully, a
 commando sergeant figured the system out.
 
-     Then they performed  the great cleaning of the  building -  they washed
-the floors, scrubbed guts of the walls,  checked everything mercilessly - so
+     Then they performed  the great cleaning of the  building---they washed
+the floors, scrubbed guts of the walls,  checked everything mercilessly---so
 that,  God forbid,  somebody's  brains would not get stuck in a bar behind a
 box with salted peanuts.
 
      They dragged  the  corpses  away  to  the  landing  field,  opened  the
-thermoconcrete up and burned the hell  out of everything with modern weapons
-- neutron guns and annihilators. Not a speck was left of the corpses and the
+thermoconcrete up and burned the hell  out of everything with modern weapons---neutron guns and annihilators. Not a speck was left of the corpses and the
 ground was baked  for  two hundred meters down into a  glass pancake... Then
 they  sealed  thermoconcrete  back  up  and  everything  was  tip-top.  They
 threatened  the  personnel  to  cut  their families down to a fifth  removed
 degree,  including  children in their  mothers' bellies  if anybody spoke an
 extra word to the media. One hundred fifty people were all.  You could count
-them - all  the stiffs were present, lying in a neat  pile next to the cargo
+them---all  the stiffs were present, lying in a neat  pile next to the cargo
 terminal...
 
      Concerning commandos, it  was  discovered  that  there  were twenty six
@@ -16619,7 +16525,7 @@ spite of the official Federation language  being the only one allowed spoken
 in the army, they had picked up some Alom on the way.
 
 #chapter("The Fifteenth Chapter,")[where  the  saviors  of  the Country  of  Great Light  pull the biggest
-insider deal in the history of the Galaxy.]
+insider deal in the history of the Galaxy]
 
      They took Bemish on a brief trip  around the  building that belonged to
 him. At every corner, he saw people wearing Federation military uniforms and
@@ -16637,14 +16543,14 @@ in.
      Rice fields still glistened  in  the sun  and  olive trees  still stood
 along the old road. The soldiers and the zealots had torn all the fruits off
 breaking the branches in the process. Olive  trees were always planted along
-the roads - road dust covered fruits forcing them to ripe quicker.
+the roads---road dust covered fruits forcing them to ripe quicker.
 
      A fighting banner of the White Falcon clan and a standard of the Empire
 were swaying above his villa. Bemish kept going forward.
 
      Kissur, however, still  didn't have that many soldiers and it looked to
 Bemish like they were mostly concentrated in  the spaceport. Few  posts were
-present  on  the  road  -  they  were   constantly  on  the  line  with  the
+present  on  the  road---they  were   constantly  on  the  line  with  the
 headquarters.  Next to the turn leading to the villa, Bemish noticed a dozen
 commandos.
 
@@ -16653,7 +16559,7 @@ kilometer and a half away from the villa. Journalists lingered behind them.
 
      The soldiers at the road  block  waved their  hands  and  their assault
 rifles at  him. A  studded chain  lay across the  road,  Bemish slowed down,
-turned across the chain  and waited - a large pack of policemen, journalists
+turned across the chain  and waited---a large pack of policemen, journalists
 and Earthmen was running towards him.
 
      Strangely, there were many  more journalists this time and Bemish could
@@ -16666,8 +16572,8 @@ The assault rifle in his hands gleamed in the sun reflecting rice fields and
 clouds turned upwards down.
 
      "Yes,"  Bemish said climbing  out  of  the  car. Five minutes later,  a
-police  helicopter  with  a  yellow band  on  the side - the  symbol of  the
-Department of Serenity and Justice - was flying him to the capital.
+police  helicopter  with  a  yellow band  on  the side---the  symbol of  the
+Department of Serenity and Justice---was flying him to the capital.
 
      The  helicopter landed next  to the sovereign's palace, right  at Seven
 Grains Hotel. Here, the highest provincial functionaries used to await their
@@ -16702,7 +16608,7 @@ it true that Shavash is dead?"
 utter fabrication.  He called the  Federation  soldiers in to provide Kissur
 with troops."
 
-     Everybody  gaped -  they  didn't know anything  yet  and Bemish was the
+     Everybody  gaped---they  didn't know anything  yet  and Bemish was the
 first one to openly state what had happened.
 
      "What about the zealots?" a journalist shouted, "Are they also in?"
@@ -16734,9 +16640,9 @@ they were already waiting for him.
 grape bunch stood on gilded legs that resembled ram's hooves. At this table,
 provincial  governors  had officially  delivered gifts to palace  department
 heads. Now twenty  people sat behind it.  Bemish recognized half a  dozen of
-them -  Federation  envoy Severin, general Stesh, the deceased  Giles' boss,
+them---Federation  envoy Severin, general Stesh, the deceased  Giles' boss,
 ex-first minister  Yanik  and a couple of high Weian  officials.  The others
-were Earthmen - five senators and three people with general insignias.
+were Earthmen---five senators and three people with general insignias.
 
      "They flew in here without troops," Bemish thought about the people  in
 military uniforms. "They don't make  generals out  of Aloms,  they only make
@@ -16806,9 +16712,9 @@ came out to use nuclear weapons against Kissur..."
      "We have certain  reasons to believe," the officer  spoke surrounded by
 dead  silence, "that in this case  our own commandos  may commit a series of
 terrorist attacks similar to Kissur's.  They may do it on Earth, on Vain, on
-Tennox - on the largest Federation planets."
+Tennox---on the largest Federation planets."
 
-     "So, we just don't have an alternative - we have to  negotiate with Mr.
+     "So, we just don't have an alternative---we have to  negotiate with Mr.
 Shavash," Bemish summarized.
 
      "Yes. We have to do it at the highest level, as they demanded."
@@ -16826,13 +16732,13 @@ defense minister, two four star generals  (one of them commanded the  Fourth
 Space Army) and five senators.
 
      They spent a  while arguing  about  where to conduct the talks. Shavash
-told them to  fly to Assalah  - just land on  the  field and  we'll meet you
+told them to  fly to Assalah---just land on  the  field and  we'll meet you
 there.  However,  Bemish didn't like  that idea.  The  belligerent financier
 somehow  happened to become one  of the key  figures during the talks and he
 was especially appreciated by  the army people who had insisted on immediate
 cancellation  of  the negotiations.  Bemish  claimed  that  as  the  Assalah
 spaceport director he couldn't guarantee the safety of the landing on purely
-technical  grounds.  It was  not a joke - there were almost no qualified air
+technical  grounds.  It was  not a joke---there were almost no qualified air
 traffic  controllers  left and  the  few  that were still  around  had  been
 crapping in their pants with fright for three days in a row.
 
@@ -16898,7 +16804,7 @@ mouse runs away from a fox."
 fall through," the general noted.
 
      Here, somebody  carefully  touched Bemish on the  shoulder. The  latter
-turned around - the minister of the police, Mr. Akhotoi stood behind him.
+turned around---the minister of the police, Mr. Akhotoi stood behind him.
 
      "They would  like to talk  to  you," Akhotoi said,  "Could you, please,
 follow me?"
@@ -16912,13 +16818,13 @@ resembled swallow's wings and opened the doors in front of him.
 sat  inside  the pavilion.  Even though  the man wore European dress, Bemish
 recognized the  Emperor almost  immediately and he was jolted a  bit. It was
 quite  surprising  that  during  the  last three  days of  the  crisis  when
-everybody - Kissur, zealots, governmental officials and even Earthmen  - had
+everybody---Kissur, zealots, governmental officials and even Earthmen---had
 the Emperor's  name on their tongue tips the entire time, nobody, as far  as
 Bemish  remembered, heard  anything  from  the  Emperor  himself. And nobody
 discussed  anything with him. Or was  that really the case?  Did Kissur call
 the Emperor?
 
-     Another man stood next  to the Emperor - an Empire's ex-first  minister
+     Another man stood next  to the Emperor---an Empire's ex-first  minister
 Nan also known as David Steighton.
 
      "Bow immediately," the police minister hissed from behind.
@@ -17000,7 +16906,7 @@ involuntarily glancing at the  beautiful jars of pure silver decorated  with
 dancing swans  and peacocks.  The  palace  servants  brought these  jars in,
 filled with special palace wine aged on nut leaves mixed with pine needles.
 
-     The  state  secretary Khodsky was  probably very  thirsty  -  he  would
+     The  state  secretary Khodsky was  probably very  thirsty---he  would
 constantly wet his lips  in a wine glass, sniff at the smell that felt wrong
 at a diplomatic meeting and put the glass back down.
 
@@ -17018,11 +16924,10 @@ was in his element.
 
      At 6:15 they heard steps  and Shavash walked  into the meeting hall. He
 wore a  European suit and he was impeccably  shaved  but  something  foreign
-entered  the hall  with  him. Bemish  sniffed and  realized what  happened -
-instead  of eau-de-cologne Shavash used  an expensive local  perfume. Bemish
+entered  the hall  with  him. Bemish  sniffed and  realized what  happened---instead  of eau-de-cologne Shavash used  an expensive local  perfume. Bemish
 unwillingly thought that it would throw the delegates off a bit. At the same
 time,  when Shavash started giving interviews to  journalists, he would look
-like a true Galaxy man - you could not film a perfume.
+like a true Galaxy man---you could not film a perfume.
 
      After some hesitation, state secretary Khodsky  silently  rose to  meet
 Shavash. The  latter  bowed  to him and took a place across  the table  from
@@ -17081,7 +16986,7 @@ Really,  what's can you say about the  fighting ability of the  country when
 half of  its shock  troops comes from  a potential enemy?! The  Federation's
 authority will be  shattered. Gera and other enemies of yours will obtain  a
 moral   advantage.  The   Federation   members,  that  have  been  demanding
-independence, will hurry to leave the  union -  they will declare  that they
+independence, will hurry to leave the  union---they will declare  that they
 completely disagree with Earth's politics."
 
      Shavash paused, sipped on his wine and continued.
@@ -17090,7 +16995,7 @@ completely disagree with Earth's politics."
 Nineteen becomes the Federation of Twenty. It will be a triumph of democracy
 and freedom!  An empire, a whole  planet voluntarily  sheds  its freedom and
 independence to become a member of  the Federation!  The Federation  doesn't
-need any weapons - it simply wins hearts over!"
+need any weapons---it simply wins hearts over!"
 
      "It's crazy," the state secretary muttered.
 
@@ -17122,8 +17027,7 @@ reasons for the conflicts will be gone.
 
      If  you  let us get away with our  actions,  you  will demonstrate your
 weakness. Having declared a war on us, you will exhibit weakness and cruelty
-simultaneously. Both winning and losing the war will be catastrophic for you
-- you will  find  yourselves internationally  isolated. You  will look  like
+simultaneously. Both winning and losing the war will be catastrophic for you---you will  find  yourselves internationally  isolated. You  will look  like
 demagogues instead of democrats. The Federation forces developing planets to
 respect  the  human  rights. However, when the same planets ask it to uphold
 human rights, the Federation drops nuclear bombs on them having decided that
@@ -17139,7 +17043,7 @@ peaceful country!"
      "What will happen to the Emperor?" the state secretary asked.
 
      "What's wrong about having  an Emperor?" the official  objected. "There
-are kings and emperors in  various states of Earth -  in Arabia, in Belgium.
+are kings and emperors in  various states of Earth---in Arabia, in Belgium.
 The Emperor will be  the  symbol of the nation  and the country will have  a
 first minister and universal elections."
 
@@ -17180,7 +17084,7 @@ invest now into economics and infrastructure of the Federation's new state!"
 
      "Do you know," the general answered, "this joke? A man is  walking down
 a forest  and an old woman  points a  blaster at  him. "Weren't you going to
-rape me, dearie?" -"Absolutely  not,  granny!" -  "You  don't have a choice,
+rape me, dearie?" -"Absolutely  not,  granny!"---"You  don't have a choice,
 dearie!"
 
      Bemish burst out in laughter.
@@ -17233,7 +17137,7 @@ Severin approached Shavash and asked him to walk upstairs.
 "on the transcom."
 
      Shavash  walked   upstairs;   Bemish  and  the   general  followed  him
-simultaneously. A number of people  were  present in  the room  upstairs - a
+simultaneously. A number of people  were  present in  the room  upstairs---a
 dozen diplomats and the same number  of technicians.  Nobody  stopped Bemish
 and the general when they entered the room following Shavash.
 
@@ -17259,7 +17163,7 @@ directly, monstrous. You obtained quite a scandalous reputation even on your
 own planet.  It's possible  that,  thanks to  your  successful  actions, the
 people will choose you as the head of the new Federation state.  It  will be
 very  unpleasant  for us to see  you in the  Assembly of  the  heads  of the
-states.  Our  condition  is  the  following -  we will accept  Weia into the
+states.  Our  condition  is  the  following---we will accept  Weia into the
 Federation as long as you  don't  participate  in the new elections.  If you
 really care about your country's well-being,  you will find it easy to agree
 to our condition."
@@ -17287,7 +17191,7 @@ bit more and it dropped almost to zero afterwards.
 
      The total sum of allowances, benefits and investment credits for  a new
 Federation  member  would  be, accordingly  to  Bemish's  calculations,  six
-thousand four billion dinars - six trillion.
+thousand four billion dinars---six trillion.
 
      Somebody approached and stood next to him. Bemish turned around and saw
 Nan and Shavash.
@@ -17315,11 +17219,11 @@ realized that for every stock that Shavash had bought  for the fund,  he had
 bought twenty for himself.
 
      Bemish  realized  that the foxy  official managed the most  astonishing
-insider deal in the  stock  market history  - he had  dropped  the  market's
+insider deal in the  stock  market history---he had  dropped  the  market's
 rating at the very bottom and had bought everything. He knew that after  his
 ultimatum, Weia would obtain the federal exchange status and his investments
 would increase tenfold. Suddenly Bemish understood why Shavash agreed to the
-president's condition - not to participate in the elections - so easily.
+president's condition---not to participate in the elections---so easily.
 
      "Why did you instigate the whole thing?" Bemish asked. "Did you want to
 get 2000% profit in ten days? Were  you trying to save  your country or were
