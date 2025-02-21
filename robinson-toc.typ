@@ -62,7 +62,7 @@
         
         #v(1em)
         #box(width: 89%)[
-          #set text(hyphenate: false)
+          #set text(hyphenate: true)
           #set par(justify: true)
           #strong(cnt)
           #subcnt
