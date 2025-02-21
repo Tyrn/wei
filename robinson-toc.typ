@@ -66,7 +66,7 @@
           #subcnt
           #box(width: 1fr, repeat[.])
         ]
-        #box(width: 7%)[#h(1fr)#it.page]
+        #box(width: 7%)[#h(1fr)#it.page()]
       ])
     }
     

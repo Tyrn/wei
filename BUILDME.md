@@ -1,5 +1,22 @@
 # The Wei Empire
 
+## Build environment
+
+- Use prebuilt binaries with Cargo, just for convenience
+
+```
+cargo install cargo-binstall
+...
+cargo binstall typst-cli
+```
+
+- Check typst-cli
+
+```
+$ typst --version
+typst 0.13.0 (8dce676d)
+```
+
 ## Notes
 
 - [A Fight for a Robinson Crusoe TOC](https://www.reddit.com/r/typst/comments/1brnchc/create_a_chapterbychapter_synopsis_mirrored_in/)
