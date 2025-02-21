@@ -62,6 +62,8 @@
         
         #v(1em)
         #box(width: 89%)[
+          #set text(hyphenate: false)
+          #set par(justify: true)
           #strong(cnt)
           #subcnt
           #box(width: 1fr, repeat[.])
