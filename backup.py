@@ -21,4 +21,4 @@ if __name__ == "__main__":
     target = Path(sys.argv[1])
     for num, source in enumerate(sys.argv[2:]):
         name, ext = Path(source).stem, Path(source).suffix
-        shutil.copy(source, target / Path(name + "-x" + ext))
+        shutil.copy(source, target / (name + "-x" + ext))
