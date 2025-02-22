@@ -17,6 +17,12 @@ $ typst --version
 typst 0.13.0 (8dce676d)
 ```
 
+- Format all the source files in the current directory
+
+```
+typstyle -i *.typ
+```
+
 ## Notes
 
 - [A Fight for a Robinson Crusoe TOC](https://www.reddit.com/r/typst/comments/1brnchc/create_a_chapterbychapter_synopsis_mirrored_in/)
