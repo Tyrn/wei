@@ -33,36 +33,32 @@
     if shouldIgnoreHeading(it.element.supplement) {
       return
     }
-    
+
     let body = it.body
     let elem = it.element
     // let cpy = body.fields()
     let title = to-string(body)
-    
+
     let description = text(style: "normal", size: 10pt)[
       #to-string(body)
     ]
-  
+
     if elem.level == 1 {
       return link(elem.location())[
-          #v(30pt)
-          #set align(center)
-          #smallcaps[#text(
-            size: 18pt
-          )[#elem.supplement]]
-          
-          //#set align(left)
-          #description
-        ]
+        #v(30pt)
+        #set align(center)
+        #smallcaps[#text(size: 18pt)[#elem.supplement]]
+
+        //#set align(left)
+        #description
+      ]
     }
     //else
     return link(elem.location())[
       #let sizes = (12pt, 10pt, 6pt)
       #set align(center)
-      #smallcaps[#text(
-        size: sizes.at(elem.level - 2)
-      )[#elem.supplement]]
-      
+      #smallcaps[#text(size: sizes.at(elem.level - 2))[#elem.supplement]]
+
       #set align(left)
       #set par(
         hanging-indent: 1em,
@@ -72,7 +68,7 @@
       #description #box(width: 1fr, repeat[.]) #it.page
     ]
   }
-  
+
   #show heading: it => {
     if shouldIgnoreHeading(it.supplement) {
       return
@@ -80,9 +76,9 @@
     return [
       #set align(center)
       #it.supplement
-  
+
       #it.body
-      
+
     ]
   }
   #cnt
@@ -90,12 +86,10 @@
 
 #let makeHeading(title, content, level) = [
   #v(10pt)
+  #heading(level: level)[#title]
   #heading(
     level: level,
-  )[#title]
-  #heading(
-    level: level,
-    supplement: title
+    supplement: title,
   )[
     #set align(center)
     #text(size: 11pt, weight: "semibold", style: "normal")[
