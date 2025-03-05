@@ -1,7 +1,7 @@
 #import "robinson-toc.typ": part, chapter
 #import "wei-toc.typ": dinkus, apply-wei-toc
 
-#show: apply-wei-toc.with(title: "Дело о лазоревом письме")
+#show: apply-wei-toc.with(title: "Дело о лазоревом письме", book-number: "IV")
 
 #part("Часть первая")[]
 

@@ -1,7 +1,7 @@
 #import "robinson-toc.typ": part, chapter
 #import "wei-toc.typ": dinkus, apply-wei-toc
 
-#show: apply-wei-toc.with(title: "Сто полей")
+#show: apply-wei-toc.with(title: "Сто полей", book-number: "II")
 
 #part("Часть первая")[Cтрана ложных имен]
 

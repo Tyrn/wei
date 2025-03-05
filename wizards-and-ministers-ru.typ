@@ -1,7 +1,7 @@
 #import "robinson-toc.typ": part, chapter
 #import "wei-toc.typ": dinkus, apply-wei-toc
 
-#show: apply-wei-toc.with(title: "Колдуны и министры")
+#show: apply-wei-toc.with(title: "Колдуны и министры", book-number: "VI")
 
 #part("Часть первая")[Реформа]
 

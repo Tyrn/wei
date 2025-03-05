@@ -1,7 +1,10 @@
 #import "robinson-toc.typ": part, chapter
 #import "wei-toc.typ": dinkus, apply-wei-toc
 
-#show: apply-wei-toc.with(title: "Повесть о государыне Касии")
+#show: apply-wei-toc.with(
+  title: "Повесть о государыне Касии",
+  book-number: "III",
+)
 
 #chapter("Глава первая,")[в которой молодой юноша по имени Руш отправляется в столицу
   хлопотать об отце, а государыня Касия проявляет милость к вовлеченным в мятеж]

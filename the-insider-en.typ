@@ -4,6 +4,7 @@
 #show: apply-wei-toc.with(
   title: "Insider",
   author: "Julia Latynina",
+  book-number: "VII",
   lang: "en",
 )
 

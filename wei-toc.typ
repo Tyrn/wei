@@ -2,15 +2,19 @@
 
 /// Scene break.
 #let dinkus() = {
-  let star = "♢"
+  let star = sym.suit.diamond.stroked
   set align(center)
   star + star + star
 }
+
+#let open-book = sym.dash.en
+#let close-book = sym.dash.en
 
 #let apply-wei-toc(
   body,
   title: "No Name",
   author: "Юлия Латынина",
+  book-number: "0",
   lang: "ru",
 ) = [
   #set text(lang: lang, size: text-size, hyphenate: true)
@@ -31,6 +35,12 @@
     #text(size: text-size)[
       #author
     ]
+
+    #text(size: 35pt, fill: gray)[
+      #v(1em)
+      #open-book #book-number #close-book
+    ]
+
   ]
 
   #pagebreak()

@@ -1,7 +1,7 @@
 #import "robinson-toc.typ": part, chapter
 #import "wei-toc.typ": dinkus, apply-wei-toc
 
-#show: apply-wei-toc.with(title: "Дело о пропавшем боге")
+#show: apply-wei-toc.with(title: "Дело о пропавшем боге", book-number: "V")
 
 #chapter("Глава первая,")[в которой речь идет об убийстве в монастыре,
   о сродстве карнавалов и восстаний, о колдовских способностях инспектора

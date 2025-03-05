@@ -1,7 +1,7 @@
 #import "robinson-toc.typ": part, chapter
 #import "wei-toc.typ": dinkus, apply-wei-toc
 
-#show: apply-wei-toc.with(title: "Инсайдер")
+#show: apply-wei-toc.with(title: "Инсайдер", book-number: "VII")
 
 #chapter("Глава первая,")[в которой Киссур Белый Кречет попадает в аварию, а первый заместитель
   министра финансов рассуждает о причинах прорухи в государственной казне.]
