@@ -36,8 +36,8 @@
       #author
     ]
 
-    #text(size: 35pt, fill: gray)[
-      #v(1em)
+    #text(size: 25pt, fill: silver)[
+      #v(2em)
       #open-book #book-number #close-book
     ]
 
