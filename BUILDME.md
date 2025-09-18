@@ -23,6 +23,20 @@ typst 0.13.0 (8dce676d)
 typstyle -i *.typ
 ```
 
+## Output generation
+
+- Minimalistic one-liner
+
+```
+for f in 0*.typ; do typst compile "$f" "${f%.typ}.pdf"; done
+```
+
+- Simple script
+
+```
+./typst-compile-all.sh
+```
+
 ## Notes
 
 - [A Fight for a Robinson Crusoe TOC](https://www.reddit.com/r/typst/comments/1brnchc/create_a_chapterbychapter_synopsis_mirrored_in/)
