@@ -3,7 +3,9 @@
 set -u
 # set -x
 
+# ✔️ ✅
+
 for f in 0*.typ; do
-  printf "Compiling %s... " "$f"
-  typst compile "$f" "${f%.typ}.pdf" && echo "✓ Success: ${f%.typ}.pdf" || echo "✗ Failed: $f"
+  printf "%-45s" "$f..."
+  typst compile "$f" "${f%.typ}.pdf" && printf "✔️  %s.pdf\n" "${f%.typ}" || echo "❌ Failed: $f"
 done
