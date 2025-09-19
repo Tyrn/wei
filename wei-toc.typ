@@ -2,7 +2,7 @@
 
 /// Scene break.
 #let dinkus() = {
-  let star = sym.lozenge
+  let star = sym.star.stroked
   set align(center)
   star + " " + star + " " + star
 }
