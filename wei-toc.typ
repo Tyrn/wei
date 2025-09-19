@@ -2,9 +2,9 @@
 
 /// Scene break.
 #let dinkus() = {
-  let star = sym.suit.diamond.stroked
+  let star = sym.lozenge
   set align(center)
-  star + star + star
+  star + " " + star + " " + star
 }
 
 #let open-book = sym.dash.en
